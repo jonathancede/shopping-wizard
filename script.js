@@ -1,0 +1,1 @@
+/* This document provides the differents functions of the application. */
