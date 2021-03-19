@@ -1,1 +1,50 @@
 /* This document provides the differents properties designs. */
+*{
+    padding: 0;
+    margin: 0;
+    border: black 1px solid;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+}
+
+
+#header{
+    height: 100px;
+}
+
+/* #header1{
+    border: black 1px solid;
+    position: absolute;
+
+}
+
+#header2{
+    border: black 1px solid;
+    position: absolute;
+    left: 10%;
+} */
+
+main{
+    background-color: red;
+    flex-grow: 1;
+}
+
+#footer{
+    height: 70px;
+    background-color: #00d5c2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer-right {
+    color: #dcf1eb;
+}
+
+#footer-left {
+    color: white;
+}
