@@ -1,3 +1,9 @@
+:root{
+    --mainBackgroundColor: yellow;
+    --sidePadding: 50px;
+}
+
+
 /* This document provides the differents properties designs. */
 *{
     padding: 0;
@@ -8,7 +14,7 @@
 body{
     display: flex;
     flex-direction: column;
-    height: 98vh;
+    height: 100vh;
 }
 
 
@@ -29,7 +35,7 @@ body{
 } */
 
 main{
-    background-color: red;
+    background-color: var(--mainBackgroundColor);
     flex-grow: 1;
 }
 
@@ -39,12 +45,9 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
-#footer-right {
-    color: #dcf1eb;
-}
-
-#footer-left {
-    color: white;
+#footer div{
+    background-color:rgba(45, 37, 208, 0.386);
 }
