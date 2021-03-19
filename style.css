@@ -1,17 +1,21 @@
+/* This document provides the differents properties designs. */
+
 :root{
-    --mainBackgroundColor: yellow;
-    --sidePadding: 50px;
+    --color-dark-aquamarine: #00d5c2;
+    --color-light-aquamarine: #dcf1eb;
+    --color-dark-red: #d22b41;
+    --color-light-red: #f3d8da;
+    --padding-sides: 55px;
 }
 
-
-/* This document provides the differents properties designs. */
 *{
     padding: 0;
     margin: 0;
-    border: black 1px solid;
+    /* border: black 1px solid; */
 }
 
 body{
+    font-family: 'Commissioner', sans-serif;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -19,23 +23,24 @@ body{
 
 
 #header{
-    height: 100px;
+    font-size: 66px;
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    color: var(--color-dark-aquamarine);
+    padding-left: var(--padding-sides);
 }
 
-/* #header1{
-    border: black 1px solid;
-    position: absolute;
-
+#header1{
+    font-weight: bolder;
 }
 
 #header2{
-    border: black 1px solid;
-    position: absolute;
-    left: 10%;
-} */
+    font-weight: lighter;
+}
 
 main{
-    background-color: var(--mainBackgroundColor);
+    /* background-color: yellow; */
     flex-grow: 1;
 }
 
@@ -46,8 +51,26 @@ main{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-left: var(--padding-sides);
+    padding-right: 35px;
 }
 
-#footer div{
-    background-color:rgba(45, 37, 208, 0.386);
+#footer-right{
+    color: var(--color-light-aquamarine);
+}
+
+#footer-left{
+    color: white;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 16px;
 }
