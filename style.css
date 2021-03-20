@@ -58,11 +58,18 @@ main{
     justify-content: center;
 }
 
-#main-center{
+#main-left{
     background-color: var(--dark-red);
     flex-grow: 1;
-    width: inherit; /* Gets width from his parent (- paddings) */
     height: inherit; /* Gets height from his parent (- paddings) */
+    margin-right: 10px;
+}
+
+#main-right{
+    background-color: var(--dark-red);
+    flex-grow: 1;
+    height: inherit; /* Gets height from his parent (- paddings) */
+    margin-left: 10px
 }
 
 
