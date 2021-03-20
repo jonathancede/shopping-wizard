@@ -65,12 +65,13 @@ main{
     padding-right:var(--padding-sides);
 }
 
-#footer-right{
-    color: var(--light-green);
-}
-
 #footer-left{
     color: white;
+}
+
+#footer-right{
+    color: var(--light-green);
+    font-weight: lighter
 }
 
 
