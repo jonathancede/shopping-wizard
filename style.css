@@ -1,33 +1,41 @@
-/* This document provides the differents properties designs. */
+/* <<<<<<< Shopping wizard | Stylesheet >>>>>>> */
 
+/* General variables */
 :root{
-    --color-dark-aquamarine: #00d5c2;
-    --color-light-aquamarine: #dcf1eb;
-    --color-dark-red: #d22b41;
-    --color-light-red: #f3d8da;
+    --dark-green: #00d5c2;
+    --light-green: #dcf1eb;
+    --dark-red: #d22b41;
+    --ligh-red: #f3d8da;
     --padding-sides: 55px;
+    --font: 'Commissioner', sans-serif;
 }
 
+
+/* General styling */
 *{
     padding: 0;
     margin: 0;
     /* border: black 1px solid; */
 }
 
+
+/* Body */
 body{
-    font-family: 'Commissioner', sans-serif;
+    font-family: var(--font);
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
 
+/* Header */
 #header{
     font-size: 66px;
-    height: 85px;
+    height: 150px;
     display: flex;
     flex-direction: row;
-    color: var(--color-dark-aquamarine);
+    align-items: center;
+    color: var(--dark-green);
     padding-left: var(--padding-sides);
 }
 
@@ -39,30 +47,55 @@ body{
     font-weight: lighter;
 }
 
+
+/* Changing div */
 main{
-    /* background-color: yellow; */
     flex-grow: 1;
+    background-color: var(--ligh-red);
+    padding: 30px var(--padding-sides) 30px var(--padding-sides); /* top right bottom left */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
+#main-left{
+    background-color: var(--dark-red);
+    flex-grow: 1;
+    height: inherit; /* Gets height from his parent (- paddings) */
+    margin-right: 10px;
+}
+
+#main-right{
+    background-color: var(--dark-red);
+    flex-grow: 1;
+    height: inherit; /* Gets height from his parent (- paddings) */
+    margin-left: 10px
+}
+
+
+/* Footer */
 #footer{
-    height: 70px;
+    height: 110px;
     background-color: #00d5c2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-left: var(--padding-sides);
-    padding-right: 35px;
-}
-
-#footer-right{
-    color: var(--color-light-aquamarine);
+    padding-right:var(--padding-sides);
 }
 
 #footer-left{
     color: white;
 }
 
+#footer-right{
+    color: var(--light-green);
+    font-weight: lighter
+}
+
+
+/* Typeface styling */
 h1{
     font-size: 40px;
 }
@@ -74,3 +107,6 @@ h2{
 h3{
     font-size: 16px;
 }
+
+
+/* Animations */
