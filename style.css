@@ -31,7 +31,7 @@ body{
 /* Header */
 #header{
     font-size: 66px;
-    height: 165px;
+    height: 150px;
     display: flex;
     flex-direction: row;
     align-items: center;
