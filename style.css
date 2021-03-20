@@ -15,7 +15,7 @@
 *{
     padding: 0;
     margin: 0;
-    /* border: black 1px solid; */
+    border: black 1px solid;
 }
 
 
@@ -35,8 +35,13 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     color: var(--dark-green);
     padding-left: var(--padding-sides);
+}
+
+#header-logotype{
+    display:flex;
 }
 
 #header1{
