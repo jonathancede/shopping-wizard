@@ -2,10 +2,10 @@
 
 /* General variables */
 :root{
-    --color-dark-aquamarine: #00d5c2;
-    --color-light-aquamarine: #dcf1eb;
-    --color-dark-red: #d22b41;
-    --color-light-red: #f3d8da;
+    --dark-green: #00d5c2;
+    --light-green: #dcf1eb;
+    --dark-red: #d22b41;
+    --ligh-red: #f3d8da;
     --padding-sides: 55px;
 }
 
@@ -33,7 +33,7 @@ body{
     height: 85px;
     display: flex;
     flex-direction: row;
-    color: var(--color-dark-aquamarine);
+    color: var(--dark-green);
     padding-left: var(--padding-sides);
 }
 
@@ -65,7 +65,7 @@ main{
 }
 
 #footer-right{
-    color: var(--color-light-aquamarine);
+    color: var(--light-green);
 }
 
 #footer-left{
