@@ -38,6 +38,7 @@ body{
     justify-content: space-between;
     color: var(--dark-green);
     padding-left: var(--padding-sides);
+    padding-right: var(--padding-sides);
 }
 
 /* Logotype */
