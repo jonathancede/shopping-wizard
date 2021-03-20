@@ -1,5 +1,6 @@
-/* This document provides the differents properties designs. */
+/* <<<<<<< Shopping wizard | Stylesheet >>>>>>> */
 
+/* General variables */
 :root{
     --color-dark-aquamarine: #00d5c2;
     --color-light-aquamarine: #dcf1eb;
@@ -8,12 +9,16 @@
     --padding-sides: 55px;
 }
 
+
+/* General styling */
 *{
     padding: 0;
     margin: 0;
     /* border: black 1px solid; */
 }
 
+
+/* Body */
 body{
     font-family: 'Commissioner', sans-serif;
     display: flex;
@@ -22,6 +27,7 @@ body{
 }
 
 
+/* Header */
 #header{
     font-size: 66px;
     height: 85px;
@@ -39,11 +45,14 @@ body{
     font-weight: lighter;
 }
 
+
+/* Changing div */
 main{
-    /* background-color: yellow; */
     flex-grow: 1;
 }
 
+
+/* Footer */
 #footer{
     height: 70px;
     background-color: #00d5c2;
@@ -63,6 +72,8 @@ main{
     color: white;
 }
 
+
+/* Typeface styling */
 h1{
     font-size: 40px;
 }
@@ -74,3 +85,6 @@ h2{
 h3{
     font-size: 16px;
 }
+
+
+/* Animations */
