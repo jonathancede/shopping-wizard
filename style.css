@@ -58,9 +58,16 @@ body{
 #time-window{
     border: 2px solid var(--dark-green);
     background-color: var(--light-green);
-    height: 90px;
-    width: 240px;
+    height: 60px;
+    width: 330px;
+    padding: 16px 25px 16px 25px;
+    pa
 }
+
+#minutes-left{
+    font-weight: 200;
+}
+
 
 
 /* Changing div */
