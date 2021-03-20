@@ -51,6 +51,18 @@ body{
 /* Changing div */
 main{
     flex-grow: 1;
+    background-color: var(--ligh-red);
+    padding: 30px var(--padding-sides) 30px var(--padding-sides); /* top right bottom left */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#main-center{
+    background-color: var(--dark-red);
+    flex-grow: 1;
+    width: inherit; /* Gets width from his parent (- paddings) */
+    height: inherit; /* Gets height from his parent (- paddings) */
 }
 
 
