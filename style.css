@@ -61,7 +61,7 @@ main{
     justify-content: space-between;
     align-items: center;
     padding-left: var(--padding-sides);
-    padding-right: 35px;
+    padding-right:var(--padding-sides);
 }
 
 #footer-right{
