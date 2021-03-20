@@ -15,7 +15,7 @@
 *{
     padding: 0;
     margin: 0;
-    border: black 1px solid;
+    /* border: black 1px solid; */
 }
 
 
@@ -56,9 +56,10 @@ body{
 
 /* Pop-up remaining time window */
 #time-window{
-    background-color: khaki;
+    border: 2px solid var(--dark-green);
+    background-color: var(--light-green);
     height: 90px;
-    width: 220px;
+    width: 240px;
 }
 
 
