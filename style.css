@@ -58,13 +58,28 @@ main{
     justify-content: center;
 }
 
+/* Left block */
 #main-left{
     background-color: var(--dark-red);
     flex-grow: 1;
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-right: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
+#timeline{
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 0, 0.235); /* Comment this to hide block background */
+}
+
+#summary{
+    flex-grow: 1;
+    background-color: rgba(255, 255, 0, 0.235); /* Comment this to hide block background */
+}
+
+/* Right block */
 #main-right{
     background-color: var(--dark-red);
     flex-grow: 1;
