@@ -35,8 +35,15 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     color: var(--dark-green);
     padding-left: var(--padding-sides);
+    padding-right: var(--padding-sides);
+}
+
+/* Logotype */
+#header-logotype{
+    display:flex;
 }
 
 #header1{
@@ -45,6 +52,34 @@ body{
 
 #header2{
     font-weight: lighter;
+}
+
+/* Pop-up remaining time window */
+#time-window{
+    border: 2px solid var(--dark-green);
+    background-color: var(--light-green);
+    height: 60px;
+    width: 330px;
+    padding: 16px 25px 16px 25px;
+    display: flex;
+    align-items: flex-start; /* Stack elements at top of pop-up window */
+}
+
+/* Pop-up text */
+#time-text{
+    flex-grow:1;
+}
+
+/* Subtext showing remaining minutes */
+#minutes-left{
+    font-weight: 200;
+}
+
+/* Closing cross */
+#time-cross{
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
 }
 
 
