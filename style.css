@@ -65,8 +65,23 @@ main{
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-right: 10px;
     display: flex;
-    flex-direction: column;
 }
+
+.picture-box{
+border: black 2px solid;
+background-color: #00d5c2;
+height: 650px;
+flex-grow: 1;
+}
+.gallery-box{
+width: 120px;
+background-color:lightsalmon;
+
+
+}
+
+
+    
 
 #timeline{
     height: 100px;
@@ -81,11 +96,132 @@ main{
 
 /* Right block */
 #main-right{
-    background-color: var(--dark-red);
+     /* background-color: var(--dark-red); */
+     display: flex;
     flex-grow: 1;
     height: inherit; /* Gets height from his parent (- paddings) */
-    margin-left: 10px
+    margin-left: 10px;
+    display: flex;
 }
+
+#parent-plants {
+    flex-grow: 1;
+    /* width: 80%; */
+    background-color: yellow;
+}
+
+
+#parent-plants div  {
+   display: flex;
+    flex-direction: row;
+    color: #00d5c2;
+    flex-wrap: wrap; 
+}
+.line-margin{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: #00d5c2;
+   
+
+}
+
+/* #plant-style {
+height: 250px;
+width:inherit ;
+border:#00d5c2 2px solid;
+border-left:transparent ;
+border-right: transparent;
+
+
+} */
+
+#type-of-plant {
+    display: flex;
+    border: transparent;
+    margin: 0;
+    width: 100%;
+    height: 30%;
+}
+
+#plant-text{
+margin-right: 20px;
+margin-top: 20px;
+}
+
+#plant1,#plant2,#plant3,#plant4{
+    flex: 1;
+    height: 100%;
+    border: #00d5c2 2px solid;
+    margin-right: 10px;
+    margin-top: 20px;  
+}
+
+ #quantity-text  {
+    display: flex;
+   flex-direction: row;
+}
+
+#quantity-box{
+   width: 30px;
+   height: 20px;
+   margin-left: 35px;
+   border: transparent;
+   background-color: #dcf1eb;
+   color: #00d5c2; 
+}
+
+#plant-base {
+    flex: 1;
+    height: 100px;
+    width:inherit;
+    border: #00d5c2 2px solid;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    flex-direction: row;
+}
+
+#base-box1{
+    flex: 1;
+    display: flex;
+}
+
+#checkbox1,#checkbox2{
+    flex: 2;
+    margin-top: 20px;
+}
+
+
+#plant-textarea{
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    width:inherit   
+
+}
+#text-box1{
+    /* border: black 2px solid; */
+}
+#text-box2{
+    /* border: black 2px solid; */
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#text-box3{
+    border: black 2px solid;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#text-textarea{
+    
+}
+
+#price-box{
+    width: 80px;
+    background-color: lightcoral
+}
+
 
 
 /* Footer */
