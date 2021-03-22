@@ -230,23 +230,45 @@ flex-basis: 20%;
     flex: 1;
     height: 100px;
     width:inherit;
-   
     flex-direction: row;
 }
 
-#base-box1{
-    flex: 1;
+.checkbox{
+   margin-left: 60px;
+   
+
+}
+/* Hide default radio/checkbox button */
+.radio_input input, .checkbox_input input{
+    opacity: 0%;
+    width: 0;
+    height: 0;
+}
+
+/* Center new radio/checkbox to text */
+.radio_input, .checkbox_input{
     display: flex;
+    align-items: center;
 }
 
-#checkbox1,#checkbox2{
-    flex: 2;
-   
+/* Styling owr own radio/checkbox button */
+.radio_control, .checkbox_control{
+    background-color: black;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: var(--stroke-border) solid var(--dark-green);
 }
 
+/* Checked radio */
+.radio_input input:checked + .radio_control{
+    background-color: var(--dark-green);
+}
 
-#plant-textarea{
-   
+/* Checked checkbox */
+.checkbox_input input:checked + .checkbox_control{
+    background-color: var(--dark-green);
 }
 
 #text-box2{
@@ -254,16 +276,11 @@ flex-basis: 20%;
     flex-direction: column;
     height: 40%;
     width: 70%;
-    
-    
-   
 }
 .text-area-wrapper{
 margin-top:20px;
 width: 100%;
 height: 150px;
-
-
 
 }
 .custom-text-area{
