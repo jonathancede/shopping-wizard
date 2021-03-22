@@ -127,6 +127,13 @@ main{
     margin-left: 10px
 }
 
+#bottom-right-left{
+    margin-right: 20px;
+}
+
+#bottom-right-left, #bottom-right-right{
+    flex: 1 1 50%;
+}
 
 /* Separator lines >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .separator-line{
