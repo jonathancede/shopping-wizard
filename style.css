@@ -493,6 +493,8 @@ form label{
     /* Remove default outline */
     border: none;
     font-family: var(--font);
+    font-size: 16px;
+    border-left: 12px solid var(--light-green);;
 }
 
 /* Hidden form item */
