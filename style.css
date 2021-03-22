@@ -195,7 +195,7 @@ background-color:lightsalmon;
 }
 
 
-/* Right block */
+/* Right block shipping */
 #main-right-shipping{
     /* background-color: var(--dark-red); */
     display: flex;
@@ -203,6 +203,16 @@ background-color:lightsalmon;
     flex: 1 1 50%;
     margin-left: 10px;
 }
+
+/* Right block address */
+#main-right-address{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    margin-left: 10px;
+}
+
+
 
 #main-right{
     background-color: var(--dark-red);
