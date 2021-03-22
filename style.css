@@ -165,7 +165,6 @@ background-color:lightsalmon;
 
 #parent-plants div  {
     display: flex;
-    flex-direction: row;
     color: #00d5c2;
     margin-bottom: 20px;
 }
@@ -194,7 +193,7 @@ border-right: transparent;
 
 #type-of-plant {
    
-    height: 25%;
+    height: 20%;
 }
 
 .section-title{
@@ -248,24 +247,16 @@ flex-basis: 20%;
 
 #plant-textarea{
     height: 120px;
-    width: 120px;
-    display: flex;
-    align-content: center;
-    justify-content:flex-start;
-    
+    width: 120px; 
 }
 
 #text-box2{
-   
+    display: flex;
+    flex-direction: column;
     height: 200px;
    
 }
-#test{
-    
-    background-color: #d22b41;
-    height:200px;
-    width: 200px;
-}
+
 #text-area{
   
 }
