@@ -104,6 +104,15 @@ main{
     flex-direction: column;
 }
 
+#main-left-resume{
+    /* background-color: var(--dark-red); */
+    flex-basis: 50%;
+    height: inherit; /* Gets height from his parent (- paddings) */
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Top elements */
 #main-left-mp{
     background-color: var(--dark-red);
@@ -138,11 +147,48 @@ background-color:lightsalmon;
 #timeline, #top-right{
     height: 100px;
     margin-bottom: 20px;
-    /* background-color: rgba(255, 255, 0, 0.235); */
+    background-color: rgba(255, 255, 0, 0.235);
+}
+
+#summary{
+    height: 100%;
+    /* background-color: rgba(255, 255, 0, 0.235); Comment this to hide block background */
+    display: flex;
+    flex-direction: row;
+}
+
+#container-image-summary{
+    flex-basis: 63%;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-image-summary img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#data-resume{
+    flex-basis: 37%;
+    background-color: var(--light-green);
+    color: var(--dark-green);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#data-resume div{
+    margin-left: 30px;
+}
+
+.second-line-data-resume{
+    font-weight: 200;
 }
 
 /* Bottom elements */
-#summary, #bottom-right{
+#bottom-right{
     display: flex;
     flex-grow: 1;
     /*background-color: rgba(255, 255, 0, 0.235);*/
@@ -158,12 +204,11 @@ background-color:lightsalmon;
 }
 
 #main-right{
-     /* background-color: var(--dark-red); */
-     display: flex;
+    background-color: var(--dark-red);
+    display: flex;
     flex-basis: 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-left: 10px;
-   
 }
 
 #parent-plants {
