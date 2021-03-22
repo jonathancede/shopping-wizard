@@ -16,7 +16,7 @@
 *{
     padding: 0;
     margin: 0;
-    /* border: black 1px solid; */
+    border: black 1px solid;
 }
 
 
@@ -190,9 +190,10 @@ background-color:lightsalmon;
 /* Bottom elements */
 #bottom-right{
     display: flex;
-    flex-grow: 1;
-    /*background-color: rgba(255, 255, 0, 0.235);*/
+    height: 100%;
+    flex: 1 1 auto;
 }
+
 
 /* Right block */
 #main-right-shipping{
@@ -215,7 +216,6 @@ background-color:lightsalmon;
     flex-grow: 1;
     /* width: 80%; */
     background-color: yellow;
-    
 }
 
 
