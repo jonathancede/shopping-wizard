@@ -217,6 +217,8 @@ main{
 button {
     font-family: var(--font);
     font-weight: 700;
+    /* Remove default outline */
+    outline: none;
 }
 
 #wrap-gift-button{
@@ -224,9 +226,14 @@ button {
     border: var(--stroke-border) solid var(--dark-green);
     background-color: white;
     padding: 10px;
-    /* Remove default outline */
-    outline: none;
+    
+}
 
+.negative-button{
+    color: var(--dark-green);
+    border: var(--stroke-border) solid var(--dark-green);
+    background-color: white;
+    padding: 10px;
 }
 
 
