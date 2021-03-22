@@ -310,17 +310,24 @@ height: 150px;
 
 
 }
-#buy-button-box{
-    height: 50px;
-    width: 100px;
-    text-align: center;
-    background-color: white;
-    color: #00d5c2;
-  
-    
 
-    
+.negative-button{
+    height: 60px;
+    width: 120px;
+    color: var(--dark-green);
+    border: var(--stroke-border) solid var(--dark-green);
+    background-color: white;
+    padding: 10px;
 }
+
+/* Outlined buttons + hover */
+.negative-button:hover {
+    color: white;
+    border: var(--stroke-border) solid var(--dark-green);
+    background-color: var(--dark-green);
+    padding: 10px;
+}
+
 .section-title-2{
     line-height: 24px;
     flex-basis: 20%;
