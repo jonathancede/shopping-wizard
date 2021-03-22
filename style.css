@@ -15,7 +15,7 @@
 *{
     padding: 0;
     margin: 0;
-    border: black 1px solid;
+    /* border: black 1px solid; */
 }
 
 
@@ -103,14 +103,15 @@ main{
     flex-direction: column;
 }
 
-
+/* Top elements */
 #timeline, #top-right{
     height: 100px;
     margin-bottom: 20px;
     background-color: rgba(255, 255, 0, 0.235); /* Comment this to hide block background */
 }
 
-#summary{
+/* Bottom elements */
+#summary, #bottom-right{
     flex-grow: 1;
     background-color: rgba(255, 255, 0, 0.235); /* Comment this to hide block background */
 }
@@ -118,6 +119,8 @@ main{
 /* Right block */
 #main-right{
     /* background-color: var(--dark-red); */
+    display: flex;
+    flex-direction: column;
     flex: 1 1 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-left: 10px
