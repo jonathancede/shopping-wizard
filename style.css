@@ -142,7 +142,6 @@ background-color:lightsalmon;
     margin-bottom: 10px;
 }
 
-    
 
 #timeline, #top-right{
     height: 100px;
@@ -224,14 +223,15 @@ background-color:lightsalmon;
 /* Address form */
 #address-form{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    background-color: yellow;
 }
 
 /* Back + Clear + Confirm */
 #buttons-div{
-    background-color: lightcoral;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -393,8 +393,6 @@ margin-right: 20px;
 }
 
 
-
-
 /* Separator lines >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .separator-line{
     height: var(--stroke-border);
@@ -472,16 +470,18 @@ margin-right: 20px;
 /* Forms >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* Form block */
 .form-item{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     /* background-color: lightcoral; */
     width: 30%;
 }
 
 /* Form text */
 form label{
+    display: inline-block; /* Inline block to be able to use bottom margin */
     color: var(--dark-green);
     font-size: 20px;
     font-weight: 700;
+    margin-bottom: 8px;
 }
 
 /* Text area inside each form item */
@@ -489,13 +489,18 @@ form label{
     background-color: var(--light-green);
     color: var(--dark-green);
     width: 100%;
-    height: 30px;
-    /* Remove default outline */
+    height: 50px;
+    /* Remove focus outline */
     outline: none;
+    /* Remove default outline */
+    border: none;
     font-family: var(--font);
 }
 
-
+/* Hidden form item */
+#hidden-form{
+    display: none;
+}
 
 /* Buttons >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* Styling general button */
