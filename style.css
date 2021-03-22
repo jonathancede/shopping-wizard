@@ -8,6 +8,7 @@
     --ligh-red: #f3d8da;
     --padding-sides: 55px;
     --font: 'Commissioner', sans-serif;
+    --stroke-border: 2px;
 }
 
 
@@ -56,7 +57,7 @@ body{
 
 /* Pop-up remaining time window */
 #time-window{
-    border: 2px solid var(--dark-green);
+    border: var(--stroke-border) solid var(--dark-green);
     background-color: var(--light-green);
     height: 60px;
     width: 330px;
@@ -137,7 +138,7 @@ main{
 
 /* Separator lines >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .separator-line{
-    height: 2px;
+    height: var(--stroke-border);
     background: var(--dark-green);
     margin-bottom: 10px;
 }
@@ -176,7 +177,7 @@ main{
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    border: 2px solid var(--dark-green);
+    border: var(--stroke-border) solid var(--dark-green);
 }
 
 /* Checked radio */
@@ -213,8 +214,15 @@ main{
 
 /* Buttons >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 button {
-    background-color: red;
+    
 }
+
+#wrap-gift-button{
+    border: var(--stroke-border);
+
+}
+
+
 
 /* Footer */
 #footer{
