@@ -15,7 +15,7 @@
 *{
     padding: 0;
     margin: 0;
-    border: black 1px solid;
+    /* border: black 1px solid; */
 }
 
 
@@ -74,12 +74,18 @@ height: 650px;
 flex-grow: 1;
 }
 .gallery-box{
+display: flex;
+flex-direction: column;
 width: 120px;
 background-color:lightsalmon;
 
-
 }
-
+.photo-gallery{
+    width: 50px;
+    height: 80px;
+    border: black 2px solid;
+    margin-bottom: 10px;
+}
 
     
 
@@ -108,14 +114,15 @@ background-color:lightsalmon;
     flex-grow: 1;
     /* width: 80%; */
     background-color: yellow;
+    
 }
 
 
 #parent-plants div  {
-   display: flex;
+    display: flex;
     flex-direction: row;
     color: #00d5c2;
-    flex-wrap: wrap; 
+    margin-bottom: 20px;
 }
 .line-margin{
     margin-bottom: 20px;
@@ -140,11 +147,12 @@ border-right: transparent;
     display: flex;
     border: transparent;
     margin: 0;
-    height: 30%;
+    height: 25%;
 }
 
 .section-title{
 line-height: 24px;
+margin-right: 20px;
 
 }
 
@@ -157,6 +165,7 @@ line-height: 24px;
 }
 
  #quantity-text  {
+   
     display: flex;
    flex-direction: row;
 }
@@ -214,9 +223,11 @@ line-height: 24px;
 }
 
 #price-box{
-    width: 150px;
+    
+    flex-basis: 30%;
     background-color: lightcoral;
     margin-left: 20px;
+    
 }
 
 
