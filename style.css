@@ -94,7 +94,16 @@ main{
 }
 
 /* Left block */
-#main-leftmp{
+#main-left{
+    background-color: var(--dark-red);
+    flex-grow: 1;
+    height: inherit; /* Gets height from his parent (- paddings) */
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-left-mp{
     background-color: var(--dark-red);
     flex-basis: 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
