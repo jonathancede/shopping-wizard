@@ -16,7 +16,7 @@
 *{
     padding: 0;
     margin: 0;
-    /* border: black 1px solid; */
+    border: black 1px solid;
 }
 
 
@@ -204,7 +204,7 @@ background-color:lightsalmon;
     margin-left: 10px;
 }
 
-/* Right block address */
+/* Address behaviour */
 #main-right-address{
     display: flex;
     flex-direction: column;
@@ -212,6 +212,14 @@ background-color:lightsalmon;
     margin-left: 10px;
 }
 
+/* Address behaviour */
+#bottom-right-address{
+    display: flex;
+    height: 100%;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 
 #main-right{
@@ -341,6 +349,7 @@ margin-right: 20px;
 }
 
 
+
 #bottom-right-left{
     margin-right: 20px;
     display: flex;
@@ -442,6 +451,15 @@ margin-right: 20px;
     /* Bottom margin */
     margin-bottom: 10px;
 }
+/* Forms >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+form label{
+    color: var(--dark-green);
+    font-size: 20px;
+}
+
+
+
+
 
 
 /* Buttons >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
