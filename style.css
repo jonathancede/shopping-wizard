@@ -221,6 +221,14 @@ background-color:lightsalmon;
     justify-content: space-between;
 }
 
+/* Back + Clear + Confirm */
+#buttons-div{
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 #main-right{
     background-color: var(--dark-red);
@@ -377,6 +385,8 @@ margin-right: 20px;
 }
 
 
+
+
 /* Separator lines >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .separator-line{
     height: var(--stroke-border);
@@ -496,7 +506,7 @@ button {
 /* Back button */
 #back-button, #confirm-button{
     font-size: 30px;
-    width: 50%;
+    width: 25%;
 }
 
 
