@@ -59,7 +59,7 @@ main{
 }
 
 /* Left block */
-#main-left{
+#main-leftmp{
     background-color: var(--dark-red);
     flex-basis: 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
