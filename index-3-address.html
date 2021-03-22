@@ -78,16 +78,62 @@
             <div id="bottom-right-address">
                 <form id="address-form" action="/action_page.php">
                     <!-- First name -->
-                    <label for="fname">First name</label><br>
-                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <div class="form-item">
+                        <label for="firstN">First name</label><br>
+                        <input class="form-text-area" type="text" id="user-name" name="name" value="">
+                    </div>
                     <!-- Last name -->
-                    <label for="lname">Last name</label><br>
-                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <div class="form-item">
+                        <label for="lastN">Last name</label><br>
+                        <input class="form-text-area" type="text" id="user-last-name" name="last-name" value="">
+                    </div>
+                    <!-- Birthday -->
+                    <div class="form-item">
+                        <label for="bday">Last name</label><br>
+                        <input class="form-text-area" type="text" id="user-birtdhay" name="birthday" value="dd/mm/yyyy">
+                    </div>
+
+                    <!-- <<<<<<<<<< Second line >>>>>>>>>> -->
+
+                    <!-- Address 1 -->
+                    <div class="form-item">
+                        <label for="address1">Address 1</label><br>
+                        <input class="form-text-area" type="text" id="address-one" name="address-1" value="">
+                    </div>
+                    <!-- Address 2 -->
+                    <div class="form-item">
+                        <label for="address2">Address 2</label><br>
+                        <input class="form-text-area" type="text" id="address-two" name="address-2" value="">
+                    </div>
+                    <!-- Zip code -->
+                    <div class="form-item">
+                        <label for="postalcode">Postal code</label><br>
+                        <input class="form-text-area" type="text" id="user-postalcode" name="postalcode" value="">
+                    </div>
+
+                    <!-- <<<<<<<<<< Third line >>>>>>>>>> -->
+
+                    <!-- Country -->
+                    <div class="form-item">
+                        <label for="address1">Address 1</label><br>
+                        <input class="form-text-area" type="text" id="address-one" name="address-1" value="">
+                    </div>
+                    <!-- Phone -->
+                    <div class="form-item">
+                        <label for="address2">Address 2</label><br>
+                        <input class="form-text-area" type="text" id="address-two" name="address-2" value="">
+                    </div>
+
+
                     <!-- Submit button -->
                     <!-- <input type="submit" value="Submit"> -->
                 </form>
-                <!-- Confirm button -->
-                <button class="negative-button" id="confirm-button" type="button">Confirm</button>
+                <div id="buttons-div">
+                    <!-- Back button -->
+                    <button class="negative-button" id="back-button" type="button">Back</button>
+                    <!-- Confirm button -->
+                    <button class="negative-button" id="confirm-button" type="button">Confirm</button>
+                </div>
             </div>
         </div>
     </main>
