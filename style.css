@@ -136,15 +136,24 @@ main{
     align-items: flex-start;
 }
 
+#bottom-right-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 #shipping-options{
     flex: 1 1 50%;
-
 }
 
 #bottom-right-left, #bottom-right-right{
     flex: 1 1 50%;
 }
 
+#gift-options{
+    width: 100%;
+    flex: 1 1 50%;
+}
 
 
 /* Separator lines >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -255,9 +264,8 @@ button {
 }
 
 /* Back button */
-#back-button{
+#back-button, #confirm-button{
     font-size: 30px;
-    
 }
 
 
