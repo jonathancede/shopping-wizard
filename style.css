@@ -112,6 +112,7 @@ main{
 
 /* Bottom elements */
 #summary, #bottom-right{
+    display: flex;
     flex-grow: 1;
     background-color: rgba(255, 255, 0, 0.235); /* Comment this to hide block background */
 }
@@ -126,13 +127,15 @@ main{
     margin-left: 10px
 }
 
+
+/* Separator lines >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .separator-line{
     height: 2px;
     background: var(--dark-green);
     margin-bottom: 10px;
 }
 
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SHIPPING PAGE */
+/* Radio buttons >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .bottom-right-subtitle{
     margin-bottom: 20px;
 }
@@ -171,8 +174,6 @@ main{
 .radio_input input:checked + .radio_control{
     background-color: var(--dark-green);
 }
-
-
 
 
 
