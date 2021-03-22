@@ -138,6 +138,9 @@ main{
     color: var(--dark-green);
 }
 
+.bottom-right-subtitle{
+    margin-bottom: 20px;
+}
 
 
 
