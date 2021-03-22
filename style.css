@@ -15,7 +15,7 @@
 *{
     padding: 0;
     margin: 0;
-    /* border: black 1px solid; */
+    border: black 1px solid;
 }
 
 
@@ -31,7 +31,7 @@ body{
 /* Header */
 #header{
     font-size: 66px;
-    height: 150px;
+    height: 12%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -85,8 +85,10 @@ body{
 
 /* Changing div */
 main{
-    flex-grow: 1;
-    background-color: var(--ligh-red);
+    /* flex: 1 1 auto; */
+    /* flex-grow: 1; */
+    height: 100%;
+    /* background-color: var(--ligh-red); */
     padding: 30px var(--padding-sides) 30px var(--padding-sides); /* top right bottom left */
     display: flex;
     flex-direction: row;
@@ -95,8 +97,8 @@ main{
 
 /* Left block */
 #main-left{
-    background-color: var(--dark-red);
-    flex-grow: 1;
+    /* background-color: var(--dark-red); */
+    flex-basis: 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-right: 10px;
     display: flex;
@@ -110,14 +112,48 @@ main{
 }
 
 #summary{
-    flex-grow: 1;
-    background-color: rgba(255, 255, 0, 0.235); /* Comment this to hide block background */
+    height: 100%;
+    /* background-color: rgba(255, 255, 0, 0.235); Comment this to hide block background */
+    display: flex;
+    flex-direction: row;
+}
+
+#container-image-summary{
+    flex-basis: 63%;
+    height: 100%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-image-summary img{
+    width: 100%;
+    /* /* max-width: 400px; */
+    height: 100%;
+}
+
+#data-resume{
+    flex-basis: 37%;
+    background-color: var(--light-green);
+    color: var(--dark-green);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#data-resume div{
+    margin-left: 30px;
+}
+
+.second-line-data-resume{
+    font-weight: 200;
 }
 
 /* Right block */
 #main-right{
     background-color: var(--dark-red);
-    flex-grow: 1;
+    flex-basis: 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-left: 10px
 }
@@ -125,7 +161,7 @@ main{
 
 /* Footer */
 #footer{
-    height: 110px;
+    height: 8%;
     background-color: #00d5c2;
     display: flex;
     flex-direction: row;
