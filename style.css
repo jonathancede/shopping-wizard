@@ -125,7 +125,7 @@ main{
 
 /* Footer */
 #footer{
-    height: 110px;
+    height: 8%;
     background-color: #00d5c2;
     display: flex;
     flex-direction: row;
