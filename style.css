@@ -15,7 +15,7 @@
 *{
     padding: 0;
     margin: 0;
-    border: black 1px solid;
+    /* border: black 1px solid; */
 }
 
 
@@ -85,9 +85,7 @@ body{
 
 /* Changing div */
 main{
-    /* flex: 1 1 auto; */
-    /* flex-grow: 1; */
-    height: 100%;
+    flex-grow: 1;
     /* background-color: var(--ligh-red); */
     padding: 30px var(--padding-sides) 30px var(--padding-sides); /* top right bottom left */
     display: flex;
@@ -96,7 +94,7 @@ main{
 }
 
 /* Left block */
-#main-left{
+#main-left-resume{
     /* background-color: var(--dark-red); */
     flex-basis: 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
@@ -120,17 +118,15 @@ main{
 
 #container-image-summary{
     flex-basis: 63%;
-    height: 100%;
-    background-color: blue;
+    background-color: lightgray;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #container-image-summary img{
-    width: 100%;
-    /* /* max-width: 400px; */
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #data-resume{
