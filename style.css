@@ -219,20 +219,28 @@ button {
     font-weight: 700;
     /* Remove default outline */
     outline: none;
+    transition: .4s;
 }
 
-#wrap-gift-button{
+/* #wrap-gift-button{
     color: var(--dark-green);
     border: var(--stroke-border) solid var(--dark-green);
     background-color: white;
     padding: 10px;
     
-}
+} */
 
 .negative-button{
     color: var(--dark-green);
     border: var(--stroke-border) solid var(--dark-green);
     background-color: white;
+    padding: 10px;
+}
+
+.negative-button:hover {
+    color: white;
+    border: var(--stroke-border) solid var(--dark-green);
+    background-color: var(--dark-green);
     padding: 10px;
 }
 
@@ -264,6 +272,7 @@ button {
 /* Color to all text elements */
 h1, h2, h3 {
     color: var(--dark-green);
+    font-weight: 700;
 }
 
 h1{
