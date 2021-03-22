@@ -86,7 +86,7 @@ body{
 /* Changing div */
 main{
     flex-grow: 1;
-    background-color: var(--ligh-red);
+    /* background-color: var(--ligh-red); */
     padding: 30px var(--padding-sides) 30px var(--padding-sides); /* top right bottom left */
     display: flex;
     flex-direction: row;
@@ -107,14 +107,14 @@ main{
 #timeline, #top-right{
     height: 100px;
     margin-bottom: 20px;
-    background-color: rgba(255, 255, 0, 0.235); /* Comment this to hide block background */
+    /* background-color: rgba(255, 255, 0, 0.235); */
 }
 
 /* Bottom elements */
 #summary, #bottom-right{
     display: flex;
     flex-grow: 1;
-    background-color: rgba(255, 255, 0, 0.235); /* Comment this to hide block background */
+    /*background-color: rgba(255, 255, 0, 0.235);*/
 }
 
 /* Right block */
@@ -187,6 +187,17 @@ main{
 /* Checked checkbox */
 .checkbox_input input:checked + .checkbox_control{
     background-color: var(--dark-green);
+}
+
+/* Text area styling >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.custom-text-area{
+    background-color: var(--light-green);
+    /* width: inherit; */
+    height: 80px;
+    border: none;
+    font-family: var(--font);
+    color: var(--dark-green);
+    padding: 10px;
 }
 
 
