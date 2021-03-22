@@ -128,8 +128,17 @@ main{
     margin-left: 10px
 }
 
+
 #bottom-right-left{
     margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#shipping-options{
+    background-color: yellow;
+    flex: 1 1 50%;
+
 }
 
 #bottom-right-left, #bottom-right-right{
