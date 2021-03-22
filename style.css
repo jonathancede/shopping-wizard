@@ -167,6 +167,11 @@ main{
     border: 2px solid var(--dark-green);
 }
 
+/* Checked radio */
+.radio_input input:checked + .radio_control{
+    background-color: var(--dark-green);
+}
+
 
 
 
