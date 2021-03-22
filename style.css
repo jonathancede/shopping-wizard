@@ -118,7 +118,7 @@ main{
 }
 
 /* Right block */
-#main-right{
+#main-right-shipping{
     /* background-color: var(--dark-red); */
     display: flex;
     flex-direction: column;
@@ -192,27 +192,29 @@ main{
 /* Text area styling >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 .custom-text-area{
     background-color: var(--light-green);
+    width: 100%;
     border: none;
     font-family: var(--font);
     color: var(--dark-green);
-    padding: 10px;
+    /*padding: 10px;*/
     /* Remove default outline */
     outline: none;
     /* Remove default resize */
     resize: none;
-    
 }
 
 /* Shipping page */
 .gift-text-area{
-    height: 80px;
+    height: 90px;
     /* Bottom margin */
     margin-bottom: 10px;
 }
 
 
 /* Buttons >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
+button {
+    background-color: red;
+}
 
 /* Footer */
 #footer{
