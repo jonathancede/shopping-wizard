@@ -15,7 +15,7 @@
 *{
     padding: 0;
     margin: 0;
-    /* border: black 1px solid; */
+    border: black 1px solid;
 }
 
 
@@ -96,7 +96,7 @@ main{
 /* Left block */
 #main-left{
     background-color: var(--dark-red);
-    flex-grow: 1;
+    flex: 1 1 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-right: 10px;
     display: flex;
@@ -117,7 +117,7 @@ main{
 /* Right block */
 #main-right{
     /* background-color: var(--dark-red); */
-    flex-grow: 1;
+    flex: 1 1 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-left: 10px
 }
@@ -157,6 +157,7 @@ main{
 /* Typeface styling */
 h1{
     font-size: 40px;
+    color: var(--dark-green);
 }
 
 h2{
