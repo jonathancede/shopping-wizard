@@ -15,7 +15,7 @@
 *{
     padding: 0;
     margin: 0;
-    /* border: black 1px solid; */
+    border: black 1px solid;
 }
 
 
@@ -132,15 +132,42 @@ main{
     margin-bottom: 10px;
 }
 
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SHIPPING PAGE
-/* Checkboxes */
-.radio-contanier{
-    color: var(--dark-green);
-}
-
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SHIPPING PAGE */
 .bottom-right-subtitle{
     margin-bottom: 20px;
 }
+
+/* Radio wrapper */
+.radio{
+    color: var(--dark-green);
+    /* Display elements as grid */
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-gap: 0.5em; /* Give elements a space between */
+}
+
+/* Hide default radio button */
+.radio_input input{
+    opacity: 0%;
+    width: 0;
+    height: 0;
+}
+
+.radio_input{
+    display: flex;
+    align-items: center;
+}
+
+/* Styling owr own radio button */
+.radio_control {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid var(--dark-green);
+}
+
+
 
 
 
