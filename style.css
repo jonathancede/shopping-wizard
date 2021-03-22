@@ -213,12 +213,19 @@ main{
 
 
 /* Buttons >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Styling general button */
 button {
-    
+    font-family: var(--font);
+    font-weight: 700;
 }
 
 #wrap-gift-button{
-    border: var(--stroke-border);
+    color: var(--dark-green);
+    border: var(--stroke-border) solid var(--dark-green);
+    background-color: white;
+    padding: 10px;
+    /* Remove default outline */
+    outline: none;
 
 }
 
