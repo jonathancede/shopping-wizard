@@ -222,10 +222,12 @@ button {
     transition: .4s;
 }
 
+/* Wrap gift button (shipping page)*/
 #wrap-gift-button{
     width: 50%;
 }
 
+/* Outlined buttons */
 .negative-button{
     color: var(--dark-green);
     border: var(--stroke-border) solid var(--dark-green);
@@ -233,6 +235,7 @@ button {
     padding: 10px;
 }
 
+/* Outlined buttons + hover */
 .negative-button:hover {
     color: white;
     border: var(--stroke-border) solid var(--dark-green);
