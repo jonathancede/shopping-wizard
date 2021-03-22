@@ -107,7 +107,7 @@ background-color:lightsalmon;
     flex-basis: 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-left: 10px;
-    display: flex;
+   
 }
 
 #parent-plants {
