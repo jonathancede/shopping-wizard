@@ -103,7 +103,8 @@ main{
     flex-direction: column;
 }
 
-#timeline{
+
+#timeline, #top-right{
     height: 100px;
     margin-bottom: 20px;
     background-color: rgba(255, 255, 0, 0.235); /* Comment this to hide block background */
