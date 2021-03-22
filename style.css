@@ -156,7 +156,6 @@ main{
     display: grid;
     grid-template-columns: min-content auto;
     grid-gap: 0.5em; /* Give elements a space between */
-    transition: 1s;
 }
 
 /* Hide default radio/checkbox button */
@@ -223,6 +222,9 @@ button {
     transition: .4s;
 }
 
+#wrap-gift-button{
+    width: 50%;
+}
 
 .negative-button{
     color: var(--dark-green);
