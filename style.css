@@ -137,17 +137,21 @@ main{
 /* border: black 2px solid; */
 /* background-color:lightgray; */
 flex-grow: 1;
+display: flex;
+justify-content: center;
+align-items: center;
 }
-#main-context-picture{
+
+.picture-box img{
 width: 654px;
-
-height:715px;
-
+height: 700px;
 }
+
 .gallery-box{
 display: flex;
 flex-direction: column;
 width: 120px;
+
 /* background-color:lightsalmon; */
 
 }
@@ -306,8 +310,29 @@ flex-basis: 20%;
     flex-grow: 1;
     border: #00d5c2 2px solid;
     margin-left: 10px;
-
+    justify-content: center;
+    align-items: center;
 }
+#plant1 img,#plant2 img,#plant3 img,#plant4 img{
+    width: 82px;
+    height: 110px;
+}
+ #plant1:hover { /* Hover over each of the type of plants */
+    color: white;
+    border: var(--stroke-border) solid var(--dark-green);
+    background-color: var(--light-green);}
+    #plant2:hover {
+        color: white;
+        border: var(--stroke-border) solid var(--dark-green);
+        background-color: var(--light-green);}
+        #plant3:hover {
+            color: white;
+            border: var(--stroke-border) solid var(--dark-green);
+            background-color: var(--light-green);}
+            #plant4:hover {
+                color: white;
+                border: var(--stroke-border) solid var(--dark-green);
+                background-color: var(--light-green);}
 
  #quantity-text  {
 
@@ -331,8 +356,8 @@ flex-basis: 20%;
     flex-direction: row;
 }
 
-.checkbox{
-   margin-left: 60px;
+.base-checkbox{
+   margin-left: 20px;
 
 
 }
@@ -407,6 +432,16 @@ height: 150px;
     margin-left: 20px;
 
 }
+.price-total{
+font-size: 20px;
+
+
+}
+.price-total-2{
+    font-size: 40px;
+    
+    
+    }
 .main-price{
     color: #00d5c2;
     flex-basis: 100%;
@@ -504,15 +539,51 @@ align-items:flex-end ;
     grid-template-columns: min-content auto;
     grid-gap: 0.5em; /* Give elements a space between */
 }
+#custom-message-box{
+    display: flex;
 
-/* Hide default radio/checkbox button */
+}
+
+
+.checkbox-mp_input input{
+    opacity: 0%;
+    width: 0;
+    height: 0;
+}
+.checkbox_input-mp{
+    display: flex;
+    align-items: center;
+}
+.checkbox-mp_control{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: var(--stroke-border) solid var(--dark-green);}
+
+
+.checkbox-mp_control{
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: var(--stroke-border) solid var(--dark-green);}
+
+.checkbox-mp_input input:checked + .checkbox-mp_control{
+            background-color: var(--dark-green);
+        }
+
+
+
+
+
+        /* Hide default radio/checkbox button */
 .radio_input input, .checkbox_input input{
     opacity: 0%;
     width: 0;
     height: 0;
 }
-
-/* Center new radio/checkbox to text */
+        /* Center new radio/checkbox to text */
 .radio_input, .checkbox_input{
     display: flex;
     align-items: center;
