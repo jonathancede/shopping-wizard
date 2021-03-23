@@ -80,17 +80,17 @@
                     <!-- First name -->
                     <div class="form-item">
                         <label for="firstN">First name</label><br>
-                        <input class="form-text-area" type="text" id="user-first-name" name="first-name" value="">
+                        <input class="form-text-area" type="text" id="user-first-name" name="first-name" value="" required>
                     </div>
                     <!-- Last name -->
                     <div class="form-item">
                         <label for="lastN">Last name</label><br>
-                        <input class="form-text-area" type="text" id="user-last-name" name="last-name" value="">
+                        <input class="form-text-area" type="text" id="user-last-name" name="last-name" value="" required>
                     </div>
                     <!-- Birthday -->
                     <div class="form-item">
                         <label for="bday">Birthday</label><br>
-                        <input class="form-text-area" type="text" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" id="user-birtdhay" name="birthday" value="dd/mm/yyyy">
+                        <input class="form-text-area" type="text" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" id="user-birtdhay" name="birthday" value="dd/mm/yyyy" required>
                     </div>
 
                     <!-- <<<<<<<<<< Second line >>>>>>>>>> -->
@@ -98,7 +98,7 @@
                     <!-- Address 1 -->
                     <div class="form-item">
                         <label for="address1">Address 1</label><br>
-                        <input class="form-text-area" type="text" id="user-address-one" name="address-1" value="">
+                        <input class="form-text-area" type="text" id="user-address-one" name="address-1" value="" required>
                     </div>
                     <!-- Address 2 -->
                     <div class="form-item">
@@ -108,7 +108,7 @@
                     <!-- Zip code -->
                     <div class="form-item">
                         <label for="postalcode">Postal code</label><br>
-                        <input class="form-text-area" type="text" id="user-postalcode" name="postalcode" value="">
+                        <input class="form-text-area" type="text" id="user-postalcode" name="postalcode" value="" required>
                     </div>
 
                     <!-- <<<<<<<<<< Third line >>>>>>>>>> -->
@@ -118,7 +118,7 @@
                         <label for="country">Country</label><br>
                         <!-- Select menu | Country -->
                         <div class="select-country-wrapper">
-                            <select class="form-text-area select-menu" id="user-country" name="country">
+                            <select class="form-text-area select-menu" id="user-country" name="country" required>
                                 <!-- List of countries -->
                                 <option value="Default">Select a country</option>
                                 <option value="Afganistan">Afghanistan</option>
@@ -376,7 +376,7 @@
                         <!-- Select menu | Country -->
                         <div class="select-prefix-wrapper">
                             <!-- Prefixes list -->
-                            <select class="form-text-area select-menu" id="user-phone-prefix" name="phone-prefix">
+                            <select class="form-text-area select-menu" id="user-phone-prefix" name="phone-prefix" >
                                 <!-- List of prefixes -->
                                 <option data-countryCode="DEF" value="">Pre.</option>
                                 <option data-countryCode="DZ" value="+213">Algeria (+213)</option>
@@ -595,7 +595,7 @@
                                 <option data-countryCode="ZW" value="+263">Zimbabwe (+263)</option>
                             </select>
                             <!-- User phone -->
-                            <input class="form-text-area" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" id="user-phone" name="phone" value="">
+                            <input class="form-text-area" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" id="user-phone" name="phone" value="" required>
                         </div>
                     </div>
                     <!-- Hidden element -->
