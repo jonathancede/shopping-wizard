@@ -810,5 +810,12 @@ h3{
     font-size: 16px;
 }
 
+/* Password requirements */
+#password-requirements{
+    margin-top: 5px;
+    color: var(--dark-green);
+    font-weight: 200;
+}
+
 
 /* Animations */
