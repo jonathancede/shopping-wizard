@@ -23,14 +23,15 @@ var isGift;
 var giftMessage;
 // var wrapper;
 
-function CheckAndNextPage(){
+function CheckAndNextPage(event){
+    event.preventDefault();
     switch (indexCurrentPage) {
         case 1:
             var mainleftCurrentPage = document.getElementById("main-left-mp");
             var mainRightCurrentPage = document.getElementById("main-right-mp");
 
             var mainleftNextPage = document.getElementById("main-left-resume");
-            var mainRightNextPage = document.getElementById("main-right-address");
+            var mainRightNextPage = document.getElementById("main-right-profile");
 
             mainleftCurrentPage.style.display = "none";
             mainRightCurrentPage.style.display = "none";
@@ -41,6 +42,21 @@ function CheckAndNextPage(){
             indexCurrentPage++;
             break;
         case 2:
+            var mainleftCurrentPage = document.getElementById("main-left-resume");
+            var mainRightCurrentPage = document.getElementById("main-right-profile");
+
+            var mainleftNextPage = document.getElementById("main-left-resume");
+            var mainRightNextPage = document.getElementById("main-right-address");
+
+            mainleftCurrentPage.style.display = "none";
+            mainRightCurrentPage.style.display = "none";
+
+            mainleftNextPage.style.display = "flex";
+            mainRightNextPage.style.display = "flex";
+            
+            indexCurrentPage++;
+            break;
+        case 3:
             var mainleftCurrentPage = document.getElementById("main-left-resume");
             var mainRightCurrentPage = document.getElementById("main-right-address");
 
@@ -55,7 +71,7 @@ function CheckAndNextPage(){
             
             indexCurrentPage++;
             break;
-        case 3:
+        case 4:
             var mainleftCurrentPage = document.getElementById("main-left-resume");
             var mainRightCurrentPage = document.getElementById("main-right-shipping");
 
@@ -70,7 +86,7 @@ function CheckAndNextPage(){
             
             indexCurrentPage++;
             break;
-        case 4:
+        case 5:
             var mainleftCurrentPage = document.getElementById("main-left-finish");
             var mainRightCurrentPage = document.getElementById("main-right-finish");
 
@@ -94,7 +110,7 @@ function BackPage(){
     switch (indexCurrentPage) {
         case 2:
             var mainleftCurrentPage = document.getElementById("main-left-resume");
-            var mainRightCurrentPage = document.getElementById("main-right-address");
+            var mainRightCurrentPage = document.getElementById("main-right-profile");
 
             var mainleftNextPage = document.getElementById("main-left-mp");
             var mainRightNextPage = document.getElementById("main-right-mp");
@@ -109,6 +125,21 @@ function BackPage(){
             break;
         case 3:
             var mainleftCurrentPage = document.getElementById("main-left-resume");
+            var mainRightCurrentPage = document.getElementById("main-right-address");
+
+            var mainleftNextPage = document.getElementById("main-left-resume");
+            var mainRightNextPage = document.getElementById("main-right-profile");
+
+            mainleftCurrentPage.style.display = "none";
+            mainRightCurrentPage.style.display = "none";
+
+            mainleftNextPage.style.display = "flex";
+            mainRightNextPage.style.display = "flex";
+            
+            indexCurrentPage--;
+            break;
+        case 4:
+            var mainleftCurrentPage = document.getElementById("main-left-resume");
             var mainRightCurrentPage = document.getElementById("main-right-shipping");
 
             var mainleftNextPage = document.getElementById("main-left-resume");
@@ -122,7 +153,7 @@ function BackPage(){
             
             indexCurrentPage--;
             break;
-        case 4:
+        case 5:
             var mainleftCurrentPage = document.getElementById("main-left-finish");
             var mainRightCurrentPage = document.getElementById("main-right-finish");
 
