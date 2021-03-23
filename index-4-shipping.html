@@ -36,11 +36,117 @@
     </header>
     <!-- Changing div -->
     <main>
-        <div id="main-left">
+        <div id="main-left-resume">
             <div id="timeline"></div>
-            <div id="summary"></div>
+            <div id="summary">
+                <div id="container-image-summary">
+                    <!-- <img src="Assets/VAR MADERA.png" alt="Image Resume"> -->
+                </div>
+                <div id="data-resume">
+                    <div>
+                        <h2>Plant</h2>
+                        <h2 class="second-line-data-resume">Tri (x2)</h2>
+                    </div>
+                    <div>
+                        <h2>Base</h2>
+                        <h2 class="second-line-data-resume">Wooden (x2)</h2>
+                    </div>
+                    <div>
+                        <h2>Message</h2>
+                        <h2 class="second-line-data-resume">My optional text (x2)</h2>
+                    </div>
+                    <div>
+                        <h2>Shipping</h2>
+                        <h2 class="second-line-data-resume">Extra shipping (48h)<br>+ 4,99€</h2>
+                    </div>
+                    <div>
+                        <h2>Price</h2>
+                        <h2 class="second-line-data-resume">50,00€</h2>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="main-right"></div>
+        <div id="main-right-shipping">
+            <!-- Top right block -->
+            <div id="top-right">
+                <!-- Line -->
+                <div class="separator-line"></div>
+                <!-- Title -->
+                <h1>Shipping</h1>
+            </div>
+            <!-- Bottom right block -->
+            <div id="bottom-right">
+                <!-- Bottom right left -->
+                <div id="bottom-right-left">
+                    <!-- Shipping options -->
+                    <div id="shipping-options">
+                        <!-- Subtitle -->
+                        <h2 class="bottom-right-subtitle">Select the type of shipping</h2>
+                        <!-- Radio buttons -->
+                        <!-- Free -->
+                        <label class="radio">
+                            <span class="radio_input">
+                                <input type="radio" name="radio">
+                                <span class="radio_control"></span>
+                            </span>
+                            <span class="radio_label">Free shipping (72h)</span>
+                        </label>
+                        <!-- Linebreak -->
+                        <br>
+                        <!-- Extra  -->
+                        <label class="radio">
+                            <span class="radio_input">
+                                <input type="radio" name="radio">
+                                <span class="radio_control"></span>
+                            </span>
+                            <span class="radio_label">Extra shipping (48h) <strong>+ 4,99€</strong></span>
+                        </label>
+                        <!-- Linebreak -->
+                        <br>
+                        <!-- Premium  -->
+                        <label class="radio">
+                            <span class="radio_input">
+                                <input type="radio" name="radio">
+                                <span class="radio_control"></span>
+                            </span>
+                            <span class="radio_label">Premium shipping (72h) <strong>+ 7,99€</strong></span>
+                        </label>
+                        <!-- Linebreak -->
+                        <br><br>
+                        <h3 id="arrival-dates">Your order will arrive between <br>
+                            Tuesday, 29th March at 3pm
+                            and <br>Wednesday, 30th March at 3pm.</h3>
+                    </div>
+                    <!-- Back button -->
+                    <button class="negative-button" id="back-button" type="button">Back</button>
+                </div>
+                <!-- Bottom right right -->
+                <div id="bottom-right-right">
+                    <div id="gift-options">
+                        <!-- Subtitle -->
+                        <!-- Gift checkbox -->
+                        <label class="checkbox gift-radio">
+                            <span class="checkbox_input">
+                                <input type="checkbox" name="checkbox">
+                                <span class="checkbox_control"></span>
+                            </span>
+                            <h2 class="checkbox_label">Gift?</h2>
+                        </label>
+                        <!-- Text area -->
+                        <div class="text-area-wrapper">
+                            <textarea type="text" class="custom-text-area gift-text-area" id="gift-text" name="gift-text">&nbsp;Test area</textarea>
+                        </div>
+                        <!-- Wrapper button -->
+                        <button class="negative-button" id="wrap-gift-button" type="button">
+                            Add wrapper  &nbsp;&nbsp;
+                            <i style="font-size: 16px;" class="uil uil-image"></i>
+                        </button>
+                    </div>
+                    <!-- Confirm button -->
+                    <button class="negative-button" id="confirm-button" type="button">Confirm</button>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Footer -->
     <footer id="footer">
