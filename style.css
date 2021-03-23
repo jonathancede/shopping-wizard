@@ -237,6 +237,10 @@ width: 120px;
     margin-left: 10px;
 }
 
+#main-right-profile{
+    background-color: green;
+}
+
 /* Address behaviour */
 #main-right-address{
     /* background-color: var(--dark-red); */
