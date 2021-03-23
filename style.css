@@ -494,7 +494,7 @@ form label{
     border: none;
     font-family: var(--font);
     font-size: 16px;
-    border-left: 12px solid var(--light-green);;
+    border-left: 12px solid var(--light-green);
 }
 
 /* Hidden form item */
@@ -502,10 +502,18 @@ form label{
     display: none;
 }
 
+/* Select menu wrapper */
+.select-text-area-wrapper{
+    border: var(--stroke-border) solid var(--dark-green);
+    /* Solve this better */
+    width:105%;
+}
+
 /* Select menu (country and phone) */
 .select-menu{
     background-color: var(--light-green);
-    border: var(--stroke-border) solid var(--dark-green);
+    border-left: 12px solid var(--light-green);
+    border-right: 12px solid var(--light-green);
 }
 
 
@@ -540,7 +548,7 @@ button {
     padding: 10px;
 }
 
-/* Back button */
+/* Back/Confirm button */
 #back-button, #confirm-button{
     font-size: 30px;
     width: 25%;
