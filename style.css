@@ -86,7 +86,7 @@ body{
 /* Changing div */
 main{
     flex-grow: 1;
-    background-color: var(--ligh-red);
+    /* background-color: var(--ligh-red); */
     padding: 30px var(--padding-sides) 30px var(--padding-sides); /* top right bottom left */
     display: flex;
     flex-direction: row;
@@ -104,35 +104,42 @@ main{
 }
 
 #main-left-mp{
-    background-color: var(--dark-red);
+    /* background-color: var(--dark-red); */
     flex-basis: 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-right: 10px;
     display: flex;
     flex-direction: row;
-   
+
 }
 
 .picture-box{
-border: black 2px solid;
-background-color: #00d5c2;
+/* border: black 2px solid; */
+/* background-color:lightgray; */
 flex-grow: 1;
+}
+#main-context-picture{
+width: 654px;
+
+height:715px;
+
 }
 .gallery-box{
 display: flex;
 flex-direction: column;
 width: 120px;
-background-color:lightsalmon;
+/* background-color:lightsalmon; */
 
 }
 .photo-gallery{
     width: 50px;
     height: 80px;
-    border: black 2px solid;
+    /* border: black 2px solid; */
+    background-color: var(--light-green);
     margin-bottom: 10px;
 }
 
-    
+
 
 #timeline{
     height: 100px;
@@ -152,14 +159,14 @@ background-color:lightsalmon;
     flex-basis: 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-left: 10px;
-   
+
 }
 
 #parent-plants {
     flex-grow: 1;
     /* width: 80%; */
-    background-color: yellow;
-    
+    /* background-color: yellow; */
+
 }
 
 
@@ -173,7 +180,7 @@ background-color:lightsalmon;
     width: 100%;
     height: 2px;
     background-color: #00d5c2;
-   
+
 
 }
 
@@ -192,7 +199,7 @@ border-right: transparent;
 }
 
 #type-of-plant {
-   
+
     height: 20%;
 }
 
@@ -208,22 +215,22 @@ flex-basis: 20%;
     flex-grow: 1;
     border: #00d5c2 2px solid;
     margin-left: 10px;
-    
+
 }
 
  #quantity-text  {
-   
+
     display: flex;
    flex-direction: row;
 }
 
 #quantity-box{
-   width: 30px;
-   height: 20px;
-   margin-left: 35px;
+   width: 50px;
+   height: 30px;
+   margin-left: 10px;
    border: transparent;
    background-color: #dcf1eb;
-   color: #00d5c2; 
+   color: #00d5c2;
 }
 
 #plant-base {
@@ -235,7 +242,7 @@ flex-basis: 20%;
 
 .checkbox{
    margin-left: 60px;
-   
+
 
 }
 /* Hide default radio/checkbox button */
@@ -253,7 +260,7 @@ flex-basis: 20%;
 
 /* Styling owr own radio/checkbox button */
 .radio_control, .checkbox_control{
-    background-color: black;
+
     display: block;
     width: 8px;
     height: 8px;
@@ -300,22 +307,20 @@ height: 150px;
 #price-box{
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: flex-end;
     flex-basis: 15%;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     margin-left: 20px;
-    
+
 }
 .main-price{
     color: #00d5c2;
     flex-basis: 100%;
     width: 100%;
-    
-   
+
 }
 #price-text-box{
-    
     height: 100px;
 }
 #type-plant-price{
@@ -328,11 +333,12 @@ height: 150px;
 
 }
 
+
 .negative-button{
     height: 60px;
     width: 120px;
     color: var(--dark-green);
-    border: var(--stroke-border) solid var(--dark-green);
+    border: 2px solid var(--dark-green);
     background-color: white;
     padding: 10px;
 }
@@ -348,7 +354,7 @@ height: 150px;
 .section-title-2{
     line-height: 24px;
     flex-basis: 20%;
-    
+
     }
 
 
