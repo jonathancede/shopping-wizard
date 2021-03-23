@@ -239,6 +239,10 @@ width: 120px;
 
 #main-right-profile{
     background-color: green;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    margin-left: 10px;
 }
 
 /* Address behaviour */
