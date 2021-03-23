@@ -113,32 +113,49 @@ main{
     flex-direction: column;
 }
 
-/* Top elements */
-#main-left-mp{
-    background-color: var(--dark-red);
+#main-left-finish{
+    /* background-color: var(--dark-red); */
     flex-basis: 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-right: 10px;
     display: flex;
-    flex-direction: row;  
+    flex-direction: column;
+}
+
+/* Top elements */
+#main-left-mp{
+    /* background-color: var(--dark-red); */
+    flex-basis: 50%;
+    height: inherit; /* Gets height from his parent (- paddings) */
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+
 }
 
 .picture-box{
-border: black 2px solid;
-background-color: #00d5c2;
+/* border: black 2px solid; */
+/* background-color:lightgray; */
 flex-grow: 1;
+}
+#main-context-picture{
+width: 654px;
+
+height:715px;
+
 }
 .gallery-box{
 display: flex;
 flex-direction: column;
 width: 120px;
-background-color:lightsalmon;
+/* background-color:lightsalmon; */
 
 }
 .photo-gallery{
     width: 50px;
     height: 80px;
-    border: black 2px solid;
+    /* border: black 2px solid; */
+    background-color: var(--light-green);
     margin-bottom: 10px;
 }
 
@@ -169,6 +186,14 @@ background-color:lightsalmon;
     max-height: 100%;
 }
 
+#container-image-finish{
+    height: 100%;
+    background-color: lightgrey;
+    /* background-color: rgba(255, 255, 0, 0.235); Comment this to hide block background */
+    display: flex;
+    flex-direction: row;
+}
+
 #data-resume{
     flex-basis: 37%;
     background-color: var(--light-green);
@@ -194,6 +219,15 @@ background-color:lightsalmon;
 }
 
 
+/* Right block */
+#main-right-mp{
+     /* background-color: var(--dark-red); */
+     display: flex;
+    flex-basis: 50%;
+    height: inherit; /* Gets height from his parent (- paddings) */
+    margin-left: 10px;
+}
+
 /* Right block shipping */
 #main-right-shipping{
     /* background-color: var(--dark-red); */
@@ -205,6 +239,16 @@ background-color:lightsalmon;
 
 /* Address behaviour */
 #main-right-address{
+    /* background-color: var(--dark-red); */
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    margin-left: 10px;
+}
+
+/* Finish behaviour */
+#main-right-finish{
+    /* background-color: var(--dark-red); */
     display: flex;
     flex-direction: column;
     flex: 1 1 50%;
@@ -247,13 +291,13 @@ background-color:lightsalmon;
 #parent-plants {
     flex-grow: 1;
     /* width: 80%; */
-    background-color: yellow;
+    /* background-color: yellow; */
+
 }
 
 
 #parent-plants div  {
     display: flex;
-    flex-direction: row;
     color: #00d5c2;
     margin-bottom: 20px;
 }
@@ -262,7 +306,7 @@ background-color:lightsalmon;
     width: 100%;
     height: 2px;
     background-color: #00d5c2;
-   
+
 
 }
 
@@ -281,13 +325,14 @@ border-right: transparent;
 }
 
 #type-of-plant {
-   
-    height: 25%;
+
+    height: 20%;
 }
 
 .section-title{
 line-height: 24px;
 margin-right: 20px;
+flex-basis: 20%;
 
 }
 
@@ -296,71 +341,154 @@ margin-right: 20px;
     flex-grow: 1;
     border: #00d5c2 2px solid;
     margin-left: 10px;
-    
+
 }
 
  #quantity-text  {
-   
+
     display: flex;
    flex-direction: row;
 }
 
 #quantity-box{
-   width: 30px;
-   height: 20px;
-   margin-left: 35px;
+   width: 50px;
+   height: 30px;
+   margin-left: 10px;
    border: transparent;
    background-color: #dcf1eb;
-   color: #00d5c2; 
+   color: #00d5c2;
 }
 
 #plant-base {
     flex: 1;
     height: 100px;
     width:inherit;
+    flex-direction: row;
+}
+
+.checkbox{
+   margin-left: 60px;
+
+
+}
+/* Hide default radio/checkbox button */
+.radio_input input, .checkbox_input input{
+    opacity: 0%;
+    width: 0;
+    height: 0;
+}
+
+/* Center new radio/checkbox to text */
+.radio_input, .checkbox_input{
+    display: flex;
+    align-items: center;
    
-    flex-direction: row;
 }
 
-#base-box1{
-    flex: 1;
-    display: flex;
+/* Styling owr own radio/checkbox button */
+.radio_control, .checkbox_control{
+
+    display: block;
+    margin-right: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: var(--stroke-border) solid var(--dark-green);
 }
 
-#checkbox1,#checkbox2{
-    flex: 2;
-    margin-top: 20px;
+/* Checked radio */
+.radio_input input:checked + .radio_control{
+    background-color: var(--dark-green);
 }
 
-
-#plant-textarea{
-    display: flex;
-    flex-direction: row;
-    height: 250px;
-    width:inherit;
-}
-
-#text-box1{
-    /* border: black 2px solid; */
+/* Checked checkbox */
+.checkbox_input input:checked + .checkbox_control{
+    background-color: var(--dark-green);
 }
 
 #text-box2{
-    /* border: black 2px solid; */
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 70%;
+}
+.text-area-wrapper{
+margin-top:20px;
+width: 100%;
+height: 150px;
+
+}
+.custom-text-area{
+    background-color: var(--light-green);
+    width: 100%;
+    border: none;
+    font-family: var(--font);
+    color: var(--dark-green);
+    /*padding: 10px;*/
+    /* Remove default outline */
+    outline: none;
+    /* Remove default resize */
+    resize: none;
 }
 
-#text-box3{
-    border: black 2px solid;
-}
-
-#text-textarea{
-
-}
 
 #price-box{
-    flex-basis: 30%;
-    background-color: lightcoral;
+    flex-grow: 1;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+    flex-basis: 15%;
+    /* background-color: lightcoral; */
     margin-left: 20px;
+
 }
+.main-price{
+    color: #00d5c2;
+    flex-basis: 100%;
+    width: 100%;
+
+}
+#price-text-box{
+    height: 100px;
+}
+#type-plant-price{
+    height: 50px;
+}
+#type-base-price{
+
+    height:50px ;
+
+
+}
+#buy-button-box{
+display: flex;
+flex-direction: row;
+align-items:flex-end ;
+}
+
+.negative-button{
+    height: 60px;
+    width: 120px;
+    color: var(--dark-green);
+    border: 2px solid var(--dark-green);
+    background-color: white;
+    padding: 10px;
+}
+
+/* Outlined buttons + hover */
+.negative-button:hover {
+    color: white;
+    border: var(--stroke-border) solid var(--dark-green);
+    background-color: var(--dark-green);
+    padding: 10px;
+}
+
+.section-title-2{
+    line-height: 24px;
+    flex-basis: 20%;
+
+    }
+
 
 
 
@@ -533,6 +661,41 @@ form label{
     padding-right: 12px;
 }
 
+#finish-data{
+    background-color: var(--light-green);
+    display: flex;
+    height: 100%;
+    flex: 1 1 auto;
+    flex-direction: row;
+}
+
+#summary-finish{
+    margin-left: 25px;
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#total-price-finish{
+    margin-left: 25px;
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#terms-conditions-finish{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#buttons-finish{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /* Buttons >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* Styling general button */
 button {
@@ -566,6 +729,12 @@ button {
 
 /* Back/Confirm button */
 #back-button, #confirm-button{
+    font-size: 30px;
+    width: 25%;
+}
+
+/* Back button */
+#back-button-finish, #confirm-button-finish{
     font-size: 30px;
     width: 25%;
 }
