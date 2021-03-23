@@ -113,6 +113,15 @@ main{
     flex-direction: column;
 }
 
+#main-left-finish{
+    /* background-color: var(--dark-red); */
+    flex-basis: 50%;
+    height: inherit; /* Gets height from his parent (- paddings) */
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Top elements */
 #main-left-mp{
     background-color: var(--dark-red);
@@ -170,6 +179,14 @@ background-color:lightsalmon;
     max-height: 100%;
 }
 
+#container-image-finish{
+    height: 100%;
+    background-color: lightgrey;
+    /* background-color: rgba(255, 255, 0, 0.235); Comment this to hide block background */
+    display: flex;
+    flex-direction: row;
+}
+
 #data-resume{
     flex-basis: 37%;
     background-color: var(--light-green);
@@ -197,6 +214,14 @@ background-color:lightsalmon;
 
 /* Right block */
 #main-right-shipping{
+    /* background-color: var(--dark-red); */
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    margin-left: 10px;
+}
+
+#main-right-finish{
     /* background-color: var(--dark-red); */
     display: flex;
     flex-direction: column;
@@ -433,6 +458,40 @@ margin-right: 20px;
     margin-bottom: 10px;
 }
 
+#finish-data{
+    background-color: var(--light-green);
+    display: flex;
+    height: 100%;
+    flex: 1 1 auto;
+    flex-direction: row;
+}
+
+#summary-finish{
+    margin-left: 25px;
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#total-price-finish{
+    margin-left: 25px;
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#terms-conditions-finish{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#buttons-finish{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 /* Buttons >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* Styling general button */
@@ -469,6 +528,12 @@ button {
 #back-button, #confirm-button{
     font-size: 30px;
     width: 50%;
+}
+
+/* Back button */
+#back-button-finish, #confirm-button-finish{
+    font-size: 30px;
+    width: 25%;
 }
 
 
