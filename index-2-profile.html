@@ -93,7 +93,7 @@
                     <!-- Password 1 -->
                     <div class="form-item-profile">
                         <label for="address1">Password</label><br>
-                        <input class="form-text-area" type="password" id="user-address-one" name="password-1" value="">
+                        <input class="form-text-area" type="password" minlength="8" maxlength="20" id="user-address-one" name="password-1" value="">
                     </div>
                     <!-- Password 2 -->
                     <div class="form-item-profile">
@@ -105,6 +105,8 @@
                 <div id="buttons-div">
                     <!-- Back button -->
                     <button class="negative-button" id="back-button" type="button">Back</button>
+                    <!-- Clear form button -->
+                    <button class="positive-button" id="clear-button" type="reset" form="profile-form">Clear</button>
                     <!-- Confirm button -->
                     <button class="negative-button" type="submit" form="profile-form" value="Submit" id="confirm-button">Confirm</button>
                 </div>

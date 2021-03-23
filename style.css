@@ -739,17 +739,34 @@ button {
     padding: 10px;
 }
 
+/* Positive button */
+.positive-button{
+    color: white;
+    border: var(--stroke-border) solid var(--dark-green);
+    background-color: var(--dark-green);
+    padding: 10px;
+}
+
 /* Back/Confirm button */
 #back-button, #confirm-button{
     font-size: 30px;
     width: 25%;
 }
 
-/* Back button */
+/* Back/Confirm button */
 #back-button-finish, #confirm-button-finish{
     font-size: 30px;
     width: 25%;
 }
+
+/* Clear button */
+#clear-button{
+    font-size: 16px;
+    width: 25%;
+}
+
+
+
 
 
 /* Footer */
