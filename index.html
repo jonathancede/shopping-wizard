@@ -141,7 +141,54 @@
                     </div>
                 </div>
                 <div id="buy-button-box">
-                    <button class="negative-button" id="buy-button" type="button" onclick="CheckAndNextPage()" ><h2>Buy</h2></button>
+                    <button class="negative-button" id="buy-button" type="button" onclick="CheckAndNextPage(event)" ><h2>Buy</h2></button>
+                </div>
+            </div>
+        </div>
+        <div id="main-right-profile">
+            <!-- Top right block -->
+            <div id="top-right">
+                <!-- Line -->
+                <div class="separator-line"></div>
+                <!-- Title -->
+                <h1>Profile</h1>
+            </div>
+            <!-- Bottom right block -->
+            <div id="bottom-right-profile">
+                <form id="profile-form" action="/action_page.php">
+                    <!-- User name -->
+                    <div class="form-item-profile">
+                        <label for="userN">User name</label><br>
+                        <input class="form-text-area" type="text" minlength="5" maxlength="20" id="user-name" name="user-name" value="" required>
+                    </div>
+                    <!-- Email -->
+                    <div class="form-item-profile">
+                        <label for="mail">Email</label><br>
+                        <input class="form-text-area" type="email" minlength="8" maxlength="50" id="user-mail" name="mail" value="" required>
+                    </div>
+
+                    <!-- <<<<<<<<<< Second line >>>>>>>>>> -->
+
+                    <!-- Password 1 -->
+                    <div class="form-item-profile">
+                        <label for="address1">Password</label><br>
+                        <input class="form-text-area" type="password" minlength="8" maxlength="20" id="user-address-one" name="password-1" value="" required>
+                        <h3 id="password-requirements">Include at least A-Z, a-z, 0-9 <br> and a special character</h3>
+                    </div>
+                    <!-- Password 2 -->
+                    <div class="form-item-profile">
+                        <label for="address2">Confirm passsword</label><br>
+                        <input class="form-text-area" type="password" id="user-address-two" name="password-2" value="" required>
+                    </div>
+                </form>
+                <!-- Buttons -->
+                <div id="buttons-div">
+                    <!-- Back button -->
+                    <button class="negative-button" id="back-button" type="button" onclick="BackPage()" >Back</button>
+                    <!-- Clear form button -->
+                    <button class="positive-button" id="clear-button" type="reset" form="profile-form">Clear</button>
+                    <!-- Confirm button -->
+                    <button class="negative-button" type="submit" form="profile-form" value="Submit" id="confirm-button" onclick="CheckAndNextPage(event)" >Confirm</button>
                 </div>
             </div>
         </div>
@@ -689,7 +736,7 @@
                     <!-- Back button -->
                     <button class="negative-button" id="back-button" type="button" onclick="BackPage()" >Back</button>
                     <!-- Confirm button -->
-                    <button class="negative-button" type="submit" form="address-form" value="Submit" id="confirm-button" onclick="CheckAndNextPage()" >Confirm</button>
+                    <button class="negative-button" type="submit" form="address-form" value="Submit" id="confirm-button" onclick="CheckAndNextPage(event)" >Confirm</button>
                 </div>
             </div>
         </div>
@@ -770,7 +817,7 @@
                         </button>
                     </div>
                     <!-- Confirm button -->
-                    <button class="negative-button" id="confirm-button" type="button" onclick="CheckAndNextPage()" >Confirm</button>
+                    <button class="negative-button" id="confirm-button" type="button" onclick="CheckAndNextPage(event)" >Confirm</button>
                 </div>
             </div>
         </div>
@@ -821,7 +868,7 @@
                 <!-- Back button -->
                 <button class="negative-button" id="back-button-finish" type="button" onclick="BackPage()" >Back</button>
                 <!-- Confirm button -->
-                <button class="negative-button" id="confirm-button-finish" type="button" onclick="CheckAndNextPage()" >Confirm</button>
+                <button class="negative-button" id="confirm-button-finish" type="button" onclick="CheckAndNextPage(event)" >Confirm</button>
             </div>
         </div>
     </main>
