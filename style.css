@@ -347,12 +347,14 @@ flex-basis: 20%;
 .radio_input, .checkbox_input{
     display: flex;
     align-items: center;
+   
 }
 
 /* Styling owr own radio/checkbox button */
 .radio_control, .checkbox_control{
 
     display: block;
+    margin-right: 10px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
