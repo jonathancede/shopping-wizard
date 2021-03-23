@@ -502,6 +502,13 @@ form label{
     display: none;
 }
 
+/* Select menu (country and phone) */
+.select-menu{
+    background-color: var(--light-green);
+    border: var(--stroke-border) solid var(--dark-green);
+}
+
+
 /* Buttons >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* Styling general button */
 button {
