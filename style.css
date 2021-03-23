@@ -135,7 +135,7 @@ main{
 
 .picture-box{
 /* border: black 2px solid; */
-/* background-color:lightgray; */
+background-color:lightgray;
 flex-grow: 1;
 }
 #main-context-picture{
