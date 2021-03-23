@@ -117,7 +117,7 @@
                     <div class="form-item">
                         <label for="country">Country</label><br>
                         <!-- Select menu | Country -->
-                        <div class="select-text-area-wrapper">
+                        <div class="select-country-wrapper">
                             <select class="form-text-area select-menu" id="user-country" name="country">
                                 <!-- List of countries -->
                                 <option value="Default">Select a country</option>
@@ -374,7 +374,8 @@
                     <div class="form-item">
                         <label for="address2">Phone</label><br>
                         <!-- Select menu | Country -->
-                        <div class="select-text-area-wrapper">
+                        <div class="select-prefix-wrapper">
+                            <!-- Prefixes list -->
                             <select class="form-text-area select-menu" id="user-phone-prefix" name="phone-prefix">
                                 <!-- List of prefixes -->
                                 <option data-countryCode="DZ" value="+213">Algeria (+213)</option>
@@ -592,6 +593,9 @@
                                 <option data-countryCode="ZM" value="+260">Zambia (+260)</option>
                                 <option data-countryCode="ZW" value="+263">Zimbabwe (+263)</option>
                             </select>
+                            <!-- User phone -->
+                            <input class="form-text-area" type="text" id="user-phone" name="phone" value="">
+
                         </div>
                     </div>
                     <!-- Hidden element -->
