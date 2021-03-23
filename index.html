@@ -26,13 +26,15 @@
     <main>
         <div id="main-left-mp">
             <div class="gallery-box">
-                <div id="photo-gallery1" class="photo-gallery"></div>
-                <div id="photo-gallery2" class="photo-gallery"></div>
-                <div id="photo-gallery3" class="photo-gallery"></div>
-                <div id="photo-gallery4" class="photo-gallery"></div>
+                <div id="photo-gallery1"><img src="Assets/VAR MADERA 3.jpg" class="photo-gallery" title="Plant VAR"></div>
+                <div id="photo-gallery2"><img src="Assets/TRI MADERA 2.jpg" class="photo-gallery" title="Plant TRI"></div>
+                <div id="photo-gallery3"><img src="Assets/CAM MADERA.jpg" class="photo-gallery" title="Plant CAM"></div>
+                <div id="photo-gallery4"><img src="Assets/SCAP MADERA.jpg" class="photo-gallery" title="Plant SCAP"></div>
+
+
             </div>
             <div class="picture-box">
-                <!-- <img id="main-context-picture" src="Assets/TRI CEMENTO.jpg" alt="Tri-cemento"> -->
+                <img src="Assets/VAR MADERA 3.jpg" alt="VAR MADERA">
             </div>
         <!-- <div class="content-box">Content box </div> -->
         </div>
@@ -76,27 +78,29 @@
                 <!-- <div id="plant-style"> -->
                     <div class="sub-section" id="type-of-plant">
                         <h1 class="section-title">Plant</h1>
-                        <div id="plant1"></div>
-                        <div id="plant2"></div>
-                        <div id="plant3"></div>
-                        <div id="plant4"></div>
+                        <div id="plant1"><img src="Assets/VAR_1.png" alt="VAR" title="Plant VAR"></div>
+                        <div id="plant2"><img src="Assets/TRI_1.png" alt="TRI" title="Plant TRI"></div>
+                        <div id="plant3"><img src="Assets/CAM_1.png" alt="CAM" title="Plant CAM"></div>
+                        <div id="plant4"><img src="Assets/SCAP_1.png" alt="SCAP" title="Plant SCAP"></div>
                     </div>
                     <div id="quantity-text">
+                        
                         <label class="section-title"><h2>Quantity</h2></label>
-                        <input type="number" id="quantity-box" name="quantity" min="1" max="5">
+                        <input type="number" id="quantity-box" name="quantity" min="1" >
                     </div>
                 <!-- </div> -->
                 <div class="line-margin"></div>
                 <div class="sub-section" id="plant-base">
-                    <div class="section-title"><h1>Base</h1>
-                        <div class="checkbox">
+                    <div class="section-title"><h1 class="section-title">Base</h1>
+                        <div class="base-checkbox">
                             <!-- Wooden Button  -->
                             <label class="radio">
                                 <span class="radio_input">
-                                    <input type="radio" name="radio">
+                                    <input type="radio" name="radio" checked>
                                     <span class="radio_control"></span>
-                                    <span class="radio_label"><h2>Wooden</h2></span>
+                                    <span class="radio_label"><h2>Wooden</h2>
                                 </span>
+
                             </label>
                         </div>
                         <div class="checkbox"> <!--Concrete Button  -->
@@ -106,38 +110,51 @@
                                      <span class="radio_control"></span>
                                      <span class="radio_label"><h2>Concrete</h2></span>
                                 </span>
+
                             </label>
                         </div>
                     </div>
                 </div>
+
                 <div class="line-margin"></div>
                 <div class="sub-section" id="plant-textarea">
-                    <h1 id="text-box1" class="section-title">Text</h1>
+                    <h1 class="section-title">Text</h1>
                     <div id="text-box2">
-                    <div id="custom-message-box"><label class="radio">
-                        <span class="radio_input">
-                            <input type="radio" name="radio">
-                             <span class="radio_control"></span>
-                             <span class="radio_label"><h3>Add custom message</h></span>
-                        </span></div>
+                    <div id="custom-message-box">
+                        <label class="checkbox-mp">
+                        <span class="checkbox-mp_input">
+                            <input type="checkbox" name="checkbox">
+                             <span class="checkbox-mp_control"></span>
+                             <span class="checkbox-mp_label"><h3>Add custom message</h3>
+                        </span>
+                    </div>
                         <!-- Text area -->
                         <div class="text-area-wrapper">
                             <textarea type="text" class="custom-text-area" id="gift-text" name="gift-text">&nbsp;This is some optional text</textarea>
                         </div>
                      </div>
+
                 </div>
             </div>
             <div id="price-box">
                 <div class="line-margin"></div>
                 <div class="main-price">
                     <div id="price-text-box" class="section-title-2">
-                        <div id="price-total-text"><h1>Price</h1></div>
-                        <div id="price-total">46.00€</div>
+                    <h1>Price</h1>
+                    <br>
+                        <div id="price-total-box" class="price-total-2">46.00€</div>
                     </div>
-                    <div id="type-plant-price">
-                        <h2>Tri</h2></div>
-                    <div id="type-base-price">
-                        <h2>Wooden base</h2>
+                    <!-- cambiar clase price total a id -->
+                    <div id="type-plant-price" class="selection-title2">
+                            <h2>Tri</h2>
+                            <div id="type-price-total" class="price-total">20.00€(x2)</div>
+                            <br>
+                    
+                            <div id="type-base-price" class="selection-title2>">
+                            <h2>Wooden base</h2>
+                            
+                            <div id="base-price-total"class="price-total">3.00€(x2)</div>
+                            </div>                          
                     </div>
                 </div>
                 <div id="buy-button-box">
