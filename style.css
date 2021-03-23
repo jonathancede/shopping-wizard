@@ -109,7 +109,7 @@ main{
     flex-basis: 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-right: 10px;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
@@ -118,7 +118,7 @@ main{
     flex-basis: 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-right: 10px;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
@@ -135,7 +135,7 @@ main{
 
 .picture-box{
 /* border: black 2px solid; */
-/* background-color:lightgray; */
+background-color:lightgray;
 flex-grow: 1;
 }
 #main-context-picture{
@@ -231,7 +231,7 @@ width: 120px;
 /* Right block shipping */
 #main-right-shipping{
     /* background-color: var(--dark-red); */
-    display: flex;
+    display: none;
     flex-direction: column;
     flex: 1 1 50%;
     margin-left: 10px;
@@ -239,7 +239,7 @@ width: 120px;
 
 #main-right-profile{
     /* background-color: green; */
-    display: flex;
+    display: none;
     flex-direction: column;
     flex: 1 1 50%;
     margin-left: 10px;
@@ -248,7 +248,7 @@ width: 120px;
 /* Address behaviour */
 #main-right-address{
     /* background-color: var(--dark-red); */
-    display: flex;
+    display: none;
     flex-direction: column;
     flex: 1 1 50%;
     margin-left: 10px;
@@ -257,7 +257,7 @@ width: 120px;
 /* Finish behaviour */
 #main-right-finish{
     /* background-color: var(--dark-red); */
-    display: flex;
+    display: none;
     flex-direction: column;
     flex: 1 1 50%;
     margin-left: 10px;
