@@ -527,7 +527,7 @@ form label{
 /* Prefix box width */
 #user-phone-prefix{
     background-color: var(--light-green);
-    width: 40%;
+    width: 50%;
     border: var(--stroke-border) solid var(--dark-green);
     padding-left: 12px;
     padding-right: 12px;
