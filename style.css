@@ -237,6 +237,14 @@ width: 120px;
     margin-left: 10px;
 }
 
+#main-right-profile{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    margin-left: 10px;
+}
+
 /* Address behaviour */
 #main-right-address{
     /* background-color: var(--dark-red); */
@@ -256,7 +264,7 @@ width: 120px;
 }
 
 /* Address behaviour */
-#bottom-right-address{
+#bottom-right-address, #bottom-right-profile{
     display: flex;
     height: 100%;
     flex: 1 1 auto;
@@ -265,7 +273,7 @@ width: 120px;
 }
 
 /* Address form */
-#address-form{
+#address-form, #profile-form{
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -279,7 +287,6 @@ width: 120px;
     justify-content: space-between;
 }
 
-
 #main-right{
     background-color: var(--dark-red);
     display: flex;
@@ -292,22 +299,19 @@ width: 120px;
     flex-grow: 1;
     /* width: 80%; */
     /* background-color: yellow; */
-
 }
-
 
 #parent-plants div  {
     display: flex;
     color: #00d5c2;
     margin-bottom: 20px;
 }
+
 .line-margin{
     margin-bottom: 20px;
     width: 100%;
     height: 2px;
     background-color: #00d5c2;
-
-
 }
 
 /* #plant-style {
@@ -368,9 +372,8 @@ flex-basis: 20%;
 
 .checkbox{
    margin-left: 60px;
-
-
 }
+
 /* Hide default radio/checkbox button */
 .radio_input input, .checkbox_input input{
     opacity: 0%;
@@ -387,7 +390,6 @@ flex-basis: 20%;
 
 /* Styling owr own radio/checkbox button */
 .radio_control, .checkbox_control{
-
     display: block;
     margin-right: 10px;
     width: 8px;
@@ -412,6 +414,7 @@ flex-basis: 20%;
     height: 40%;
     width: 70%;
 }
+
 .text-area-wrapper{
 margin-top:20px;
 width: 100%;
@@ -601,6 +604,12 @@ align-items:flex-end ;
     width: 30%;
 }
 
+.form-item-profile{
+    margin-bottom: 25px;
+    /* background-color: lightcoral; */
+    width: 47%;
+}
+
 /* Form text */
 form label{
     display: inline-block; /* Inline block to be able to use bottom margin */
@@ -612,6 +621,7 @@ form label{
 
 /* Text area inside each form item */
 .form-text-area{
+    box-sizing: border-box;
     background-color: var(--light-green);
     color: var(--dark-green);
     width: 100%;
@@ -632,16 +642,18 @@ form label{
 
 /* Select country wrapper */
 .select-country-wrapper{
+    box-sizing: border-box;
     border: var(--stroke-border) solid var(--dark-green);
     /* Solve this better */
-    width:105%;
+    width:100%;
     display: flex;
 }
 
 /* Select country wrapper */
 .select-prefix-wrapper{
+    box-sizing: border-box;
     /* Solve this better */
-    width:105%;
+    width:100%;
     display: flex;
 }
 
@@ -727,17 +739,34 @@ button {
     padding: 10px;
 }
 
+/* Positive button */
+.positive-button{
+    color: white;
+    border: var(--stroke-border) solid var(--dark-green);
+    background-color: var(--dark-green);
+    padding: 10px;
+}
+
 /* Back/Confirm button */
 #back-button, #confirm-button{
     font-size: 30px;
     width: 25%;
 }
 
-/* Back button */
+/* Back/Confirm button */
 #back-button-finish, #confirm-button-finish{
     font-size: 30px;
     width: 25%;
 }
+
+/* Clear button */
+#clear-button{
+    font-size: 16px;
+    width: 25%;
+}
+
+
+
 
 
 /* Footer */
@@ -779,6 +808,13 @@ h2, .radio-container{
 
 h3{
     font-size: 16px;
+}
+
+/* Password requirements */
+#password-requirements{
+    margin-top: 5px;
+    color: var(--dark-green);
+    font-weight: 200;
 }
 
 
