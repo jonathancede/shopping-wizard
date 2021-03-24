@@ -7,3 +7,11 @@ console.log("Time-window.js loaded");
 var timeWindow = document.getElementById("time-window");
 console.log("Time window:", timeWindow);
 
+
+// Date calculation
+var currentTime = new Date()
+var minute = (1000)*60;
+var fiveMinutes = currentTime + minute*5;
+
+console.log(currentTime);
+console.log("Five minutes", fiveMinutes);
