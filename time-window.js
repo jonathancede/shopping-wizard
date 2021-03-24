@@ -1,17 +1,20 @@
 // POP-UP TIME WINDOW
 
-// >>>>>>>>>>>>> Test
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Test
 //console.log("Time-window.js loaded");
 
 
-// >>>>>>>>>>>>> Window element
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Window element
 var timeWindow = document.getElementById("time-window");
-console.log("Time window:", timeWindow);
+//console.log("Time window:", timeWindow);
 var timeTextElement = document.getElementById("minutes-left");
-console.log("Minutes left:", timeTextElement);
+//console.log("Minutes left:", timeTextElement);
+var windowCross = document.getElementById("time-cross");
+windowCross.addEventListener("click", closeWindow);
 
 
-// >>>>>>>>>>>>> Date calculation
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Date calculation
 var currentTime = new Date().getTime();
 var minute = (1000)*60;
 var fiveMinutes = currentTime + (minute*5);
@@ -24,16 +27,15 @@ secondsLeft = miliSecondsLeft/1000;
 // Convert seconds into minutes
 minutesLeft = secondsLeft/60;
 timeTextElement.innerHTML = `You have ${minutesLeft} minutes left`;
-
 // Test
-console.log("Initial minute:", minutesLeft);
+//console.log("Initial minute:", minutesLeft);
 
 
-// >>>>>>>>>>>>> Time intervals
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Time intervals
 // Tracking ten seconds
 function tenSeconds(){
     // Hide pop-up window after 10 seconds of showing-up
-    // timeWindow.style.display="none";
     timeWindow.style.animation = "timeWindowAnimationOut .4s ease forwards";
 }
 
