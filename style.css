@@ -818,6 +818,13 @@ button {
     padding: 10px;
 }
 
+.positive-button:hover{
+    color: var(--dark-green);
+    border: var(--stroke-border) solid var(--dark-green);
+    background-color: white;
+    padding: 10px;
+}
+
 /* Back/Confirm button */
 #back-button, #confirm-button{
     font-size: 30px;
