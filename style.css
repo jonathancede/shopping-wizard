@@ -388,6 +388,11 @@ flex-basis: 20%;
    color: #00d5c2;
 }
 
+#quantity-box input:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px lightgrey;
+}
+
 #plant-base {
     flex: 1;
     height: 100px;
@@ -395,13 +400,19 @@ flex-basis: 20%;
     flex-direction: row;
 }
 
-.base-checkbox{
-   margin-left: 20px;
-}
-
 /* .checkbox{
    margin-left: 60px;
 } */
+
+.base-checkbox, .checkbox{
+    display: flex;
+    align-items: start;
+}
+
+.checkbox{
+    display: flex;
+    align-items: start;
+}
 
 /* Hide default radio/checkbox button */
 .radio_input input, .checkbox_input input{
@@ -411,14 +422,13 @@ flex-basis: 20%;
 }
 
 /* Center new radio/checkbox to text */
-.radio_input, .checkbox_input{
+.radio_input, .checkbox_input, .checkbox-mp_input{
     display: flex;
     align-items: center;
-   
 }
 
 /* Styling owr own radio/checkbox button */
-.radio_control, .checkbox_control{
+.radio_control, .checkbox_control, .checkbox-mp_control{
     display: block;
     margin-right: 10px;
     width: 8px;
@@ -454,13 +464,27 @@ height: 150px;
     background-color: var(--light-green);
     width: 100%;
     border: none;
-    font-family: var(--font);
+    font-weight: bold;
+    font-size: 20px ;
     color: var(--dark-green);
     /*padding: 10px;*/
     /* Remove default outline */
     outline: none;
     /* Remove default resize */
     resize: none;
+    padding: 10px;
+}
+
+.custom-text-area::placeholder{
+    font-weight: normal;
+    font-size: 20px ;
+    color: var(--dark-green);
+}
+
+.custom-text-area:focus {
+    outline: none !important;
+    border:1px solid var(--color-lightgreen);
+    box-shadow: 0 0 10px lightgrey;
 }
 
 
@@ -503,9 +527,9 @@ font-size: 20px;
 
 }
 #buy-button-box{
-display: flex;
-flex-direction: row;
-align-items:flex-end ;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end ;
 }
 
 .negative-button{
@@ -519,20 +543,16 @@ align-items:flex-end ;
 
 /* Outlined buttons + hover */
 .negative-button:hover {
-    color: white;
     border: var(--stroke-border) solid var(--dark-green);
     background-color: var(--dark-green);
+    color: white;
     padding: 10px;
 }
 
 .section-title-2{
     line-height: 24px;
     flex-basis: 20%;
-
-    }
-
-
-
+}
 
 #bottom-right-left{
     margin-right: 20px;
@@ -586,50 +606,25 @@ align-items:flex-end ;
     display: flex;
 }
 
-.checkbox-mp_input input{
-    opacity: 0%;
-    width: 0;
-    height: 0;
-}
-.checkbox_input-mp{
-    display: flex;
-    align-items: center;
-}
-
-.checkbox-mp_control{
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    border: var(--stroke-border) solid var(--dark-green);}
-
-
-.checkbox-mp_control{
-        display: block;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        border: var(--stroke-border) solid var(--dark-green);}
-
 .checkbox-mp_input input:checked + .checkbox-mp_control{
-            background-color: var(--dark-green);
+    background-color: var(--dark-green);
 }
 
 /* Hide default radio/checkbox button */
-.radio_input input, .checkbox_input input{
+.radio_input input, .checkbox_input input, .checkbox-mp_input input{
     opacity: 0%;
     width: 0;
     height: 0;
 }
 
 /* Center new radio/checkbox to text */
-.radio_input, .checkbox_input{
+.radio_input, .checkbox_input, .checkbox_input-mp{
     display: flex;
     align-items: center;
 }
 
 /* Styling owr own radio/checkbox button */
-.radio_control, .checkbox_control{
+.radio_control, .checkbox_control, .checkbox-mp_control{
     display: block;
     width: 8px;
     height: 8px;
