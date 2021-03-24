@@ -134,8 +134,8 @@ main{
 }
 
 .picture-box{
-/* border: black 2px solid; */
-background-color:lightgray;
+/* border: var(--dark-green) 2px solid; */
+background-color: var(--light-green);
 flex-grow: 1;
 display: flex;
 justify-content: center;
@@ -143,8 +143,9 @@ align-items: center;
 }
 
 .picture-box img{
-width: 654px;
-height: 700px;
+border: var(--dark-green) 2px solid;
+width: 700px;
+height: 650px;
 }
 
 .gallery-box{
@@ -158,11 +159,10 @@ width: 120px;
 .photo-gallery{
     width: 50px;
     height: 80px;
-    /* border: black 2px solid; */
+    border: var(--dark-green) 2px solid;
     background-color: var(--light-green);
     margin-bottom: 10px;
 }
-
 
 #timeline, #top-right{
     height: 100px;
@@ -354,7 +354,7 @@ flex-basis: 20%;
 }
 #plant1 img,#plant2 img,#plant3 img,#plant4 img{
     width: 82px;
-    height: 110px;
+    height: 95px;
 }
  #plant1:hover { /* Hover over each of the type of plants */
     color: white;
