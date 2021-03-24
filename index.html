@@ -124,28 +124,25 @@
                 <!-- </div> -->
                 <div class="line-margin"></div>
                 <div class="sub-section" id="plant-base">
-                    <div class="section-title"><h1 class="section-title">Base</h1>
-                        <div class="base-checkbox">
-                            <!-- Wooden Button  -->
-                            <label class="radio">
-                                <span class="radio_input">
-                                    <input type="radio" name="radio" checked>
-                                    <span class="radio_control"></span>
-                                    <span class="radio_label"><h2>Wooden</h2>
-                                </span>
-
-                            </label>
-                        </div>
-                        <div class="checkbox"> <!--Concrete Button  -->
-                            <label class="radio">
-                                <span class="radio_input">
-                                    <input type="radio" name="radio">
-                                    <span class="radio_control"></span>
-                                    <span class="radio_label"><h2>Concrete</h2></span>
-                                </span>
-
-                            </label>
-                        </div>
+                    <h1 class="section-title">Base</h1>
+                    <div class="base-checkbox">
+                        <!-- Wooden Button  -->
+                        <label class="radio">
+                            <span class="radio_input">
+                                <input type="radio" name="radio" checked>
+                                <span class="radio_control"></span>
+                                <span class="radio_label"><h2>Wooden</h2>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="checkbox"> <!--Concrete Button  -->
+                        <label class="radio">
+                            <span class="radio_input">
+                                <input type="radio" name="radio">
+                                <span class="radio_control"></span>
+                                <span class="radio_label"><h2>Concrete</h2></span>
+                            </span>
+                        </label>
                     </div>
                 </div>
 
@@ -155,15 +152,16 @@
                     <div id="text-box2">
                     <div id="custom-message-box">
                         <label class="checkbox-mp">
-                        <span class="checkbox-mp_input">
-                            <input type="checkbox" name="checkbox">
-                            <span class="checkbox-mp_control"></span>
-                            <span class="checkbox-mp_label"><h3>Add custom message</h3>
-                        </span>
+                            <span class="checkbox-mp_input">
+                                <input id="custom-message-id" type="checkbox" name="checkbox">
+                                <span class="checkbox-mp_control"></span>
+                                <span class="checkbox-mp_label"><h3>Add custom message</h3>
+                            </span>
+                        </label>
                     </div>
                         <!-- Text area -->
                         <div class="text-area-wrapper">
-                            <textarea placeholder="This is some optional text..." type="text" class="custom-text-area" id="gift-text" name="gift-text" maxlength="24"></textarea>
+                            <textarea placeholder="This is some optional text..." type="text" class="custom-text-area" id="custom-text" name="gift-text" maxlength="24" disabled="true"></textarea>
                         </div>
                     </div>
                 </div>
@@ -184,6 +182,9 @@
                             <div id="type-base-price" class="selection-title2>">
                             <h2>Wooden base</h2>
                             <div id="base-price-total"class="price-total">3.00€(x2)</div>
+                            <br>
+                            <h2>Custom message</h2>
+                            <div id="custom-message-total"class="price-total">1.50€(x2)</div>
                             </div>
                     </div>
                 </div>
@@ -222,13 +223,13 @@
                     <!-- Password 1 -->
                     <div class="form-item-profile">
                         <label for="address1">Password</label><br>
-                        <input class="form-text-area" type="password" minlength="8" maxlength="20" id="user-address-one" name="password-1" value="" required>
+                        <input class="form-text-area" type="password" minlength="8" maxlength="20" id="user-password" name="password-1" value="" required>
                         <h3 id="password-requirements">Include at least A-Z, a-z, 0-9 <br> and a special character</h3>
                     </div>
                     <!-- Password 2 -->
                     <div class="form-item-profile">
                         <label for="address2">Confirm passsword</label><br>
-                        <input class="form-text-area" type="password" id="user-address-two" name="password-2" value="" required>
+                        <input class="form-text-area" type="password" id="user-password-confirm" name="password-2" value="" required>
                     </div>
                 </form>
                 <!-- Buttons -->
@@ -406,14 +407,14 @@
                         <!-- Gift checkbox -->
                         <label class="checkbox gift-radio">
                             <span class="checkbox_input">
-                                <input type="checkbox" name="checkbox">
+                                <input id="gift-message-id" type="checkbox" name="checkbox">
                                 <span class="checkbox_control"></span>
                             </span>
                             <h2 class="checkbox_label">Gift?</h2>
                         </label>
                         <!-- Text area -->
                         <div class="text-area-wrapper">
-                            <textarea placeholder="Add a gift message..." type="text" class="custom-text-area gift-text-area" id="gift-text" name="gift-text" maxlength="200"></textarea>
+                            <textarea placeholder="Add a gift message..." type="text" class="custom-text-area gift-text-area" id="gift-text" name="gift-text" maxlength="200" disabled="true"></textarea>
                         </div>
                         <!-- Wrapper button -->
                         <button class="negative-button" id="wrap-gift-button" type="button">
@@ -494,4 +495,5 @@
 <script src="script.js"></script>
 <script src="toogle-display.js"></script>
 <script src="time-window.js"></script>
+<script src="opacity-textarea.js"></script>
 </html>
