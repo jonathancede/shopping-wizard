@@ -228,7 +228,7 @@ width: 120px;
 /* Right block */
 #main-right-mp{
      /* background-color: var(--dark-red); */
-     display: flex;
+    display: flex;
     flex-basis: 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-left: 10px;
@@ -354,11 +354,13 @@ flex-basis: 20%;
     justify-content: center;
     align-items: center;
 }
+
 #plant1 img,#plant2 img,#plant3 img,#plant4 img{
     width: 82px;
     height: 110px;
 }
- #plant1:hover { /* Hover over each of the type of plants */
+
+#plant1:hover { /* Hover over each of the type of plants */
     color: white;
     border: var(--stroke-border) solid var(--dark-green);
     background-color: var(--light-green);}
@@ -375,19 +377,18 @@ flex-basis: 20%;
                 border: var(--stroke-border) solid var(--dark-green);
                 background-color: var(--light-green);}
 
- #quantity-text  {
-
+#quantity-text  {
     display: flex;
-   flex-direction: row;
+    flex-direction: row;
 }
 
 #quantity-box{
-   width: 50px;
-   height: 30px;
-   margin-left: 10px;
-   border: transparent;
-   background-color: #dcf1eb;
-   color: #00d5c2;
+    width: 50px;
+    height: 30px;
+    margin-left: 10px;
+    border: transparent;
+    background-color: #dcf1eb;
+    color: #00d5c2;
 }
 
 #plant-base {
@@ -398,11 +399,11 @@ flex-basis: 20%;
 }
 
 .base-checkbox{
-   margin-left: 20px;
+    margin-left: 20px;
 }
 
 /* .checkbox{
-   margin-left: 60px;
+    margin-left: 60px;
 } */
 
 /* Hide default radio/checkbox button */
@@ -416,7 +417,6 @@ flex-basis: 20%;
 .radio_input, .checkbox_input{
     display: flex;
     align-items: center;
-   
 }
 
 /* Styling owr own radio/checkbox button */
@@ -478,32 +478,30 @@ height: 150px;
 }
 .price-total{
 font-size: 20px;
-
-
 }
+
 .price-total-2{
     font-size: 40px;
-    
-    
-    }
+}
+
 .main-price{
     color: #00d5c2;
     flex-basis: 100%;
     width: 100%;
-
 }
+
 #price-text-box{
     height: 100px;
 }
+
 #type-plant-price{
     height: 50px;
 }
+
 #type-base-price{
-
     height:50px ;
-
-
 }
+
 #buy-button-box{
 display: flex;
 flex-direction: row;
@@ -530,10 +528,7 @@ align-items:flex-end ;
 .section-title-2{
     line-height: 24px;
     flex-basis: 20%;
-
-    }
-
-
+}
 
 
 #bottom-right-left{
