@@ -890,14 +890,15 @@ h3{
 
 
 /* Animations */
-@keyframes popUpAnimation{
+@keyframes timeWindowAnimation{
     0%{
-
+        opacity: 100%;
     }
     90%{
-
+        opacity: 0%;
     }
     100%{
-
+        opacity: 0%;
+        display: none;
     }
 }
