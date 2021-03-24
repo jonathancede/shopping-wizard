@@ -37,7 +37,7 @@ function tenSeconds(){
 }
 
 // Default hiding
-setTimeout(tenSeconds, 10000);
+//setTimeout(tenSeconds, 10000);
 
 // Tracking minutes
 function eachMinute(){
@@ -46,7 +46,7 @@ function eachMinute(){
     timeTextElement.innerHTML = `You have ${minutesLeft} minutes left`;
     timeWindow.style.display = "flex";
     // Hiding window after ten seconds
-    setTimeout(tenSeconds, 10000);
+    //setTimeout(tenSeconds, 10000);
 }
 
 // Execute eachMinute function every minute
