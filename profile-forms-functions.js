@@ -33,17 +33,26 @@ purchase.userName= document.getElementById("user-name");
 purchase.email= document.getElementById("user-mail");
 purchase.password= document.getElementById("user-password"); /* is password*/
 var confirmpasword= document.getElementById("user-password-confirm"); /* is password confirm*/
+okbutton = document.getElementById="confirm-button";
 
 
-if(ContainsAny(password, [, Number, "term3"])){
-    if(password == confirmpasword ||
-        password.includes())
-    {
-        okbutton = document.getElementById="confirm-button";
-        okbutton.disabled = false;
-    }
-    //do something
- }else {okbutton.disabled = true;}
+function CheckPassword(password)
+{var necesarycharacters = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/}
+if(password.value.match(necesarycharacters))
+{
+    okbutton = document.getElementById="confirm-button";
+    okbutton.disabled = false;
+}else (okbutton.disabled = true;)
+
+
+// if(ContainsAny(password, [, Number, "term3"])){
+//     if(password == confirmpasword)
+//     {
+//         okbutton = document.getElementById="confirm-button";
+//         okbutton.disabled = false;
+//     }
+//     //do something
+//  }else {okbutton.disabled = true;}
 
 
 
