@@ -4,5 +4,5 @@
 console.log("Time-window.js loaded");
 
 // Window element
-let timeWindow = document.getElementById("time-window");
+var timeWindow = document.getElementById("time-window");
 console.log("Time window:", timeWindow);
