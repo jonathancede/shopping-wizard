@@ -143,15 +143,15 @@
                     <div id="custom-message-box">
                         <label class="checkbox-mp">
                             <span class="checkbox-mp_input">
-                                <input type="checkbox" name="checkbox">
+                                <input id="custom-message-id" type="checkbox" name="checkbox">
                                 <span class="checkbox-mp_control"></span>
-                                <span class="checkbox-mp_label"><h2>Add custom message</h2>
+                                <span class="checkbox-mp_label"><h3>Add custom message</h3>
                             </span>
                         </label>
                     </div>
                         <!-- Text area -->
                         <div class="text-area-wrapper">
-                            <textarea placeholder="This is some optional text..." type="text" class="custom-text-area" id="gift-text" name="gift-text" maxlength="24"></textarea>
+                            <textarea placeholder="This is some optional text..." type="text" class="custom-text-area" id="custom-text" name="gift-text" maxlength="24" disabled="true"></textarea>
                         </div>
                     </div>
                 </div>
@@ -397,14 +397,14 @@
                         <!-- Gift checkbox -->
                         <label class="checkbox gift-radio">
                             <span class="checkbox_input">
-                                <input type="checkbox" name="checkbox">
+                                <input id="gift-message-id" type="checkbox" name="checkbox">
                                 <span class="checkbox_control"></span>
                             </span>
                             <h2 class="checkbox_label">Gift?</h2>
                         </label>
                         <!-- Text area -->
                         <div class="text-area-wrapper">
-                            <textarea placeholder="Add a gift message..." type="text" class="custom-text-area gift-text-area" id="gift-text" name="gift-text" maxlength="200"></textarea>
+                            <textarea placeholder="Add a gift message..." type="text" class="custom-text-area gift-text-area" id="gift-text" name="gift-text" maxlength="200" disabled="true"></textarea>
                         </div>
                         <!-- Wrapper button -->
                         <button class="negative-button" id="wrap-gift-button" type="button">
@@ -484,4 +484,5 @@
 <!-- Javascript files -->
 <script src="script.js"></script>
 <script src="toogle-display.js"></script>
+<script src="opacity-textarea.js"></script>
 </html>

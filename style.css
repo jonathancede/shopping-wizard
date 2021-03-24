@@ -710,6 +710,7 @@ textarea::placeholder{
 .custom-text-area{
     box-sizing: border-box;
     padding: 10px;
+    opacity: 20%;
 }
 
 /* Hidden form item */
