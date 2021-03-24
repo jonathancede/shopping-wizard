@@ -890,3 +890,14 @@ h3{
 
 
 /* Animations */
+@keyframes popUpAnimation{
+    0%{
+
+    }
+    90%{
+
+    }
+    100%{
+
+    }
+}
