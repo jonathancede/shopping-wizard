@@ -33,20 +33,29 @@ timeTextElement.innerHTML = `You have ${minutesLeft} minutes left`;
 
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Time intervals
-// Tracking ten seconds
-function tenSeconds(){
-    // Hide pop-up window after 10 seconds of showing-up
-    timeWindow.style.animation = "timeWindowAnimationOut .4s ease forwards";
+// Half second to display none
+function displayNone(){
+    timeWindow.style.display= "none";
 }
 
-// Default hiding
+// Tracking ten seconds
+function tenSeconds(){
+    // Disappearing element
+    timeWindow.style.animation = "timeWindowAnimationOut .4s ease forwards";
+    // Setting display to none
+    setInterval(displayNone, 500);
+}
+
+// Hiding window after ten seconds
 setTimeout(tenSeconds, 10000);
 
 // Tracking minutes
 function eachMinute(){
     minutesLeft -= 1; // Remove one minute
     console.log("Minutes left", minutesLeft);
+    // Updating string containing minutes
     timeTextElement.innerHTML = `You have ${minutesLeft} minutes left`;
+    // Appearing element
     timeWindow.style.animation = "timeWindowAnimationIn .4s ease forwards";
     // Hiding window after ten seconds
     setTimeout(tenSeconds, 10000);
@@ -56,8 +65,15 @@ function eachMinute(){
 setInterval(eachMinute, minute)
 
 
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Clicking cross function
 function closeWindow(event){
-    console.log("Closing pop-up window");
+    // Disappearing element
+    timeWindow.style.animation = "timeWindowAnimationOut .4s ease forwards";
+    // Setting display to none
+    setInterval(displayNone, 500);
 }
+
+
 
 
