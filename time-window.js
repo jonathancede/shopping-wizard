@@ -45,6 +45,7 @@ function eachMinute(){
     console.log("Minutes left", minutesLeft);
     timeTextElement.innerHTML = `You have ${minutesLeft} minutes left`;
     timeWindow.style.display = "flex";
+    // Hiding window after ten seconds
     setTimeout(tenSeconds, 10000);
 }
 
