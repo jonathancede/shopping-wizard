@@ -1,27 +1,31 @@
 var indexCurrentPage = 1;       // This variable indicates the index of the current page.
 
-/*---- Global variables to store the product details ----*/
-var typeOfPlant;
-var quantity;
-var typeOfBase;
-var isCustomMessage;
-var CustomMessage;
-
-/*---- Global variables to store the details of Address ----*/
-var firstName;
-var lastName;
-var birthday;
-var addressOne;
-var addressTwo;
-var postalCode;
-var country;
-var phone;
-
-/*---- Global variables to store the details of Shipping ----*/
-var typeOfShipping;
-var isGift;
-var giftMessage;
-// var wrapper;
+/*---- This is the object where the information will be storaged ----*/
+var purchase = {
+    /*---- Global variables to store the product details ----*/
+    typeOfPlant,
+    quantity,
+    typeOfBase,
+    isCustomMessage,
+    customMessage = new String,
+    /*---- Global variables to store the details of Profile ----*/
+    userName = new String,
+    email = new String,
+    password = new String,
+    /*---- Global variables to store the details of Address ----*/
+    firstName = new String,
+    lastName = new String,
+    birthday = new String,
+    addressOne = new String,
+    addressTwo = new String,
+    postalCode = new String,
+    country = new String,
+    phone = new String,
+    /*---- Global variables to store the details of Shipping ----*/
+    typeOfShipping,
+    isGift,
+    giftMessage = new String
+};
 
 function CheckAndNextPage(event){
     event.preventDefault();
