@@ -33,24 +33,25 @@ console.log("Initial minute:", minutesLeft);
 // Tracking ten seconds
 function tenSeconds(){
     // Hide pop-up window after 10 seconds of showing-up
-    timeWindow.style.display="none";
+    // timeWindow.style.display="none";
+    timeWindow.style.animation = "timeWindowAnimationOut .4s ease forwards";
 }
 
 // Default hiding
-//setTimeout(tenSeconds, 10000);
+setTimeout(tenSeconds, 10000);
 
 // Tracking minutes
 function eachMinute(){
     minutesLeft -= 1; // Remove one minute
     console.log("Minutes left", minutesLeft);
     timeTextElement.innerHTML = `You have ${minutesLeft} minutes left`;
-    timeWindow.style.display = "flex";
+    timeWindow.style.animation = "timeWindowAnimationIn .4s ease forwards";
     // Hiding window after ten seconds
-    //setTimeout(tenSeconds, 10000);
+    setTimeout(tenSeconds, 10000);
 }
 
 // Execute eachMinute function every minute
-setInterval(eachMinute, minute)
+setInterval(eachMinute, 20000)
 
 
 
