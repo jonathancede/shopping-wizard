@@ -357,7 +357,7 @@
                         <!-- Free -->
                         <label class="radio">
                             <span class="radio_input">
-                                <input type="radio" name="radio">
+                                <input type="radio" name="radio" checked>
                                 <span class="radio_control"></span>
                             </span>
                             <span class="radio_label">Free shipping (72h)</span>
@@ -388,8 +388,6 @@
                             Tuesday, 29th March at 3pm
                             and <br>Wednesday, 30th March at 3pm.</h3>
                     </div>
-                    <!-- Back button -->
-                    <button class="negative-button" id="back-button" type="button" onclick="BackPage()" >Back</button>
                 </div>
                 <!-- Bottom right right -->
                 <div id="bottom-right-right">
@@ -413,12 +411,15 @@
                             <i style="font-size: 16px;" class="uil uil-image"></i>
                         </button>
                     </div>
-                    <!-- Confirm button -->
-                    <button class="negative-button" id="confirm-button" type="button" onclick="CheckAndNextPage(event)" >Confirm</button>
                 </div>
             </div>
+            <div id="buttons-div">
+                <!-- Back button -->
+                <button class="negative-button" id="back-button" type="button" onclick="BackPage()">Back</button>
+                <!-- Confirm button -->
+                <button class="negative-button" type="submit" form="address-form" value="Submit" id="confirm-button" onclick="CheckAndNextPage(event)">Confirm</button>
+            </div>
         </div>
-
         <!-- Finish (right) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
         <div id="main-right-finish">
