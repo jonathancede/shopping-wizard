@@ -163,7 +163,7 @@
                     </div>
                         <!-- Text area -->
                         <div class="text-area-wrapper">
-                            <textarea type="text" class="custom-text-area" id="gift-text" name="gift-text" maxlength="24">&nbsp;This is some optional text</textarea>
+                            <textarea placeholder="This is some optional text..." type="text" class="custom-text-area" id="gift-text" name="gift-text" maxlength="24"></textarea>
                         </div>
                     </div>
                 </div>
@@ -269,7 +269,7 @@
                     <!-- Birthday -->
                     <div class="form-item">
                         <label for="bday">Birthday</label><br>
-                        <input class="form-text-area" type="text" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" id="user-birtdhay" name="birthday" value="dd/mm/yyyy" required>
+                        <input class="form-text-area" placeholder="dd/mm/yyyy" type="text" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" id="user-birtdhay" name="birthday"  required>
                     </div>
 
                     <!-- <<<<<<<<<< Second line >>>>>>>>>> -->
@@ -367,7 +367,7 @@
                         <!-- Free -->
                         <label class="radio">
                             <span class="radio_input">
-                                <input type="radio" name="radio">
+                                <input type="radio" name="radio" checked>
                                 <span class="radio_control"></span>
                             </span>
                             <span class="radio_label">Free shipping (72h)</span>
@@ -398,8 +398,6 @@
                             Tuesday, 29th March at 3pm
                             and <br>Wednesday, 30th March at 3pm.</h3>
                     </div>
-                    <!-- Back button -->
-                    <button class="negative-button" id="back-button" type="button" onclick="BackPage()" >Back</button>
                 </div>
                 <!-- Bottom right right -->
                 <div id="bottom-right-right">
@@ -415,7 +413,7 @@
                         </label>
                         <!-- Text area -->
                         <div class="text-area-wrapper">
-                            <textarea type="text" class="custom-text-area gift-text-area" id="gift-text" name="gift-text" maxlength="200">&nbsp;Test area</textarea>
+                            <textarea placeholder="Add a gift message..." type="text" class="custom-text-area gift-text-area" id="gift-text" name="gift-text" maxlength="200"></textarea>
                         </div>
                         <!-- Wrapper button -->
                         <button class="negative-button" id="wrap-gift-button" type="button">
@@ -423,12 +421,15 @@
                             <i style="font-size: 16px;" class="uil uil-image"></i>
                         </button>
                     </div>
-                    <!-- Confirm button -->
-                    <button class="negative-button" id="confirm-button" type="button" onclick="CheckAndNextPage(event)" >Confirm</button>
                 </div>
             </div>
+            <div id="buttons-div">
+                <!-- Back button -->
+                <button class="negative-button" id="back-button" type="button" onclick="BackPage()">Back</button>
+                <!-- Confirm button -->
+                <button class="negative-button" type="submit" form="address-form" value="Submit" id="confirm-button" onclick="CheckAndNextPage(event)">Confirm</button>
+            </div>
         </div>
-
         <!-- Finish (right) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
         <div id="main-right-finish">
