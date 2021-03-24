@@ -23,7 +23,7 @@ const minute = 1000*60;
 
 // HTML elements >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 document.getElementById("buy-button").addEventListener("click", initializeTime);
-
+document.getElementById("back-to-main-page").addEventListener("click", resetTime);
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Time intervals
 // Half second to display none
