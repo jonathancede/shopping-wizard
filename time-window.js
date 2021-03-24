@@ -1,12 +1,14 @@
 // POP-UP TIME WINDOW
 
 // >>>>>>>>>>>>> Test
-console.log("Time-window.js loaded");
+//console.log("Time-window.js loaded");
 
 
 // >>>>>>>>>>>>> Window element
 var timeWindow = document.getElementById("time-window");
 console.log("Time window:", timeWindow);
+var timeTextElement = document.getElementById("minutes-left");
+console.log("Minutes left:", timeTextElement);
 
 
 // >>>>>>>>>>>>> Date calculation
@@ -21,16 +23,17 @@ miliSecondsLeft = fiveMinutes-currentTime;
 secondsLeft = miliSecondsLeft/1000;
 // Convert seconds into minutes
 minutesLeft = secondsLeft/60;
-
+timeTextElement.innerHTML = `You have ${minutesLeft} minutes left`;
+// Test
 console.log("Initial minute:", minutesLeft);
-
 
 // >>>>>>>>>>>>> Time intervals
 // Tracking minutes
 function eachMinute(){
     console.log("Minute");
-    minutesLeft -= 1; // Remove one second
-    console.log("Seconds left", minutesLeft);
+    minutesLeft -= 1; // Remove one minute
+    console.log("Minutes left", minutesLeft);
+    timeTextElement.innerHTML = `You have ${minutesLeft} minutes left`;
 }
 
 setInterval(eachMinute, minute)
