@@ -53,8 +53,11 @@ function eachMinute(){
 }
 
 // Execute eachMinute function every minute
-setInterval(eachMinute, 20000)
+setInterval(eachMinute, minute)
 
 
+function closeWindow(event){
+    console.log("Closing pop-up window");
+}
 
 
