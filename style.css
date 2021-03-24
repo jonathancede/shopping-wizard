@@ -64,6 +64,9 @@ body{
     padding: 10px 15px 5px 15px;
     display: flex;
     align-items: flex-start; /* Stack elements at top of pop-up window */
+    transition: .4s;
+    animation: none; /* Default animation to none */
+    
 }
 
 /* Pop-up text */
