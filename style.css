@@ -705,6 +705,13 @@ form label{
     font-size: 16px;
     border-left: 12px solid var(--light-green);
 }
+input::placeholder{
+    color: var(--dark-green);
+
+}
+textarea::placeholder{
+    color: var(--dark-green);
+}
 
 /* Hidden form item */
 #hidden-form{
