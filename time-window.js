@@ -12,9 +12,10 @@ var timeTextElement = document.getElementById("minutes-left");
 //console.log("Minutes left:", timeTextElement);
 var windowCross = document.getElementById("time-cross");
 windowCross.addEventListener("click", closeWindow);
+var miliSecondsLeft = new String;
+var remainingTime = new String;
 var currentTime;
 var fiveMinutes;
-var miliSecondsLeft = new String;
 var secondsLeft;
 var minutesLeft;
 const minute = 1000*60;
@@ -67,7 +68,8 @@ function subtractSecond(){
     secondsLeft -= 1;
     minutesConverted = parseInt(secondsLeft/60);
     secondsConverted = parseInt(((secondsLeft/60) % 1)*60);
-    console.log(`Current time ${minutesConverted} minutes and ${secondsConverted} seconds.`);
+    remainingTime = `Current time ${minutesConverted} minutes and ${secondsConverted} seconds.`
+    console.log(remainingTime);
 }
 
 
