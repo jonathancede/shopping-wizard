@@ -35,11 +35,18 @@ purchase.password= document.getElementById("user-password"); /* is password*/
 var confirmpasword= document.getElementById("user-password-confirm"); /* is password confirm*/
 
 
-if(password == confirmpasword)
-{
-    okbutton = document.getElementById="confirm-button";
-    okbutton.disabled = false;
-}else {okbutton.disabled = true}
+if(ContainsAny(password, [, Number, "term3"])){
+    if(password == confirmpasword ||
+        password.includes())
+    {
+        okbutton = document.getElementById="confirm-button";
+        okbutton.disabled = false;
+    }
+    //do something
+ }else {okbutton.disabled = true;}
+
+
+
 
 // Global purchase dynamic list
 
