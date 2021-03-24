@@ -932,17 +932,12 @@ h3{
 /* Animations */
 
 /* Appearing window */
-@keyframes timeWindowAnimationIn{
+@keyframes timeWindowAnimation{
     0%{
-        opacity: 0%;
-        display: none;
-    }
-    10%{
         opacity: 0%;
     }
     100%{
         opacity: 100%;
-        display: flex;
     }
 }
 
@@ -951,14 +946,9 @@ h3{
 @keyframes timeWindowAnimationOut{
     0%{
         opacity: 100%;
-        display: flex;
-    }
-    90%{
-        opacity: 0%;
     }
     100%{
         opacity: 0%;
-        display: none;
     }
 }
 
