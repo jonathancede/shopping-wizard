@@ -712,6 +712,10 @@ input::placeholder{
 textarea::placeholder{
     color: var(--dark-green);
 }
+.custom-text-area{
+    box-sizing: border-box;
+    padding: 10px;
+}
 
 /* Hidden form item */
 #hidden-form{
