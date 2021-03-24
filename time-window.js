@@ -24,24 +24,33 @@ secondsLeft = miliSecondsLeft/1000;
 // Convert seconds into minutes
 minutesLeft = secondsLeft/60;
 timeTextElement.innerHTML = `You have ${minutesLeft} minutes left`;
+
 // Test
 console.log("Initial minute:", minutesLeft);
 
+
 // >>>>>>>>>>>>> Time intervals
+// Tracking ten seconds
+function tenSeconds(){
+    // Hide pop-up window after 10 seconds of showing-up
+    timeWindow.style.display="none";
+}
+
+// Default hiding
+setTimeout(tenSeconds, 10000);
+
 // Tracking minutes
 function eachMinute(){
-    console.log("Minute");
     minutesLeft -= 1; // Remove one minute
     console.log("Minutes left", minutesLeft);
     timeTextElement.innerHTML = `You have ${minutesLeft} minutes left`;
+    timeWindow.style.display = "flex";
+    setTimeout(tenSeconds, 10000);
 }
 
+// Execute eachMinute function every minute
 setInterval(eachMinute, minute)
 
-// Tracking five seconds
-function fiveSeconds(){
-    // Hide pop-up window after 5 seconds of showing-up
-    timeWindow.style.display="none";
-}
-//setTimeout(fiveSeconds, 5000);
+
+
 
