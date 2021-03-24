@@ -14,25 +14,31 @@ var currentTime = new Date().getTime();
 var minute = (1000)*60;
 var fiveMinutes = currentTime + (minute*5);
 
-var minutesLeft = new String;
-console.log(minutesLeft);
+// Minutes left
+var miliSecondsLeft = new String;
+miliSecondsLeft = fiveMinutes-currentTime;
+// Convert miliseconds into seconds
+secondsLeft = miliSecondsLeft/1000;
+// Convert seconds into minutes
+minutesLeft = secondsLeft/60;
 
-//console.log("Current time", currentTime);
-//console.log("Five minutes later", fiveMinutes);
+console.log("Initial minute:", minutesLeft);
 
 
 // >>>>>>>>>>>>> Time intervals
-// Tracking seconds
-function eachSecond(){
-    console.log("Second");
+// Tracking minutes
+function eachMinute(){
+    console.log("Minute");
+    minutesLeft -= 1; // Remove one second
+    console.log("Seconds left", minutesLeft);
 }
-//setInterval(eachSecond, 1000)
+
+setInterval(eachMinute, minute)
 
 // Tracking five seconds
 function fiveSeconds(){
     // Hide pop-up window after 5 seconds of showing-up
     timeWindow.style.display="none";
 }
-
-setTimeout(fiveSeconds, 5000);
+//setTimeout(fiveSeconds, 5000);
 
