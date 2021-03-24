@@ -59,7 +59,6 @@ body{
 #time-window{
     border: var(--stroke-border) solid var(--dark-green);
     background-color: var(--light-green);
-    color: red;
     height: 60px;
     width: 330px;
     padding: 10px 15px 5px 15px;
@@ -931,14 +930,35 @@ h3{
 
 
 /* Animations */
-@keyframes timeWindowAnimation{
+
+/* Appearing window */
+@keyframes timeWindowAnimationIn{
+    0%{
+        opacity: 0%;
+        display: none;
+    }
+    10%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+        display: flex;
+    }
+}
+
+
+/* Disappearing window */
+@keyframes timeWindowAnimationOut{
     0%{
         opacity: 100%;
+        display: flex;
     }
     90%{
         opacity: 0%;
     }
     100%{
         opacity: 0%;
+        display: none;
     }
 }
+
