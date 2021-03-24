@@ -934,6 +934,7 @@ h3{
 @keyframes timeWindowAnimation{
     0%{
         opacity: 100%;
+        display: flex;
     }
     90%{
         opacity: 0%;
