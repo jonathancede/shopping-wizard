@@ -829,7 +829,7 @@ button {
 }
 
 /* Back/Confirm button */
-#back-button, #confirm-button{
+#back-button,#back-to-main-page, #confirm-button{
     font-size: 30px;
     width: 25%;
 }
