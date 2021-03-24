@@ -4,14 +4,14 @@
 //console.log("Time-window.js loaded");
 
 
-// Window element >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// Global variables >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// Window element
 var timeWindow = document.getElementById("time-window");
 //console.log("Time window:", timeWindow);
 var timeTextElement = document.getElementById("minutes-left");
 //console.log("Minutes left:", timeTextElement);
 var windowCross = document.getElementById("time-cross");
 windowCross.addEventListener("click", closeWindow);
-
 var currentTime;
 var fiveMinutes;
 var miliSecondsLeft = new String;
@@ -20,7 +20,7 @@ var minutesLeft;
 const minute = 1000*60;
 
 
-
+// HTML elements >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 document.getElementById("buy-button").addEventListener("click", initializeTime);
 
 
