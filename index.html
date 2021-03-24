@@ -24,22 +24,33 @@
             <div id="header2">Shop</div>
         </div>
     </header>
-    <!-- Changing div -->
+
+    <!-- Changing div (center)-->
     <main>
+
+
+
+        <!-- LEFT ELEMENTS -->
+
+
+
+        <!-- Main page (left) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
         <div id="main-left-mp">
             <div class="gallery-box">
                 <div id="photo-gallery1"><img src="Assets/VAR MADERA 3.jpg" class="photo-gallery" title="Plant VAR"></div>
                 <div id="photo-gallery2"><img src="Assets/TRI MADERA 2.jpg" class="photo-gallery" title="Plant TRI"></div>
                 <div id="photo-gallery3"><img src="Assets/CAM MADERA.jpg" class="photo-gallery" title="Plant CAM"></div>
                 <div id="photo-gallery4"><img src="Assets/SCAP MADERA.jpg" class="photo-gallery" title="Plant SCAP"></div>
-
-
             </div>
             <div class="picture-box">
                 <img src="Assets/VAR MADERA 3.jpg" alt="VAR MADERA">
             </div>
         <!-- <div class="content-box">Content box </div> -->
         </div>
+
+        <!-- Profile, Address, Shipping (left) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
         <div id="main-left-resume">
             <div id="timeline"></div>
             <div id="summary">
@@ -70,14 +81,25 @@
                 </div>
             </div>
         </div>
+
+        <!-- Finish (left) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
         <div id="main-left-finish">
             <div id="timeline"></div>
             <div id="container-image-finish"></div>
         </div>
+
+
+
+        <!-- RIGHT ELEMENTS -->
+
+
+
+        <!-- Main page (right) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
         <div id="main-right-mp">
             <div id="parent-plants">
                 <div class="line-margin"></div>
-                <!-- <div id="plant-style"> -->
                     <div class="sub-section" id="type-of-plant">
                         <h1 class="section-title">Plant</h1>
                         <div id="plant1"><img src="Assets/VAR_1.png" alt="VAR" title="Plant VAR"></div>
@@ -86,7 +108,6 @@
                         <div id="plant4"><img src="Assets/SCAP_1.png" alt="SCAP" title="Plant SCAP"></div>
                     </div>
                     <div id="quantity-text">
-                        
                         <label class="section-title"><h2>Quantity</h2></label>
                         <input type="number" id="quantity-box" name="quantity" min="1" >
                     </div>
@@ -109,8 +130,8 @@
                             <label class="radio">
                                 <span class="radio_input">
                                     <input type="radio" name="radio">
-                                     <span class="radio_control"></span>
-                                     <span class="radio_label"><h2>Concrete</h2></span>
+                                    <span class="radio_control"></span>
+                                    <span class="radio_label"><h2>Concrete</h2></span>
                                 </span>
 
                             </label>
@@ -126,16 +147,15 @@
                         <label class="checkbox-mp">
                         <span class="checkbox-mp_input">
                             <input type="checkbox" name="checkbox">
-                             <span class="checkbox-mp_control"></span>
-                             <span class="checkbox-mp_label"><h3>Add custom message</h3>
+                            <span class="checkbox-mp_control"></span>
+                            <span class="checkbox-mp_label"><h3>Add custom message</h3>
                         </span>
                     </div>
                         <!-- Text area -->
                         <div class="text-area-wrapper">
-                            <textarea type="text" class="custom-text-area" id="gift-text" name="gift-text">&nbsp;This is some optional text</textarea>
+                            <textarea type="text" class="custom-text-area" id="gift-text" name="gift-text" maxlength="24">&nbsp;This is some optional text</textarea>
                         </div>
-                     </div>
-
+                    </div>
                 </div>
             </div>
             <div id="price-box">
@@ -151,12 +171,10 @@
                             <h2>Tri</h2>
                             <div id="type-price-total" class="price-total">20.00€(x2)</div>
                             <br>
-                    
                             <div id="type-base-price" class="selection-title2>">
                             <h2>Wooden base</h2>
-                
                             <div id="base-price-total"class="price-total">3.00€(x2)</div>
-                            </div>                          
+                            </div>
                     </div>
                 </div>
                 <div id="buy-button-box">
@@ -164,6 +182,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- Profile (right) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
         <div id="main-right-profile">
             <!-- Top right block -->
             <div id="top-right">
@@ -211,6 +232,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- Address (right) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
         <div id="main-right-address">
             <!-- Top right block -->
             <div id="top-right">
@@ -310,6 +334,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- Shipping (right) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
         <div id="main-right-shipping">
             <!-- Top right block -->
             <div id="top-right">
@@ -378,7 +405,7 @@
                         </label>
                         <!-- Text area -->
                         <div class="text-area-wrapper">
-                            <textarea type="text" class="custom-text-area gift-text-area" id="gift-text" name="gift-text">&nbsp;Test area</textarea>
+                            <textarea type="text" class="custom-text-area gift-text-area" id="gift-text" name="gift-text" maxlength="200">&nbsp;Test area</textarea>
                         </div>
                         <!-- Wrapper button -->
                         <button class="negative-button" id="wrap-gift-button" type="button">
@@ -391,6 +418,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- Finish (right) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
         <div id="main-right-finish">
             <!-- Top right block -->
             <div id="top-right">
@@ -442,6 +472,7 @@
             </div>
         </div>
     </main>
+
     <!-- Footer -->
     <footer id="footer">
         <h3 id="footer-left">Shopping Wizzard | March 2021</h3>

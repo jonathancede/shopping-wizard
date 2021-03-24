@@ -584,9 +584,7 @@ align-items:flex-end ;
 }
 #custom-message-box{
     display: flex;
-
 }
-
 
 .checkbox-mp_input input{
     opacity: 0%;
@@ -597,6 +595,7 @@ align-items:flex-end ;
     display: flex;
     align-items: center;
 }
+
 .checkbox-mp_control{
     display: block;
     width: 8px;
@@ -614,19 +613,16 @@ align-items:flex-end ;
 
 .checkbox-mp_input input:checked + .checkbox-mp_control{
             background-color: var(--dark-green);
-        }
+}
 
-
-
-
-
-        /* Hide default radio/checkbox button */
+/* Hide default radio/checkbox button */
 .radio_input input, .checkbox_input input{
     opacity: 0%;
     width: 0;
     height: 0;
 }
-        /* Center new radio/checkbox to text */
+
+/* Center new radio/checkbox to text */
 .radio_input, .checkbox_input{
     display: flex;
     align-items: center;
@@ -663,6 +659,7 @@ align-items:flex-end ;
     outline: none;
     /* Remove default resize */
     resize: none;
+    max-len
 }
 
 /* Shipping page */
