@@ -700,6 +700,17 @@ form label{
     font-size: 16px;
     border-left: 12px solid var(--light-green);
 }
+input::placeholder{
+    color: var(--dark-green);
+
+}
+textarea::placeholder{
+    color: var(--dark-green);
+}
+.custom-text-area{
+    box-sizing: border-box;
+    padding: 10px;
+}
 
 /* Hidden form item */
 #hidden-form{
@@ -831,6 +842,37 @@ button {
     width: 25%;
 }
 
+#main-center-finish-screen{
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+}
+
+#final-text{
+    justify-content: center;
+    text-align: center;
+    height: 100% ;
+            margin-top: 200px ;
+            padding: 0 ;
+            width: 100% ;
+}
+
+#time-text{
+    justify-content: center;
+    text-align: center;
+    height: 100% ;
+    margin-bottom: 550px ;
+    margin-top: 20%;
+    padding: 0% ;
+    width: 100% ;
+
+}
+
+#buttons-true-finish{
+    text-align: center;
+    justify-content: center;
+
+}
 
 
 
