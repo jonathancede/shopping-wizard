@@ -18,6 +18,11 @@ var currentTime;
 var fiveMinutes;
 var secondsLeft;
 var minutesLeft;
+
+var tenSecondsTimeout;
+var eachMinuteInterval;
+var subtractSecondInterval;
+
 const minute = 1000*60;
 
 
@@ -33,7 +38,7 @@ function displayNone(){
 
 // Tracking ten seconds
 function tenSeconds(){
-    // Disappearing element
+    // Disappearing pop-up window
     timeWindow.style.animation = "timeWindowAnimationOut .4s ease forwards";
     // Setting display to none
     setTimeout(displayNone, 500);
@@ -46,7 +51,7 @@ function eachMinute(){
     console.log("Minutes left", minutesLeft);
     // Updating string containing minutes
     timeTextElement.innerHTML = `You have ${minutesLeft} minutes left`;
-    // Appearing element
+    // Appearing pop-up window
     timeWindow.style.display = "flex";
     timeWindow.style.animation = "timeWindowAnimationIn .4s ease forwards";
     // Hiding window after ten seconds
@@ -56,7 +61,7 @@ function eachMinute(){
 
 // Clicking cross function >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 function closeWindow(event){
-    // Disappearing element
+    // Disappearing pop-up window
     timeWindow.style.animation = "timeWindowAnimationOut .4s ease forwards";
     // Setting display to none
     setTimeout(displayNone, 500);
@@ -72,7 +77,26 @@ function subtractSecond(){
     console.log(remainingTime);
 }
 
+// Executed when user clicks "back" to main page
+function resetTime(){
+    // Reseting all variables
+    miliSecondsLeft = new String;
+    remainingTime = new String;
+    currentTime = 0;
+    fiveMinutes = 0;
+    secondsLeft = 0;
+    minutesLeft = 0;
 
+    // Hide pop-up window
+    timeWindow.style.display = "none";
+
+    // Reseting all timeouts/intervals
+    clearTimeout(tenSecondsTimeout);
+    clearInterval(eachMinuteInterval);
+    clearInterval(subtractSecondInterval);
+}
+
+// Executed when user clicks "buy" at main page
 function initializeTime(){
     // Date calculation >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     currentTime = new Date().getTime();
@@ -84,18 +108,18 @@ function initializeTime(){
     // Convert seconds into minutes
     minutesLeft = secondsLeft/60;
 
-    // Appearing element
+    // Appearing pop-up window
     timeWindow.style.opacity = "0%";
     timeWindow.style.display = "flex";
     timeWindow.style.animation = "timeWindowAnimationIn .4s ease forwards";
     timeTextElement.innerHTML = `You have ${minutesLeft} minutes left`;
 
-    // Hiding window after ten seconds
-    setTimeout(tenSeconds, 10000);
+    // Hiding pop-up window after ten seconds
+    tenSecondsTimeout = setTimeout(tenSeconds, 10000);
 
     // Execute eachMinute function every minute
-    setInterval(eachMinute, minute);
+    eachMinuteInterval = setInterval(eachMinute, minute);
 
     // Every second
-    setInterval(subtractSecond, 1000);
+    subtractSecondInterval = setInterval(subtractSecond, 1000);
 }
