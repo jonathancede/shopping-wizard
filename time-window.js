@@ -13,23 +13,27 @@ var windowCross = document.getElementById("time-cross");
 windowCross.addEventListener("click", closeWindow);
 
 
+document.getElementById("buy-button").addEventListener("click", initializeTime);
 
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Date calculation
-var currentTime = new Date().getTime();
-var minute = (1000)*60;
-var fiveMinutes = currentTime + (minute*5);
-
-// Minutes left
-var miliSecondsLeft = new String;
-miliSecondsLeft = fiveMinutes-currentTime;
-// Convert miliseconds into seconds
-secondsLeft = miliSecondsLeft/1000;
-// Convert seconds into minutes
-minutesLeft = secondsLeft/60;
-timeTextElement.innerHTML = `You have ${minutesLeft} minutes left`;
-// Test
-//console.log("Initial minute:", minutesLeft);
-
+function initializeTime(event){
+    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Date calculation
+    var currentTime = new Date().getTime();
+    var minute = (1000)*60;
+    var fiveMinutes = currentTime + (minute*5);
+    // Minutes left
+    var miliSecondsLeft = new String;
+    miliSecondsLeft = fiveMinutes-currentTime;
+    // Convert miliseconds into seconds
+    secondsLeft = miliSecondsLeft/1000;
+    // Convert seconds into minutes
+    minutesLeft = secondsLeft/60;
+    // Appearing element
+    timeWindow.style.opacity = "0%";
+    timeWindow.style.display = "flex";
+    timeWindow.style.animation = "timeWindowAnimationIn .4s ease forwards";
+    // Loading remaining minutes text
+    timeTextElement.innerHTML = `You have ${minutesLeft} minutes left`;
+}
 
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Time intervals
@@ -62,7 +66,7 @@ function eachMinute(){
 }
 
 // Execute eachMinute function every minute
-setInterval(eachMinute, minute)
+setInterval(eachMinute, 20000)
 
 
 
