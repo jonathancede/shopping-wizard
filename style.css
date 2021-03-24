@@ -836,6 +836,37 @@ button {
     width: 25%;
 }
 
+#main-center-finish-screen{
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+}
+
+#final-text{
+    justify-content: center;
+    text-align: center;
+    height: 100% ;
+            margin-top: 200px ;
+            padding: 0 ;
+            width: 100% ;
+}
+
+#time-text{
+    justify-content: center;
+    text-align: center;
+    height: 100% ;
+    margin-bottom: 550px ;
+    margin-top: 20%;
+    padding: 0% ;
+    width: 100% ;
+
+}
+
+#buttons-finish{
+    text-align: center;
+    justify-content: center;
+
+}
 
 
 
