@@ -62,12 +62,14 @@ body{
     height: 60px;
     width: 330px;
     padding: 10px 15px 5px 15px;
-    display: flex;
+    display: none; /* Hide element by default */
     align-items: flex-start; /* Stack elements at top of pop-up window */
+    transition: .4s;
+    animation: none; /* Default animation to none */
 }
 
 /* Pop-up text */
-#time-text{
+#time-window-text{
     flex-grow:1;
 }
 
@@ -226,7 +228,7 @@ width: 120px;
 /* Right block */
 #main-right-mp{
      /* background-color: var(--dark-red); */
-     display: flex;
+    display: flex;
     flex-basis: 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-left: 10px;
@@ -352,11 +354,13 @@ flex-basis: 20%;
     justify-content: center;
     align-items: center;
 }
+
 #plant1 img,#plant2 img,#plant3 img,#plant4 img{
     width: 82px;
     height: 110px;
 }
- #plant1:hover { /* Hover over each of the type of plants */
+
+#plant1:hover { /* Hover over each of the type of plants */
     color: white;
     border: var(--stroke-border) solid var(--dark-green);
     background-color: var(--light-green);}
@@ -373,19 +377,18 @@ flex-basis: 20%;
                 border: var(--stroke-border) solid var(--dark-green);
                 background-color: var(--light-green);}
 
- #quantity-text  {
-
+#quantity-text  {
     display: flex;
-   flex-direction: row;
+    flex-direction: row;
 }
 
 #quantity-box{
-   width: 50px;
-   height: 30px;
-   margin-left: 10px;
-   border: transparent;
-   background-color: #dcf1eb;
-   color: #00d5c2;
+    width: 50px;
+    height: 30px;
+    margin-left: 10px;
+    border: transparent;
+    background-color: #dcf1eb;
+    color: #00d5c2;
 }
 
 #quantity-box input:focus {
@@ -400,8 +403,12 @@ flex-basis: 20%;
     flex-direction: row;
 }
 
+.base-checkbox{
+    margin-left: 20px;
+}
+
 /* .checkbox{
-   margin-left: 60px;
+    margin-left: 60px;
 } */
 
 .base-checkbox, .checkbox{
@@ -500,32 +507,30 @@ height: 150px;
 }
 .price-total{
 font-size: 20px;
-
-
 }
+
 .price-total-2{
     font-size: 40px;
-    
-    
-    }
+}
+
 .main-price{
     color: #00d5c2;
     flex-basis: 100%;
     width: 100%;
-
 }
+
 #price-text-box{
     height: 100px;
 }
+
 #type-plant-price{
     height: 50px;
 }
+
 #type-base-price{
-
     height:50px ;
-
-
 }
+
 #buy-button-box{
     display: flex;
     flex-direction: row;
@@ -700,13 +705,15 @@ form label{
     font-size: 16px;
     border-left: 12px solid var(--light-green);
 }
+
 input::placeholder{
     color: var(--dark-green);
-
 }
+
 textarea::placeholder{
     color: var(--dark-green);
 }
+
 .custom-text-area{
     box-sizing: border-box;
     padding: 10px;
@@ -833,7 +840,7 @@ button {
 }
 
 /* Back/Confirm button */
-#back-button, #confirm-button{
+#back-button,#back-to-main-page, #confirm-button{
     font-size: 30px;
     width: 25%;
 }
@@ -873,7 +880,6 @@ button {
     margin-top: 20%;
     padding: 0% ;
     width: 100% ;
-
 }
 
 #buttons-true-finish{
@@ -935,3 +941,25 @@ h3{
 
 
 /* Animations */
+
+/* Appearing window */
+@keyframes timeWindowAnimationIn{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+/* Disappearing window */
+@keyframes timeWindowAnimationOut{
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+

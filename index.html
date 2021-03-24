@@ -23,6 +23,16 @@
             <div id="header1">Boreen</div>
             <div id="header2">Shop</div>
         </div>
+        <!-- Time window -->
+        <div id="time-window">
+            <!-- Time text -->
+            <div id="time-window-text">
+                <h2>Hurry up!</h2>
+                <h2 id="minutes-left">You have 5 minutes left</h2>
+            </div>
+            <!-- Closing cross -->
+            <i id="time-cross" class="uil uil-times"></i>
+        </div>
     </header>
 
     <!-- Changing div (center)-->
@@ -225,7 +235,7 @@
                 <!-- Buttons -->
                 <div id="buttons-div">
                     <!-- Back button -->
-                    <button class="negative-button" id="back-button" type="button" onclick="BackPage()" >Back</button>
+                    <button class="negative-button" id="back-to-main-page" type="button" onclick="BackPage()" >Back</button>
                     <!-- Clear form button -->
                     <button class="positive-button" id="clear-button" type="reset" form="profile-form">Clear</button>
                     <!-- Confirm button -->
@@ -484,5 +494,6 @@
 <!-- Javascript files -->
 <script src="script.js"></script>
 <script src="toogle-display.js"></script>
+<script src="time-window.js"></script>
 <script src="opacity-textarea.js"></script>
 </html>
