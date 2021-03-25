@@ -244,7 +244,7 @@
                     <!-- Password 2 -->
                     <div class="form-item-profile">
                         <label for="address2">Confirm passsword</label><br>
-                        <input class="form-text-area" type="password" id="user-password-confirm" name="password-2" value="" required>
+                        <input class="form-text-area" type="password" id="user-password-confirm" minlength="8" maxlength="20" name="password-2" value="" required>
                     </div>
                 </form>
                 <!-- Buttons -->
@@ -340,7 +340,7 @@
                                 <option data-countryCode="ES" value="+34">+34 | ESP</option>
                             </select>
                             <!-- User phone -->
-                            <input class="form-text-area" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" id="user-phone" name="phone" value="" required>
+                            <input class="form-text-area" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" id="user-phone" name="phone" maxlength="9" value="" required>
                         </div>
                     </div>
                     <!-- Hidden element -->
@@ -349,6 +349,13 @@
                         <input class="form-text-area" type="text" id="hidden-form" value="">
                     </div>
                 </form>
+                <label class="checkbox-mp" >
+                    <span class="checkbox-mp_input">
+                        <input id="custom-message-id" class="regular-address" type="checkbox" name="checkbox">
+                        <span class="checkbox-mp_control"></span>
+                        <span class="checkbox-mp_label"><h3>This is my regular address</h3>
+                    </span>
+                </label>
                 <!-- Buttons -->
                 <div id="buttons-div">
                     <!-- Back button -->
