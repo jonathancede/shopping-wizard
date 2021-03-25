@@ -390,7 +390,7 @@ flex-basis: 20%;
     flex-direction: row;
 }
 
-#base-checkbox{
+.base-checkbox{
     margin-left: 10px;
 }
 
