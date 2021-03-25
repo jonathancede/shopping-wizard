@@ -515,6 +515,7 @@ font-size: 20px;
 
 #total-price-mp{
     font-size: 40px;
+    display: none;
 }
 
 .main-price{
@@ -531,15 +532,15 @@ font-size: 20px;
 
 /* List wrappers */
 #type-plant-wrapper{
-    /* background-color: red; */
+    display: none;
 }
 
 #type-base-wrapper{
-    /* background-color: green; */
+    display: none;
 }
 
 #message-wrapper{
-    /* background-color: cyan; */
+    display: none;
 }
 
 #type-plant-price{
