@@ -3,6 +3,11 @@ var firstTypeShippingElement = document.getElementsByClassName("input-type-shipp
 var secondTypeShippingElement = document.getElementsByClassName("input-type-shipping")[1];
 var thirdTypeShippingElement = document.getElementsByClassName("input-type-shipping")[2];
 
+var currentDay;
+var day1;
+var day2;
+var day3;
+
 firstTypeShippingElement.addEventListener("click", DeliveryDynamic,true);
 secondTypeShippingElement.addEventListener("click", DeliveryDynamic,true);
 thirdTypeShippingElement.addEventListener("click", DeliveryDynamic,true);
@@ -16,12 +21,12 @@ function DeliveryDynamicFromAddress(event){
 function DeliveryDynamic(event){
     var textElement = document.getElementById("arrival-dates");
 
-    var currentDay = new Date();
-    var day1 = new Date();
+    currentDay = new Date();
+    day1 = new Date();
     day1.setDate(currentDay.getDate() + 1);
-    var day2 = new Date();
+    day2 = new Date();
     day2.setDate(currentDay.getDate() + 2);
-    var day3 = new Date();
+    day3 = new Date();
     day3.setDate(currentDay.getDate() + 3);
 
     if(firstTypeShippingElement.checked == true){
