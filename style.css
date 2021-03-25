@@ -503,13 +503,13 @@ height: 150px;
     flex-basis: 15%;
     /* background-color: lightcoral; */
     margin-left: 20px;
-
 }
-.price-total{
+
+.price-item{
 font-size: 20px;
 }
 
-.price-total-2{
+.total-price-mp{
     font-size: 40px;
 }
 
