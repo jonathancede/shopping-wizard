@@ -35,6 +35,5 @@ function textArea_opacity(event){
         textArea.style.opacity = "20%";
         textArea.disabled = true;
     }
-    console.log(purchase.isCustomMessage);
 }
 
