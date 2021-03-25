@@ -16,7 +16,23 @@
 *{
     padding: 0;
     margin: 0;
+    
     /* border: black 1px solid; */
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--dark-green);
+    -webkit-box-shadow: 0 0 0px 1000px var(--light-green) inset;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 
@@ -137,24 +153,32 @@ main{
 }
 
 /* Timeline circles */
+.timeline-circle{
+    background-color: white;
+    border: var(--light-green) 2px solid;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* background-color: var(--dark-green); */
+}
+
 .enabled-circle{
     background-color: var(--dark-green);
     border: var(--dark-green) 2px solid;
 }
 
-.disabled-circle{
-    background-color: white;
-    border: var(--light-green) 2px solid;
-}
+
 
 /* Timeline texts */
+.timelineText{
+    color: var(--light-green);
+}
+
 .timeline-text-enabled{
     color: var(--dark-green);
 }
 
-.timeline-text-disabled{
-    color: var(--light-green);
-}
+
 
 
 #timeline-circles{
@@ -163,12 +187,7 @@ main{
     margin-top: -12px;
 }
 
-.timeline-circle{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    /* background-color: var(--dark-green); */
-}
+
 
 #timeline-texts{
     display: flex;
