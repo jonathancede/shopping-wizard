@@ -555,6 +555,13 @@ font-size: 20px;
 input[type="file"] {
     display: none;
 }
+#final-button{
+    width: 150px;
+    height: 60px;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 10px
+}
 
 .negative-button{
     height: 60px;
@@ -886,27 +893,34 @@ button {
 
 #main-center-finish-screen{
     display: flex;
-    align-content: flex-start;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 #final-text{
-    justify-content: center;
-    text-align: center;
-    height: 100% ;
-            margin-top: 200px ;
-            padding: 0 ;
-            width: 100% ;
+    flex-grow: 1;
+padding: 200px;
+box-sizing: border-box;
+align-content: center;
+justify-content: center;
+text-align: center;
+height: 200px;
+
+   
+   
+    
 }
 
 #time-text{
+   
     justify-content: center;
     text-align: center;
-    height: 100% ;
-    margin-bottom: 550px ;
-    margin-top: 20%;
+    height: 10% ;
+    margin-top: 10px;
     padding: 0% ;
-    width: 100% ;
+   
 }
 
 #buttons-true-finish{
@@ -914,9 +928,6 @@ button {
     justify-content: center;
 
 }
-
-
-
 
 /* Footer */
 #footer{
