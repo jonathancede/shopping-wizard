@@ -1,5 +1,5 @@
 var indexCurrentPage = 1;       // This variable indicates the index of the current page.
-let priceCount;
+let priceCount = 16.00;
 
 /*---- This is the object where the information will be storaged ----*/
 var purchase = {
@@ -175,6 +175,17 @@ function StorageDataAndNextPage(event){
 
             if(purchase.isGift == true){
                 purchase.giftMessage = document.getElementById("gift-text").value;
+            }
+
+            switch (purchase.typeOfShipping) {
+                case 2:
+                    purchase.totalPriceCount = priceCount * purchase.quantity;
+                    purchase.totalPriceCount += 5.00;
+                    break;
+                case 3:
+                    purchase.totalPriceCount = priceCount * purchase.quantity;
+                    purchase.totalPriceCount += 10.00;
+                    break;
             }
             
             indexCurrentPage++;
