@@ -540,7 +540,7 @@ flex-basis: 20%;
     align-items: start;
 }
 #terms-coditions-radio{
-    margin-top: 7px;
+    margin-top: 0px;
 }
 
 /* Hide default radio/checkbox button */
@@ -753,7 +753,8 @@ input[type="file"] {
     /* Display elements as grid */
     display: grid;
     grid-template-columns: min-content auto;
-    grid-gap: 0.5em; /* Give elements a space between */
+    grid-gap: 0.5em;
+    align-items: center; /* Give elements a space between */
 }
 #custom-message-box{
     display: flex;
