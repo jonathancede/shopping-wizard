@@ -383,7 +383,7 @@
                         <!-- Free -->
                         <label class="radio">
                             <span class="radio_input">
-                                <input type="radio" name="shipping-radio" checked>
+                                <input class="input-type-shipping" type="radio" name="shipping-radio" checked>
                                 <span class="radio_control"></span>
                             </span>
                             <span class="radio_label">Free shipping (72h)</span>
@@ -393,7 +393,7 @@
                         <!-- Extra  -->
                         <label class="radio">
                             <span class="radio_input">
-                                <input type="radio" name="shipping-radio">
+                                <input class="input-type-shipping" type="radio" name="shipping-radio">
                                 <span class="radio_control"></span>
                             </span>
                             <span class="radio_label">Extra shipping (48h) <strong>+ 4,99€</strong></span>
@@ -403,16 +403,14 @@
                         <!-- Premium  -->
                         <label class="radio">
                             <span class="radio_input">
-                                <input type="radio" name="shipping-radio">
+                                <input class="input-type-shipping" type="radio" name="shipping-radio">
                                 <span class="radio_control"></span>
                             </span>
-                            <span class="radio_label">Premium shipping (72h) <strong>+ 7,99€</strong></span>
+                            <span class="radio_label">Premium shipping (24h) <strong>+ 7,99€</strong></span>
                         </label>
                         <!-- Linebreak -->
                         <br><br>
-                        <h3 id="arrival-dates">Your order will arrive between <br>
-                            Tuesday, 29th March at 3pm
-                            and <br>Wednesday, 30th March at 3pm.</h3>
+                        <h3 id="arrival-dates"></h3>
                     </div>
                 </div>
                 <!-- Bottom right right -->
@@ -432,10 +430,12 @@
                             <textarea placeholder="Add a gift message..." type="text" class="custom-text-area gift-text-area" id="gift-text" name="gift-text" maxlength="200" disabled="true"></textarea>
                         </div>
                         <!-- Wrapper button -->
-                        <button class="negative-button" id="wrap-gift-button" type="button">
-                            Add wrapper  &nbsp;&nbsp;
+                        <label class="negative-button" id="wrap-gift-button">
+                            <input type="file" accept="image/png, image/jpeg"/>
+                                Add wrapper  &nbsp;&nbsp;
                             <i style="font-size: 16px;" class="uil uil-image"></i>
-                        </button>
+                        </label>
+                        <div><ul id="output" ></ul></div>
                     </div>
                 </div>
             </div>
@@ -513,4 +513,6 @@
 <script src="image-dynamic.js"></script>
 <script src="time-window.js"></script>
 <script src="opacity-textarea.js"></script>
+<script src="delivery-dynamic.js"></script>
+<script src="wrapper-images.js"></script>
 </html>
