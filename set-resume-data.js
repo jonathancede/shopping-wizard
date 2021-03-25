@@ -1,5 +1,6 @@
 document.getElementById("buy-button").addEventListener("click", SetResumeData);
 document.getElementById("confirm-button-shipping").addEventListener("click", SetResumeDataFinish);
+document.getElementById("confirm-button-finish").addEventListener("click", SetResumeDataEnd);
 
 var plantResumeDataElement = document.getElementById("plant-resume-data");
 var baseResumeDataElement = document.getElementById("base-resume-data");
@@ -89,4 +90,32 @@ function SetResumeDataFinish(){
             shippingDateResumeDataElement.innerHTML = "(Since " + currentDay.getDate() + "/" + (currentDay.getMonth()+1) + "/" + currentDay.getFullYear() + " to " + day1.getDate() + "/" + (day1.getMonth()+1) + "/" + day1.getFullYear() + ")";
             break;
     }
+}
+
+function SetResumeDataEnd(){
+    document.getElementById("plant-resume-data-end").innerHTML = plantResumeDataElement.innerHTML;
+    document.getElementById("base-resume-data-end").innerHTML = baseResumeDataElement.innerHTML;
+
+    if(purchase.isCustomMessage == true){
+        document.getElementById("custom-message-resume-data-end-div").style.display = "";
+        if(purchase.customMessage == ""){
+            document.getElementById("custom-message-resume-data-end").innerHTML = "No message inserted";
+        }
+        else{
+            document.getElementById("custom-message-resume-data-end").innerHTML = customMessageResumeDataElement.innerHTML;
+        }
+    }
+    else{
+        document.getElementById("custom-message-resume-data-end-div").style.display = "none";
+    }
+
+    document.getElementById("shipping-type-resume-data-end").innerHTML = shippingTypeResumeDataElement.innerHTML;
+    document.getElementById("shipping-date-resume-data-end").innerHTML = shippingDateResumeDataElement.innerHTML;
+
+    var price = purchase.totalPriceCount.toFixed(2);
+    document.getElementById("total-price-end-data").innerHTML = price + "€";
+
+    document.getElementById("final-text").innerHTML = "Thank you, " + purchase.firstName + " " + purchase.lastName + ", your item has been shipped!<br>We have sent the order details to your email!";
+
+    document.getElementById("time-text").innerHTML = "Your purchase took: " + finishMinutes + " minutes and " + finishSeconds + " seconds";
 }

@@ -32,6 +32,9 @@ document.getElementById("concrete-type").addEventListener("click", addTotal);
 // Adding click listener
 document.getElementById("custom-message-id").addEventListener("click", addTotal);
 
+// Adding click listener
+document.getElementById("final-button").addEventListener("click", addTotal);
+
 
 // Functions >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // Plant
