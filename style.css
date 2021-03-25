@@ -16,7 +16,23 @@
 *{
     padding: 0;
     margin: 0;
+    
     /* border: black 1px solid; */
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--dark-green);
+    -webkit-box-shadow: 0 0 0px 1000px var(--light-green) inset;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 
@@ -95,6 +111,92 @@ main{
     flex-direction: row;
     justify-content: center;
 }
+
+
+/* Timeline */
+#timeline{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#timeline-elements{
+    margin-bottom: 20px;
+}
+
+#timeline-lines{
+    display: flex;
+}
+
+#timeline-line-background{
+    flex: 1 1 auto;
+    height: 2px;
+    background-color: var(--light-green);
+}
+
+#timeline-line-percentage{
+    /* Default width to 100% */
+    width: 100%;
+    height: 2px;
+    background-color: var(--dark-green);
+    /* transition: .4s ease-in-out; */
+}
+
+/* Changing widths in process */
+.timeline-line-33{
+    width:33%;
+}
+.timeline-line-66{
+    width:66%;
+}
+.timeline-line-99{
+    width:99%;
+}
+
+/* Timeline circles */
+.timeline-circle{
+    background-color: white;
+    border: var(--light-green) 2px solid;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* background-color: var(--dark-green); */
+}
+
+.enabled-circle{
+    background-color: var(--dark-green);
+    border: var(--dark-green) 2px solid;
+}
+
+
+
+/* Timeline texts */
+.timelineText{
+    color: var(--light-green);
+}
+
+.timeline-text-enabled{
+    color: var(--dark-green);
+}
+
+
+
+
+#timeline-circles{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -12px;
+}
+
+
+
+#timeline-texts{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 
 /* Left block */
 #main-left{
