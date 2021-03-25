@@ -783,7 +783,7 @@ input[type="file"] {
 
 .checkbox-address{
     width: fit-content;
-    transform: translateY(-120px);
+    transform: translateY(-80px);
 }
 
 
