@@ -174,22 +174,23 @@ function UpdateImages(){
     }
 }
 
+/*---- TODO ----*/
 function ImageDynamicMainPageFromEnd(){
-    indexGallery = 1;
+    // indexGallery = 1;
 
-    document.getElementById("plant1").style.backgroundColor = "#dcf1eb";
-    document.getElementById("plant2").style.backgroundColor = "white";
-    document.getElementById("plant3").style.backgroundColor = "white";
-    document.getElementById("plant4").style.backgroundColor = "white";
+    // document.getElementById("plant1").style.backgroundColor = "#dcf1eb";
+    // document.getElementById("plant2").style.backgroundColor = "white";
+    // document.getElementById("plant3").style.backgroundColor = "white";
+    // document.getElementById("plant4").style.backgroundColor = "white";
 
-    document.getElementById("quantity-box").value = 1;
+    // document.getElementById("quantity-box").value = 1;
 
-    document.getElementById("wooden-type").value = true;
-    document.getElementById("concrete-type").value = false;
+    // document.getElementById("wooden-type").value = true;
+    // document.getElementById("concrete-type").value = false;
 
-    document.getElementById("custom-message-id").value = false;
-    document.getElementById("custom-message-id").style.opacity = "20%";
-    document.getElementById("custom-text").disabled = true
+    // document.getElementById("custom-message-id").value = false;
+    // document.getElementById("custom-message-id").style.opacity = "20%";
+    // document.getElementById("custom-text").disabled = true
 
-    UpdateImages();
+    // UpdateImages();
 }
