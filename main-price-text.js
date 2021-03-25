@@ -7,10 +7,8 @@ console.log("Main page price");
 
 // HTML elements >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // Plant
-let plantWrapper = document.getElementById("type-plant-wrapper");
 let plantName = document.querySelector("#type-plant-wrapper h2");
 let plantPrice = document.getElementById("type-plant-total");
-
 // Adding click listener
 document.getElementById("plant1").addEventListener("click", addPlant);
 document.getElementById("plant2").addEventListener("click", addPlant);
@@ -20,11 +18,16 @@ document.getElementById("plant4").addEventListener("click", addPlant);
 // Base
 let baseType = document.querySelector("#type-base-wrapper h2");
 let basePrice = document.getElementById("base-price-total");
-
 // Adding click listener
 document.getElementById("wooden-type").addEventListener("click", addBase);
 document.getElementById("concrete-type").addEventListener("click", addBase);
 
+// Message
+let messageWrapper = document.getElementById("message-wrapper");
+let messageTitle = document.querySelector("#message-wrapper h2");
+let messagePrice = document.getElementById("custom-message-total");
+// Adding click listener
+document.getElementById("custom-message-id").addEventListener("click", addMessage);
 
 // Quantity
 
@@ -77,14 +80,14 @@ function addBase(){
     // Wooden
     case 1:
         // Replace base name
-        baseType.innerHTML = "Wooden";
+        baseType.innerHTML = "Wooden base";
         // Replace price
         basePrice.innerHTML = "6.00€";
         break;
     // Concrete
     case 2:
         // Replace base name
-        baseType.innerHTML = "Concrete";
+        baseType.innerHTML = "Concrete base";
         // Replace price
         basePrice.innerHTML = "4.00€";
         break;
@@ -94,5 +97,22 @@ function addBase(){
 
 // Message
 function addMessage(){
+    // Adapt message item
+    switch(purchase.isCustomMessage){
+        // With message
+        case true:
+            // Show message item
+            messageWrapper.style.display = "block";
+            // Add message title
+            messageTitle.innerHTML = "Custom message";
+            // Replace price
+            messagePrice.innerHTML = "1.50€";
+            break;
+        // Without message
+        case false:
+            // Hide message item
+            messageWrapper.style.display = "none";
+            break;
+        }
 
 }
