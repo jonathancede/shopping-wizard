@@ -6,7 +6,12 @@ var thirdTypeShippingElement = document.getElementsByClassName("input-type-shipp
 firstTypeShippingElement.addEventListener("click", DeliveryDynamic,true);
 secondTypeShippingElement.addEventListener("click", DeliveryDynamic,true);
 thirdTypeShippingElement.addEventListener("click", DeliveryDynamic,true);
-document.getElementById("confirm-button").addEventListener("click", DeliveryDynamic,true);
+document.getElementById("address-form").addEventListener("submit", DeliveryDynamicFromAddress,true);
+
+function DeliveryDynamicFromAddress(event){
+    event.preventDefault();
+    DeliveryDynamic(event);
+}
 
 function DeliveryDynamic(event){
     var textElement = document.getElementById("arrival-dates");
