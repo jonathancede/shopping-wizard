@@ -208,11 +208,19 @@ width: 120px;
     color: var(--dark-green);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #data-resume div{
-    margin-left: 30px;
+    margin: 20px;
+}
+
+#space-resume-data{
+    flex-grow: 1;
+}
+
+#price-resume-data{
+    /* margin: 20px; */
 }
 
 .second-line-data-resume{
