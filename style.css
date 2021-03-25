@@ -291,7 +291,7 @@ width: 120px;
 
 #container-image-summary{
     flex-basis: 63%;
-    background-color: lightgray;
+    /* background-color: lightgray; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -302,12 +302,29 @@ width: 120px;
     max-height: 100%;
 }
 
-#container-image-finish{
+#container-image-finish, #container-image-end{
     height: 100%;
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
     /* background-color: rgba(255, 255, 0, 0.235); Comment this to hide block background */
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-resume-principal{
+    width: 545px;
+    height: 570px;
+}
+
+#image-resume-principal-finish{
+    width: 545px;
+    height: 570px;
+}
+
+#image-resume-principal-end{
+    width: 420px;
+    height: 410px;
 }
 
 #data-resume{
@@ -1101,7 +1118,7 @@ border:var(--dark-green) 2px solid;
     flex-direction: column;
     width: 50%;
     flex-grow: 1;
-    background-color:lightgray;
+    /* background-color:lightgray; */
 }
 #thank-you-right{
     display: flex;

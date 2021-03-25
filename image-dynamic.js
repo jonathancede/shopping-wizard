@@ -122,24 +122,40 @@ function UpdateImages(){
                 else{ elementImage.setAttribute("src", path1VarWooden2); }
                 elementGalleryImage1.setAttribute("src", path1VarWooden1);
                 elementGalleryImage2.setAttribute("src", path1VarWooden2);
+
+                document.getElementById("image-resume-principal").src = path1VarWooden1;
+                document.getElementById("image-resume-principal-finish").src = path1VarWooden1;
+                document.getElementById("image-resume-principal-end").src = path1VarWooden1;
                 break;
             case 2:
                 if(indexGallery == 1){ elementImage.setAttribute("src", path2TriWooden1); }
                 else{ elementImage.setAttribute("src", path2TriWooden2); }
                 elementGalleryImage1.setAttribute("src", path2TriWooden1);
                 elementGalleryImage2.setAttribute("src", path2TriWooden2);
+
+                document.getElementById("image-resume-principal").src = path2TriWooden1;
+                document.getElementById("image-resume-principal-finish").src = path2TriWooden1;
+                document.getElementById("image-resume-principal-end").src = path2TriWooden1;
                 break;
             case 3:
                 if(indexGallery == 1){ elementImage.setAttribute("src", path3CamWooden1); }
                 else{ elementImage.setAttribute("src", path3CamWooden2); }
                 elementGalleryImage1.setAttribute("src", path3CamWooden1);
                 elementGalleryImage2.setAttribute("src", path3CamWooden2);
+
+                document.getElementById("image-resume-principal").src = path3CamWooden1;
+                document.getElementById("image-resume-principal-finish").src = path3CamWooden1;
+                document.getElementById("image-resume-principal-end").src = path3CamWooden1;
                 break;
             case 4:
                 if(indexGallery == 1){ elementImage.setAttribute("src", path4ScapWooden1); }
                 else{ elementImage.setAttribute("src", path4ScapWooden2); }
                 elementGalleryImage1.setAttribute("src", path4ScapWooden1);
                 elementGalleryImage2.setAttribute("src", path4ScapWooden2);
+
+                document.getElementById("image-resume-principal").src = path4ScapWooden1;
+                document.getElementById("image-resume-principal-finish").src = path4ScapWooden1;
+                document.getElementById("image-resume-principal-end").src = path4ScapWooden1;
                 break;
         }
     }
@@ -150,24 +166,40 @@ function UpdateImages(){
                 else{ elementImage.setAttribute("src", path1VarConcrete2); }
                 elementGalleryImage1.setAttribute("src", path1VarConcrete1);
                 elementGalleryImage2.setAttribute("src", path1VarConcrete2);
+
+                document.getElementById("image-resume-principal").src = path1VarConcrete1;
+                document.getElementById("image-resume-principal-finish").src = path1VarConcrete1;
+                document.getElementById("image-resume-principal-end").src = path1VarConcrete1;
                 break;
             case 2:
                 if(indexGallery == 1){ elementImage.setAttribute("src", path2TriConcrete1); }
                 else{ elementImage.setAttribute("src", path2TriConcrete2); }
                 elementGalleryImage1.setAttribute("src", path2TriConcrete1);
                 elementGalleryImage2.setAttribute("src", path2TriConcrete2);
+
+                document.getElementById("image-resume-principal").src = path2TriConcrete1;
+                document.getElementById("image-resume-principal-finish").src = path2TriConcrete1;
+                document.getElementById("image-resume-principal-end").src = path2TriConcrete1;
                 break;
             case 3:
                 if(indexGallery == 1){ elementImage.setAttribute("src", path3CamConcrete1); }
                 else{ elementImage.setAttribute("src", path3CamConcrete2); }
                 elementGalleryImage1.setAttribute("src", path3CamConcrete1);
                 elementGalleryImage2.setAttribute("src", path3CamConcrete2);
+
+                document.getElementById("image-resume-principal").src = path3CamConcrete1;
+                document.getElementById("image-resume-principal-finish").src = path3CamConcrete1;
+                document.getElementById("image-resume-principal-end").src = path3CamConcrete1;
                 break;
             case 4:
                 if(indexGallery == 1){ elementImage.setAttribute("src", path4ScapConcrete1); }
                 else{ elementImage.setAttribute("src", path4ScapConcrete2); }
                 elementGalleryImage1.setAttribute("src", path4ScapConcrete1);
                 elementGalleryImage2.setAttribute("src", path4ScapConcrete2);
+
+                document.getElementById("image-resume-principal").src = path4ScapConcrete1;
+                document.getElementById("image-resume-principal-finish").src = path4ScapConcrete1;
+                document.getElementById("image-resume-principal-end").src = path4ScapConcrete1;
                 break;
         }
     }
