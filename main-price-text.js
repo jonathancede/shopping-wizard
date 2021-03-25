@@ -5,7 +5,7 @@ console.log("Main page price");
 
 // Total price
 let totalPrice = document.getElementById("total-price-mp");
-let totalPriceCount = 16.00;
+// let totalPriceCount = 16.00;
 let totalDynamic;
 // Plant
 let plantName = document.querySelector("#type-plant-wrapper h2");
@@ -46,7 +46,7 @@ function addPlant(){
             // Replace price
             plantPrice.innerHTML = "10.00€";
             // Add to total price
-            totalPriceCount = 10.00;
+            purchase.totalPriceCount = 10.00;
             break;
         // Tri
         case 2:
@@ -55,7 +55,7 @@ function addPlant(){
             // Replace price
             plantPrice.innerHTML = "12.00€";
             // Add to total price
-            totalPriceCount = 12.00;
+            purchase.totalPriceCount = 12.00;
             break;
         // Cam
         case 3:
@@ -64,7 +64,7 @@ function addPlant(){
             // Replace price
             plantPrice.innerHTML = "14.00€";
             // Add to total price
-            totalPriceCount = 14.00;
+            purchase.totalPriceCount = 14.00;
             break;
         // Scap
         case 4:
@@ -73,7 +73,7 @@ function addPlant(){
             // Replace price
             plantPrice.innerHTML = "16.00€";
             // Add to total price
-            totalPriceCount = 16.00;
+            purchase.totalPriceCount = 16.00;
             break;
     }
 }
@@ -101,10 +101,10 @@ function addBase(){
     // Add base price depending on selected base
     if (purchase.typeOfBase == 1){
         // Wodden
-        totalPriceCount +=  6.00;
+        purchase.totalPriceCount +=  6.00;
     } else {
         // Concrete
-        totalPriceCount +=  4.00;
+        purchase.totalPriceCount +=  4.00;
     }
 }
 
@@ -132,7 +132,7 @@ function addMessage(){
     // Add message price
     if (purchase.isCustomMessage == true){
         // Message price
-        totalPriceCount +=  1.50;
+        purchase.totalPriceCount +=  1.50;
     }
 }
 
@@ -141,8 +141,8 @@ function addTotal(){
     addPlant();
     addBase();
     addMessage();
-    totalPriceCount = totalPriceCount.toFixed(2);
-    console.log(totalPriceCount);
+    purchase.totalPriceCount = purchase.totalPriceCount.toFixed(2);
+    console.log(purchase.totalPriceCount);
     let totalDynamic;
-    totalPrice.innerHTML = totalPriceCount + "€";
+    totalPrice.innerHTML = purchase.totalPriceCount + "€";
 }

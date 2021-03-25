@@ -8,6 +8,7 @@ var purchase = {
     typeOfBase: 1,
     isCustomMessage: false,
     customMessage: new String,
+    totalPriceCount: 16.00,
     /*---- Global variables to store the details of Profile ----*/
     userName: new String,
     email: new String,
