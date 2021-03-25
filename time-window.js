@@ -130,7 +130,7 @@ function subtractSecond(){
     minutesConverted = parseInt(secondsLeft/60);
     secondsConverted = parseInt(((secondsLeft/60) % 1)*60);
     remainingTime = `Current time ${minutesConverted} minutes and ${secondsConverted} seconds.`
-    
+
     // Go back to main page if there's no time left
     if (secondsLeft==0) {
         // Updating string in window
@@ -172,7 +172,7 @@ function resetTime(){
 function initializeTime(){
 
     currentTime = new Date().getTime();
-    fiveMinutes = currentTime + (minute*2);
+    fiveMinutes = currentTime + (minute*5);
     // Minutes left
     miliSecondsLeft = fiveMinutes-currentTime;
     // Convert miliseconds into seconds
