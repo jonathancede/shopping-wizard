@@ -6,7 +6,6 @@ console.log("timeline-functionality.js loaded");
 
 // Global variables >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // HTML elements >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-var percentage = document.getElementById("timeline-line-percentage");
 // Adding event listeners to buttons
 document.getElementById("buy-button").addEventListener("click", updateTimeline);
 document.getElementById("profile-form").addEventListener("submit", updateTimeline);
