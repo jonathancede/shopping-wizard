@@ -30,15 +30,15 @@ function DeliveryDynamic(event){
     day3.setDate(currentDay.getDate() + 3);
 
     if(firstTypeShippingElement.checked == true){
-        textElement.innerHTML = "Your order will arrive between <br>" + day2.getDate() + "/" + day2.getMonth() + "/" + day2.getFullYear() + " and " + day3.getDate() + "/" + day3.getMonth() + "/" + day3.getFullYear() + ".";
+        textElement.innerHTML = "Your order will arrive between <br>" + day2.getDate() + "/" + (day2.getMonth()+1) + "/" + day2.getFullYear() + " and " + day3.getDate() + "/" + (day3.getMonth()+1) + "/" + day3.getFullYear() + ".";
         purchase.typeOfShipping = 1;
     }
     else if(secondTypeShippingElement.checked == true){
-        textElement.innerHTML = "Your order will arrive between <br>" + day1.getDate() + "/" + day1.getMonth() + "/" + day1.getFullYear() + " and " + day2.getDate() + "/" + day2.getMonth() + "/" + day2.getFullYear() + ".";
+        textElement.innerHTML = "Your order will arrive between <br>" + day1.getDate() + "/" + (day1.getMonth()+1) + "/" + day1.getFullYear() + " and " + day2.getDate() + "/" + (day2.getMonth()+1) + "/" + day2.getFullYear() + ".";
         purchase.typeOfShipping = 2;
     }
     else if(thirdTypeShippingElement.checked == true){
-        textElement.innerHTML = "Your order will arrive between <br>" + currentDay.getDate() + "/" + currentDay.getMonth() + "/" + currentDay.getFullYear() + " and " + day1.getDate() + "/" + day1.getMonth() + "/" + day1.getFullYear() + ".";
+        textElement.innerHTML = "Your order will arrive between <br>" + currentDay.getDate() + "/" + (currentDay.getMonth()+1) + "/" + currentDay.getFullYear() + " and " + day1.getDate() + "/" + (day1.getMonth()+1) + "/" + day1.getFullYear() + ".";
         purchase.typeOfShipping = 3;
     }
 }

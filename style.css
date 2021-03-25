@@ -16,7 +16,23 @@
 *{
     padding: 0;
     margin: 0;
+    
     /* border: black 1px solid; */
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--dark-green);
+    -webkit-box-shadow: 0 0 0px 1000px var(--light-green) inset;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 
@@ -96,6 +112,92 @@ main{
     justify-content: center;
 }
 
+
+/* Timeline */
+#timeline{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#timeline-elements{
+    margin-bottom: 20px;
+}
+
+#timeline-lines{
+    display: flex;
+}
+
+#timeline-line-background{
+    flex: 1 1 auto;
+    height: 2px;
+    background-color: var(--light-green);
+}
+
+#timeline-line-percentage{
+    /* Default width to 100% */
+    width: 100%;
+    height: 2px;
+    background-color: var(--dark-green);
+    /* transition: .4s ease-in-out; */
+}
+
+/* Changing widths in process */
+.timeline-line-33{
+    width:33%;
+}
+.timeline-line-66{
+    width:66%;
+}
+.timeline-line-99{
+    width:99%;
+}
+
+/* Timeline circles */
+.timeline-circle{
+    background-color: white;
+    border: var(--light-green) 2px solid;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* background-color: var(--dark-green); */
+}
+
+.enabled-circle{
+    background-color: var(--dark-green);
+    border: var(--dark-green) 2px solid;
+}
+
+
+
+/* Timeline texts */
+.timelineText{
+    color: var(--light-green);
+}
+
+.timeline-text-enabled{
+    color: var(--dark-green);
+}
+
+
+
+
+#timeline-circles{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -12px;
+}
+
+
+
+#timeline-texts{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
 /* Left block */
 #main-left{
     background-color: var(--dark-red);
@@ -170,9 +272,7 @@ width: 120px;
     margin-bottom: 20px;
     /* background-color: rgba(255, 255, 0, 0.235); */
 }
-#top-right{
-    margin-top: 20px;
-}
+
 
 #summary{
     height: 100%;
@@ -924,16 +1024,8 @@ button {
 }
 
 #final-text{
-    flex-grow: 1;
-padding: 200px;
-box-sizing: border-box;
-align-content: center;
 justify-content: center;
 text-align: center;
-height: 200px;
-
-
-
 
 }
 
@@ -943,16 +1035,46 @@ height: 200px;
     text-align: center;
     height: 10% ;
     margin-top: 10px;
-    padding: 0% ;
+    box-sizing: border-box;
+    padding: 15px ;
+
+}
+.total-price-right{
+box-sizing: border-box;
+padding: 10px;
 
 }
 #thank-you-summary{
+box-sizing: border-box;
+padding: 1px;
 display: flex;
 width: 50%;
-height: 100%;
 flex-grow: 1;
-border: black 2px solid;
+border:var(--dark-green) 2px solid;
 
+
+}
+#thank-you-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    flex-grow: 1;
+    background-color:lightgray;
+}
+#thank-you-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+   flex-grow: 1;
+   
+}
+#total-price-thankyou{
+    margin-left: 10%;
+    margin-top: 5%;
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 #buttons-true-finish{
