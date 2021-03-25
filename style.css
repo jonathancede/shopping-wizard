@@ -384,7 +384,7 @@ width: 120px;
 }
 
 /* Address behaviour */
-#bottom-right-address, #bottom-right-profile{
+#bottom-right-address, #bottom-right-profile, #bottom-right-finish{
     display: flex;
     height: 100%;
     flex: 1 1 auto;
