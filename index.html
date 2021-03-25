@@ -423,10 +423,12 @@
                             <textarea placeholder="Add a gift message..." type="text" class="custom-text-area gift-text-area" id="gift-text" name="gift-text" maxlength="200" disabled="true"></textarea>
                         </div>
                         <!-- Wrapper button -->
-                        <button class="negative-button" id="wrap-gift-button" type="button">
-                            Add wrapper  &nbsp;&nbsp;
+                        <label class="negative-button" id="wrap-gift-button">
+                            <input type="file" accept="image/png, image/jpeg"/>
+                                Add wrapper  &nbsp;&nbsp;
                             <i style="font-size: 16px;" class="uil uil-image"></i>
-                        </button>
+                        </label>
+                        <div><ul id="output" ></ul></div>
                     </div>
                 </div>
             </div>
@@ -503,4 +505,5 @@
 <script src="image-dynamic.js"></script>
 <script src="time-window.js"></script>
 <script src="opacity-textarea.js"></script>
+<script src="wrapper-images.js"></script>
 </html>
