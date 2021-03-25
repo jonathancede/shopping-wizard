@@ -112,8 +112,8 @@ function eachMinute(){
     // Appearing pop-up window
     timeWindow.style.display = "flex";
     timeWindow.style.animation = "timeWindowAnimationIn .4s ease forwards";
-    // Hiding window after ten seconds
-    setTimeout(tenSeconds, 10000);
+    // Hiding window after five seconds
+    setTimeout(tenSeconds, 5000);
 }
 
 // Clicking cross function >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -145,10 +145,10 @@ function subtractSecond(){
         // Appearing pop-up window
         timeWindow.style.display = "flex";
         timeWindow.style.animation = "timeWindowAnimationIn .4s ease forwards";
-        // Hiding pop-up window after ten seconds
-        setTimeout(tenSeconds, 10000);
-        // Hiding pop-up window after ten seconds
-        setTimeout(backToMain, 10000);
+        // Hiding pop-up window after five seconds
+        setTimeout(tenSeconds, 5000);
+        // Hiding pop-up window after five seconds
+        setTimeout(backToMain, 5000);
     }
 
     // Remaining minutes and seconds
@@ -192,8 +192,8 @@ function initializeTime(){
     timeWindow.style.animation = "timeWindowAnimationIn .4s ease forwards";
     timeTextElement.innerHTML = `You have ${minutesLeft} minutes left`;
 
-    // Hiding pop-up window after ten seconds
-    tenSecondsTimeout = setTimeout(tenSeconds, 10000);
+    // Hiding pop-up window after five seconds
+    tenSecondsTimeout = setTimeout(tenSeconds, 5000);
 
     // Execute eachMinute function every minute
     eachMinuteInterval = setInterval(eachMinute, minute);
