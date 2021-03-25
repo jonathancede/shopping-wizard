@@ -62,12 +62,14 @@ body{
     height: 60px;
     width: 330px;
     padding: 10px 15px 5px 15px;
-    display: flex;
+    display: none; /* Hide element by default */
     align-items: flex-start; /* Stack elements at top of pop-up window */
+    transition: .4s;
+    animation: none; /* Default animation to none */
 }
 
 /* Pop-up text */
-#time-text{
+#time-window-text{
     flex-grow:1;
 }
 
@@ -228,7 +230,7 @@ width: 120px;
 /* Right block */
 #main-right-mp{
      /* background-color: var(--dark-red); */
-     display: flex;
+    display: flex;
     flex-basis: 50%;
     height: inherit; /* Gets height from his parent (- paddings) */
     margin-left: 10px;
@@ -364,11 +366,13 @@ flex-basis: 20%;
     justify-content: center;
     align-items: center;
 }
+
 #plant1 img,#plant2 img,#plant3 img,#plant4 img{
     width: 82px;
     height: 95px;
 }
- #plant1:hover { /* Hover over each of the type of plants */
+
+#plant1:hover { /* Hover over each of the type of plants */
     color: white;
     border: var(--stroke-border) solid var(--dark-green);
     background-color: var(--light-green);}
@@ -385,19 +389,23 @@ flex-basis: 20%;
                 border: var(--stroke-border) solid var(--dark-green);
                 background-color: var(--light-green);}
 
- #quantity-text  {
-
+#quantity-text  {
     display: flex;
-   flex-direction: row;
+    flex-direction: row;
 }
 
 #quantity-box{
-   width: 50px;
-   height: 30px;
-   margin-left: 10px;
-   border: transparent;
-   background-color: #dcf1eb;
-   color: #00d5c2;
+    width: 50px;
+    height: 30px;
+    margin-left: 10px;
+    border: transparent;
+    background-color: #dcf1eb;
+    color: #00d5c2;
+}
+
+#quantity-box input:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px lightgrey;
 }
 
 #plant-base {
@@ -408,12 +416,22 @@ flex-basis: 20%;
 }
 
 .base-checkbox{
-   margin-left: 20px;
+    margin-left: 20px;
 }
 
 /* .checkbox{
-   margin-left: 60px;
+    margin-left: 60px;
 } */
+
+.base-checkbox, .checkbox{
+    display: flex;
+    align-items: start;
+}
+
+.checkbox{
+    display: flex;
+    align-items: start;
+}
 
 /* Hide default radio/checkbox button */
 .radio_input input, .checkbox_input input{
@@ -423,14 +441,13 @@ flex-basis: 20%;
 }
 
 /* Center new radio/checkbox to text */
-.radio_input, .checkbox_input{
+.radio_input, .checkbox_input, .checkbox-mp_input{
     display: flex;
     align-items: center;
-   
 }
 
 /* Styling owr own radio/checkbox button */
-.radio_control, .checkbox_control{
+.radio_control, .checkbox_control, .checkbox-mp_control{
     display: block;
     margin-right: 10px;
     width: 8px;
@@ -466,13 +483,27 @@ height: 150px;
     background-color: var(--light-green);
     width: 100%;
     border: none;
-    font-family: var(--font);
+    font-weight: bold;
+    font-size: 20px ;
     color: var(--dark-green);
     /*padding: 10px;*/
     /* Remove default outline */
     outline: none;
     /* Remove default resize */
     resize: none;
+    padding: 10px;
+}
+
+.custom-text-area::placeholder{
+    font-weight: normal;
+    font-size: 20px ;
+    color: var(--dark-green);
+}
+
+.custom-text-area:focus {
+    outline: none !important;
+    border:1px solid var(--color-lightgreen);
+    box-shadow: 0 0 10px lightgrey;
 }
 
 
@@ -488,36 +519,34 @@ height: 150px;
 }
 .price-total{
 font-size: 20px;
-
-
 }
+
 .price-total-2{
     font-size: 40px;
-    
-    
-    }
+}
+
 .main-price{
     color: #00d5c2;
     flex-basis: 100%;
     width: 100%;
-
 }
+
 #price-text-box{
     height: 100px;
 }
+
 #type-plant-price{
     height: 50px;
 }
+
 #type-base-price{
-
     height:50px ;
-
-
 }
+
 #buy-button-box{
-display: flex;
-flex-direction: row;
-align-items:flex-end ;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end ;
 }
 
 .negative-button{
@@ -531,20 +560,16 @@ align-items:flex-end ;
 
 /* Outlined buttons + hover */
 .negative-button:hover {
-    color: white;
     border: var(--stroke-border) solid var(--dark-green);
     background-color: var(--dark-green);
+    color: white;
     padding: 10px;
 }
 
 .section-title-2{
     line-height: 24px;
     flex-basis: 20%;
-
-    }
-
-
-
+}
 
 #bottom-right-left{
     margin-right: 20px;
@@ -598,50 +623,25 @@ align-items:flex-end ;
     display: flex;
 }
 
-.checkbox-mp_input input{
-    opacity: 0%;
-    width: 0;
-    height: 0;
-}
-.checkbox_input-mp{
-    display: flex;
-    align-items: center;
-}
-
-.checkbox-mp_control{
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    border: var(--stroke-border) solid var(--dark-green);}
-
-
-.checkbox-mp_control{
-        display: block;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        border: var(--stroke-border) solid var(--dark-green);}
-
 .checkbox-mp_input input:checked + .checkbox-mp_control{
-            background-color: var(--dark-green);
+    background-color: var(--dark-green);
 }
 
 /* Hide default radio/checkbox button */
-.radio_input input, .checkbox_input input{
+.radio_input input, .checkbox_input input, .checkbox-mp_input input{
     opacity: 0%;
     width: 0;
     height: 0;
 }
 
 /* Center new radio/checkbox to text */
-.radio_input, .checkbox_input{
+.radio_input, .checkbox_input, .checkbox_input-mp{
     display: flex;
     align-items: center;
 }
 
 /* Styling owr own radio/checkbox button */
-.radio_control, .checkbox_control{
+.radio_control, .checkbox_control, .checkbox-mp_control{
     display: block;
     width: 8px;
     height: 8px;
@@ -716,6 +716,20 @@ form label{
     font-family: var(--font);
     font-size: 16px;
     border-left: 12px solid var(--light-green);
+}
+
+input::placeholder{
+    color: var(--dark-green);
+}
+
+textarea::placeholder{
+    color: var(--dark-green);
+}
+
+.custom-text-area{
+    box-sizing: border-box;
+    padding: 10px;
+    opacity: 20%;
 }
 
 /* Hidden form item */
@@ -830,8 +844,15 @@ button {
     padding: 10px;
 }
 
+.positive-button:hover{
+    color: var(--dark-green);
+    border: var(--stroke-border) solid var(--dark-green);
+    background-color: white;
+    padding: 10px;
+}
+
 /* Back/Confirm button */
-#back-button, #confirm-button{
+#back-button,#back-to-main-page, #confirm-button{
     font-size: 30px;
     width: 25%;
 }
@@ -848,6 +869,36 @@ button {
     width: 25%;
 }
 
+#main-center-finish-screen{
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+}
+
+#final-text{
+    justify-content: center;
+    text-align: center;
+    height: 100% ;
+            margin-top: 200px ;
+            padding: 0 ;
+            width: 100% ;
+}
+
+#time-text{
+    justify-content: center;
+    text-align: center;
+    height: 100% ;
+    margin-bottom: 550px ;
+    margin-top: 20%;
+    padding: 0% ;
+    width: 100% ;
+}
+
+#buttons-true-finish{
+    text-align: center;
+    justify-content: center;
+
+}
 
 
 
@@ -902,3 +953,25 @@ h3{
 
 
 /* Animations */
+
+/* Appearing window */
+@keyframes timeWindowAnimationIn{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+/* Disappearing window */
+@keyframes timeWindowAnimationOut{
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
