@@ -170,6 +170,9 @@ width: 120px;
     margin-bottom: 20px;
     /* background-color: rgba(255, 255, 0, 0.235); */
 }
+#top-right{
+    margin-top: 20px;
+}
 
 #summary{
     height: 100%;
@@ -408,7 +411,7 @@ flex-basis: 20%;
 #base-text-box{
     display: flex;
     font-size: 40px;
-    
+
 }
 
 .base-checkbox{
@@ -544,11 +547,6 @@ font-size: 20px;
 }
 
 /* List wrappers */
-#type-plant-wrapper{
-}
-
-#type-base-wrapper{
-}
 
 #message-wrapper{
     display: none;
@@ -832,10 +830,11 @@ textarea::placeholder{
 
 #total-price-finish{
     margin-left: 25px;
+    margin-top: 35px;
     flex: 1 1 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:baseline
 }
 
 #terms-conditions-finish{
@@ -932,19 +931,19 @@ justify-content: center;
 text-align: center;
 height: 200px;
 
-   
-   
-    
+
+
+
 }
 
 #time-text{
-   
+
     justify-content: center;
     text-align: center;
     height: 10% ;
     margin-top: 10px;
     padding: 0% ;
-   
+
 }
 
 #buttons-true-finish{
