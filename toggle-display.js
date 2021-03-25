@@ -1,4 +1,18 @@
 var indexCurrentPage = 1;       // This variable indicates the index of the current page.
+var percentage = document.getElementById("timeline-line-percentage");
+
+// Timeline circles
+var circle1 = document.getElementById("circle-1");
+var circle2 = document.getElementById("circle-2");
+var circle3 = document.getElementById("circle-3");
+var circle4 = document.getElementById("circle-4");
+
+// Timeline texts
+var timelineText1 = document.getElementById("timeline-text-1");
+var timelineText2 = document.getElementById("timeline-text-2");
+var timelineText3 = document.getElementById("timeline-text-3");
+var timelineText4 = document.getElementById("timeline-text-4");
+
 
 /*---- This is the object where the information will be storaged ----*/
 var purchase = {
@@ -118,6 +132,11 @@ function StorageDataAndNextPage(event){
                 purchase.customMessage = document.getElementById("custom-text").value;
             }
 
+            // Timeline
+            percentage.style.width = "0%";
+            circle1.classList.toggle("enabled-circle");
+            timelineText1.classList.toggle("timeline-text-enabled");
+            
             indexCurrentPage++;
             break;
         case 2:
@@ -134,6 +153,11 @@ function StorageDataAndNextPage(event){
             purchase.userName = document.getElementById("user-name").value;
             purchase.email = document.getElementById("user-mail").value;
             purchase.password = document.getElementById("user-password").value;
+
+            // Timeline
+            percentage.style.width = "33%";
+            circle2.classList.toggle("enabled-circle");
+            timelineText2.classList.toggle("timeline-text-enabled");
             
             indexCurrentPage++;
             break;
@@ -157,6 +181,11 @@ function StorageDataAndNextPage(event){
             purchase.country = document.getElementById("user-country").value;
             purchase.prePhone = document.getElementById("user-phone-prefix").value;
             purchase.phone = document.getElementById("user-phone").value;
+
+            // Timeline
+            percentage.style.width = "66%";
+            circle3.classList.toggle("enabled-circle");
+            timelineText3.classList.toggle("timeline-text-enabled");
             
             indexCurrentPage++;
             break;
@@ -174,6 +203,11 @@ function StorageDataAndNextPage(event){
             if(purchase.isGift == true){
                 purchase.giftMessage = document.getElementById("gift-text").value;
             }
+
+            // Timeline
+            percentage.style.width = "99%";
+            circle4.classList.toggle("enabled-circle");
+            timelineText4.classList.toggle("timeline-text-enabled");
             
             indexCurrentPage++;
             break;
@@ -189,7 +223,8 @@ function StorageDataAndNextPage(event){
 
             mainleftNextPage.style.display = "flex";
             mainRightNextPage.style.display = "flex";
-            
+
+
             // indexCurrentPage++;
             indexCurrentPage = 1;
             break;
@@ -211,7 +246,12 @@ function BackPage(){
 
             mainleftNextPage.style.display = "flex";
             mainRightNextPage.style.display = "flex";
-            
+
+            // Timeline
+            percentage.style.width = "100%";
+            circle1.classList.toggle("enabled-circle");
+            timelineText1.classList.toggle("timeline-text-enabled");
+
             indexCurrentPage--;
             break;
         case 3:
@@ -226,7 +266,12 @@ function BackPage(){
 
             mainleftNextPage.style.display = "flex";
             mainRightNextPage.style.display = "flex";
-            
+
+            // Timeline
+            percentage.style.width = "0%";
+            circle2.classList.toggle("enabled-circle");
+            timelineText2.classList.toggle("timeline-text-enabled");
+        
             indexCurrentPage--;
             break;
         case 4:
@@ -241,6 +286,11 @@ function BackPage(){
 
             mainleftNextPage.style.display = "flex";
             mainRightNextPage.style.display = "flex";
+
+            // Timeline
+            percentage.style.width = "33%";
+            circle3.classList.toggle("enabled-circle");
+            timelineText3.classList.toggle("timeline-text-enabled");
             
             indexCurrentPage--;
             break;
@@ -259,6 +309,12 @@ function BackPage(){
             
             indexCurrentPage--;
             // indexCurrentPage = 1;
+
+            // Timeline
+            percentage.style.width = "66%";
+            circle4.classList.toggle("enabled-circle");
+            timelineText4.classList.toggle("timeline-text-enabled");
+
             break;
     }
     console.log(purchase);
