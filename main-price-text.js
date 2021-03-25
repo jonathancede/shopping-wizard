@@ -10,32 +10,42 @@ console.log("Main page price");
 let plantName = document.querySelector("#type-plant-wrapper h2");
 let plantPrice = document.getElementById("type-plant-total");
 // Adding click listener
-document.getElementById("plant1").addEventListener("click", addPlant);
-document.getElementById("plant2").addEventListener("click", addPlant);
-document.getElementById("plant3").addEventListener("click", addPlant);
-document.getElementById("plant4").addEventListener("click", addPlant);
+document.getElementById("plant1").addEventListener("click", addTotal);
+document.getElementById("plant2").addEventListener("click", addTotal);
+document.getElementById("plant3").addEventListener("click", addTotal);
+document.getElementById("plant4").addEventListener("click", addTotal);
 
 // Base
 let baseType = document.querySelector("#type-base-wrapper h2");
 let basePrice = document.getElementById("base-price-total");
 // Adding click listener
-document.getElementById("wooden-type").addEventListener("click", addBase);
-document.getElementById("concrete-type").addEventListener("click", addBase);
+document.getElementById("wooden-type").addEventListener("click", addTotal);
+document.getElementById("concrete-type").addEventListener("click", addTotal);
 
 // Message
 let messageWrapper = document.getElementById("message-wrapper");
 let messageTitle = document.querySelector("#message-wrapper h2");
 let messagePrice = document.getElementById("custom-message-total");
 // Adding click listener
-document.getElementById("custom-message-id").addEventListener("click", addMessage);
+document.getElementById("custom-message-id").addEventListener("click", addTotal);
 
 // Quantity
+let userQuantity = document.getElementById("quantity-box").value;
+console.log("Quantity:", userQuantity);
+
+// Total price
+let totalPrice = document.getElementById("total-price-mp");
+let totalPriceCount = 16.00;
 
 
 
 // Functions >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // Total
 function addTotal(){
+    addPlant();
+    addBase();
+    addMessage();
+    console.log(totalPriceCount);
 }
 
 // Plant
@@ -48,6 +58,8 @@ function addPlant(){
             plantName.innerHTML = "Var";
             // Replace price
             plantPrice.innerHTML = "10.00€";
+            // Add to total price
+            totalPriceCount = 10.00;
             break;
         // Tri
         case 2:
@@ -55,6 +67,8 @@ function addPlant(){
             plantName.innerHTML = "Tri";
             // Replace price
             plantPrice.innerHTML = "12.00€";
+            // Add to total price
+            totalPriceCount = 12.00;
             break;
         // Cam
         case 3:
@@ -62,6 +76,8 @@ function addPlant(){
             plantName.innerHTML = "Cam";
             // Replace price
             plantPrice.innerHTML = "14.00€";
+            // Add to total price
+            totalPriceCount = 14.00;
             break;
         // Scap
         case 4:
@@ -69,6 +85,8 @@ function addPlant(){
             plantName.innerHTML = "Scap";
             // Replace price
             plantPrice.innerHTML = "16.00€";
+            // Add to total price
+            totalPriceCount = 16.00;
             break;
     }
 }
@@ -91,6 +109,15 @@ function addBase(){
         // Replace price
         basePrice.innerHTML = "4.00€";
         break;
+    }
+
+    // Add base price depending on selected base
+    if (purchase.typeOfBase == 1){
+        // Wodden
+        totalPriceCount +=  6.00;
+    } else {
+        // Concrete
+        totalPriceCount +=  4.00;
     }
 }
 
@@ -115,4 +142,9 @@ function addMessage(){
             break;
         }
 
+    // Add message price
+    if (purchase.isCustomMessage == true){
+        // Message price
+        totalPriceCount +=  1.50;
+    }
 }
