@@ -144,23 +144,30 @@ main{
 
 .disabled-circle{
     background-color: white;
-    border: var(--dark-green) 2px solid;
+    border: var(--light-green) 2px solid;
 }
 
+/* Timeline texts */
+.timeline-text-enabled{
+    color: var(--dark-green);
+}
 
+.timeline-text-disabled{
+    color: var(--light-green);
+}
 
 
 #timeline-circles{
     display: flex;
     justify-content: space-between;
-    margin-top: -10px;
+    margin-top: -12px;
 }
 
 .timeline-circle{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: var(--dark-green);
+    /* background-color: var(--dark-green); */
 }
 
 #timeline-texts{
