@@ -507,6 +507,8 @@ flex-basis: 20%;
     color: #00d5c2;
     text-align: center;
     padding-left: 10px;
+    /* Remove default outline */
+    outline: none;
 }
 
 #quantity-box input:focus {
