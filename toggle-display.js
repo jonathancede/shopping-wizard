@@ -49,7 +49,7 @@ document.getElementById("profile-form").addEventListener("submit", CheckPassword
 document.getElementById("address-form").addEventListener("submit", StorageDataAndNextPage, true);
 document.getElementById("confirm-button-shipping").addEventListener("click", StorageDataAndNextPage, true);
 document.getElementById("confirm-button-finish").addEventListener("click", StorageDataAndNextPage, true);
-document.getElementById("final-button").addEventListener("click", StorageDataAndNextPage, true);
+document.getElementById("final-button").addEventListener("click", ReloadPage);
 
 document.getElementById("back-button-profile").addEventListener("click", BackPage);
 document.getElementById("back-button-address").addEventListener("click", BackPage);
@@ -364,4 +364,8 @@ function BackPage(){
             break;
     }
     console.log(purchase);
+}
+
+function ReloadPage(){
+    location.reload();
 }
