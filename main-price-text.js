@@ -3,51 +3,38 @@
 // Test >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 console.log("Main page price");
 
-
-
-// HTML elements >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// Total price
+let totalPrice = document.getElementById("total-price-mp");
+let totalPriceCount = 16.00;
+let totalDynamic;
 // Plant
 let plantName = document.querySelector("#type-plant-wrapper h2");
 let plantPrice = document.getElementById("type-plant-total");
+// Base
+let baseType = document.querySelector("#type-base-wrapper h2");
+let basePrice = document.getElementById("base-price-total");
+// Message
+let messageWrapper = document.getElementById("message-wrapper");
+let messageTitle = document.querySelector("#message-wrapper h2");
+let messagePrice = document.getElementById("custom-message-total");
+
+
+// HTML elements >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // Adding click listener
 document.getElementById("plant1").addEventListener("click", addTotal);
 document.getElementById("plant2").addEventListener("click", addTotal);
 document.getElementById("plant3").addEventListener("click", addTotal);
 document.getElementById("plant4").addEventListener("click", addTotal);
 
-// Base
-let baseType = document.querySelector("#type-base-wrapper h2");
-let basePrice = document.getElementById("base-price-total");
 // Adding click listener
 document.getElementById("wooden-type").addEventListener("click", addTotal);
 document.getElementById("concrete-type").addEventListener("click", addTotal);
 
-// Message
-let messageWrapper = document.getElementById("message-wrapper");
-let messageTitle = document.querySelector("#message-wrapper h2");
-let messagePrice = document.getElementById("custom-message-total");
 // Adding click listener
 document.getElementById("custom-message-id").addEventListener("click", addTotal);
 
-// Quantity
-let userQuantity = document.getElementById("quantity-box").value;
-console.log("Quantity:", userQuantity);
-
-// Total price
-let totalPrice = document.getElementById("total-price-mp");
-let totalPriceCount = 16.00;
-
-
 
 // Functions >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-// Total
-function addTotal(){
-    addPlant();
-    addBase();
-    addMessage();
-    console.log(totalPriceCount);
-}
-
 // Plant
 function addPlant(){
     // Adapt plant item
@@ -147,4 +134,15 @@ function addMessage(){
         // Message price
         totalPriceCount +=  1.50;
     }
+}
+
+// Total
+function addTotal(){
+    addPlant();
+    addBase();
+    addMessage();
+    totalPriceCount = totalPriceCount.toFixed(2);
+    console.log(totalPriceCount);
+    let totalDynamic;
+    totalPrice.innerHTML = totalPriceCount + "€";
 }
