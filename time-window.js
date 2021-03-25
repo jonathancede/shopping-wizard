@@ -9,6 +9,8 @@
 var timeWindow = document.getElementById("time-window");
 //console.log("Time window:", timeWindow);
 var timeTextElement = document.getElementById("minutes-left");
+var timeTextTitle = document.querySelector("#time-window-text h2");
+console.log(timeTextTitle.innerHTML);
 //console.log("Minutes left:", timeTextElement);
 var windowCross = document.getElementById("time-cross");
 windowCross.addEventListener("click", closeWindow);
@@ -29,6 +31,7 @@ const minute = 1000*60;
 // HTML elements >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 document.getElementById("buy-button").addEventListener("click", initializeTime);
 document.getElementById("back-to-main-page").addEventListener("click", resetTime);
+
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Time intervals
 // Half second to display none
@@ -122,4 +125,14 @@ function initializeTime(){
 
     // Every second
     subtractSecondInterval = setInterval(subtractSecond, 1000);
+}
+
+
+if(miliSecondsLeft==0){
+    // Updating string containing minutes
+    timeTextElement.innerHTML = `Going back to main page`;
+    // Appearing pop-up window
+    timeWindow.style.display = "flex";
+    timeWindow.style.animation = "timeWindowAnimationIn .4s ease forwards";
+
 }
