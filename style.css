@@ -536,6 +536,9 @@ font-size: 20px;
     flex-direction: row;
     align-items:flex-end ;
 }
+input[type="file"] {
+    display: none;
+}
 
 .negative-button{
     height: 60px;
@@ -705,7 +708,7 @@ form label{
     font-size: 16px;
     border-left: 12px solid var(--light-green);
 }
-
+ /* Textareas */
 input::placeholder{
     color: var(--dark-green);
 }
@@ -723,6 +726,14 @@ textarea::placeholder{
 /* Hidden form item */
 #hidden-form{
     display: none;
+}
+/* Text of image added */
+#output{
+    color:var(--dark-green);
+    width: 140px;
+    height: 120px;
+    margin-top: 50px;
+    margin-left: 20px;
 }
 
 /* Select country wrapper */
