@@ -1,4 +1,5 @@
 var indexCurrentPage = 1;       // This variable indicates the index of the current page.
+let priceCount = 16.00;
 var percentage = document.getElementById("timeline-line-percentage");
 
 // Timeline circles
@@ -131,6 +132,7 @@ function StorageDataAndNextPage(event){
             if(purchase.isCustomMessage == true){
                 purchase.customMessage = document.getElementById("custom-text").value;
             }
+            purchase.totalPriceCount = priceCount * purchase.quantity;
 
             // Timeline
             percentage.style.width = "0%";
@@ -204,6 +206,17 @@ function StorageDataAndNextPage(event){
                 purchase.giftMessage = document.getElementById("gift-text").value;
             }
 
+            switch (purchase.typeOfShipping) {
+                case 2:
+                    purchase.totalPriceCount = priceCount * purchase.quantity;
+                    purchase.totalPriceCount += 5.00;
+                    break;
+                case 3:
+                    purchase.totalPriceCount = priceCount * purchase.quantity;
+                    purchase.totalPriceCount += 10.00;
+                    break;
+            }
+            
             // Timeline
             percentage.style.width = "99%";
             circle4.classList.toggle("enabled-circle");
