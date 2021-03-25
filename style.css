@@ -96,6 +96,81 @@ main{
     justify-content: center;
 }
 
+
+/* Timeline */
+#timeline{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#timeline-elements{
+    margin-bottom: 20px;
+}
+
+#timeline-lines{
+    display: flex;
+}
+
+#timeline-line-background{
+    flex: 1 1 auto;
+    height: 2px;
+    background-color: var(--light-green);
+}
+
+#timeline-line-percentage{
+    /* Default width to zero */
+    width: 0;
+    height: 2px;
+    background-color: var(--dark-green);
+}
+
+/* Changing widths in process */
+.timeline-line-33{
+    width:33%;
+}
+.timeline-line-66{
+    width:66%;
+}
+.timeline-line-99{
+    width:99%;
+}
+
+/* Timeline circles */
+.enabled-circle{
+    background-color: var(--dark-green);
+    border: var(--dark-green) 2px solid;
+}
+
+.disabled-circle{
+    background-color: white;
+    border: var(--dark-green) 2px solid;
+}
+
+
+
+
+#timeline-circles{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.timeline-circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--dark-green);
+}
+
+#timeline-texts{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
 /* Left block */
 #main-left{
     background-color: var(--dark-red);
