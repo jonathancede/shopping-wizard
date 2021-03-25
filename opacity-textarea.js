@@ -8,10 +8,24 @@ function textArea_opacity(event){
     if(typeMessage == "custom-message-id"){
         var checkbox = document.getElementById("custom-message-id");
         var textArea = document.getElementById("custom-text");
+
+        // Toggle purchase "iscustomMessage" property
+        if(checkbox.checked == true){
+            purchase.isCustomMessage = true;
+        } else {
+            purchase.isCustomMessage = false;
+        }
     }
     else{
         var checkbox = document.getElementById("gift-message-id");
         var textArea = document.getElementById("gift-text");
+
+        // Toggle purchase "isGift" property
+        if(checkbox.checked == true){
+            purchase.isGift = true;
+        } else {
+            purchase.isGift = false;
+        }
     }
 
     if (checkbox.checked == true){
@@ -21,5 +35,6 @@ function textArea_opacity(event){
         textArea.style.opacity = "20%";
         textArea.disabled = true;
     }
+    console.log(purchase.isCustomMessage);
 }
 
