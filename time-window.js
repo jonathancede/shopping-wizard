@@ -193,7 +193,7 @@ function initializeTime(){
     timeTextElement.innerHTML = `You have ${minutesLeft} minutes left`;
 
     // Hiding pop-up window after ten seconds
-    tenSecondsTimeout = setTimeout(tenSeconds, 10000);
+    tenSecondsTimeout = setTimeout(tenSeconds, 5000);
 
     // Execute eachMinute function every minute
     eachMinuteInterval = setInterval(eachMinute, minute);
