@@ -31,6 +31,8 @@ const minute = 1000*60;
 // HTML elements >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 document.getElementById("buy-button").addEventListener("click", initializeTime);
 document.getElementById("back-to-main-page").addEventListener("click", resetTime);
+// Hide pop-up window if last button is clicked
+document.getElementById("confirm-button-finish").addEventListener("click", closeWindowFinish);
 
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Time intervals
@@ -114,7 +116,6 @@ function eachMinute(){
     setTimeout(tenSeconds, 10000);
 }
 
-
 // Clicking cross function >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 function closeWindow(event){
     // Disappearing pop-up window
@@ -123,6 +124,11 @@ function closeWindow(event){
     setTimeout(displayNone, 500);
 }
 
+// Close window at finish page
+function closeWindowFinish(){
+    closeWindow();
+    resetTime();
+}
 
 // Clicking cross function >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 function subtractSecond(){
