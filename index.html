@@ -226,7 +226,7 @@
                     </div>
                 </div>
                 <div id="buy-button-box">
-                    <button class="negative-button" id="buy-button" type="button" onclick="CheckAndNextPage(event)">Buy</button>
+                    <button class="negative-button" id="buy-button" type="button">Buy</button>
                 </div>
             </div>
         </div>
@@ -265,18 +265,18 @@
                     </div>
                     <!-- Password 2 -->
                     <div class="form-item-profile">
-                        <label for="address2">Confirm passsword</label><br>
+                        <label for="address2">Confirm password</label><br>
                         <input class="form-text-area" type="password" id="user-password-confirm" name="password-2" value="" required>
                     </div>
                 </form>
                 <!-- Buttons -->
                 <div id="buttons-div">
                     <!-- Back button -->
-                    <button class="negative-button" id="back-to-main-page" type="button" onclick="BackPage()" >Back</button>
+                    <button class="negative-button" id="back-button-profile" type="button">Back</button>
                     <!-- Clear form button -->
                     <button class="positive-button" id="clear-button" type="reset" form="profile-form">Clear</button>
                     <!-- Confirm button -->
-                    <button class="negative-button" type="submit" form="profile-form" value="Submit" id="confirm-button" onclick="CheckAndNextPage(event)" >Confirm</button>
+                    <button class="negative-button" type="submit" form="profile-form" value="Submit" id="confirm-button-profile">Confirm</button>
                 </div>
             </div>
         </div>
@@ -362,7 +362,7 @@
                                 <option data-countryCode="ES" value="+34">+34 | ESP</option>
                             </select>
                             <!-- User phone -->
-                            <input class="form-text-area" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" id="user-phone" name="phone" value="" required>
+                            <input class="form-text-area" type="text" id="user-phone" name="phone" value="" required>
                         </div>
                     </div>
                     <!-- Hidden element -->
@@ -374,11 +374,11 @@
                 <!-- Buttons -->
                 <div id="buttons-div">
                     <!-- Back button -->
-                    <button class="negative-button" id="back-button" type="button" onclick="BackPage()">Back</button>
+                    <button class="negative-button" id="back-button-address" type="button">Back</button>
                     <!-- Clear form button -->
                     <button class="positive-button" id="clear-button" type="reset" form="address-form">Clear</button>
                     <!-- Confirm button -->
-                    <button class="negative-button" type="submit" form="address-form" value="Submit" id="confirm-button" onclick="CheckAndNextPage(event)">Confirm</button>
+                    <button class="negative-button" type="submit" form="address-form" value="Submit" id="confirm-button-address">Confirm</button>
                 </div>
             </div>
         </div>
@@ -463,9 +463,9 @@
             </div>
             <div id="buttons-div">
                 <!-- Back button -->
-                <button class="negative-button" id="back-button" type="button" onclick="BackPage()">Back</button>
+                <button class="negative-button" id="back-button-shipping" type="button">Back</button>
                 <!-- Confirm button -->
-                <button class="negative-button" type="submit" form="address-form" value="Submit" id="confirm-button" onclick="CheckAndNextPage(event)">Confirm</button>
+                <button class="negative-button" type="submit" form="address-form" value="Submit" id="confirm-button-shipping">Confirm</button>
             </div>
         </div>
         <!-- Finish (right) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
@@ -515,9 +515,9 @@
             </div>
             <div id="buttons-finish">
                 <!-- Back button -->
-                <button class="negative-button" id="back-button-finish" type="button" onclick="BackPage()" >Back</button>
+                <button class="negative-button" id="back-button-finish" type="button">Back</button>
                 <!-- Confirm button -->
-                <button class="negative-button" id="confirm-button-finish" type="button" onclick="CheckAndNextPage(event)" >Confirm</button>
+                <button class="negative-button" id="confirm-button-finish" type="button">Confirm</button>
             </div>
         </div>
     </main>
@@ -530,7 +530,7 @@
 </body>
 <!-- Javascript files -->
 <script src="script.js"></script>
-<script src="toogle-display.js"></script>
+<script src="toggle-display.js"></script>
 <script src="main-price-text.js"></script>
 <script src="image-dynamic.js"></script>
 <script src="time-window.js"></script>

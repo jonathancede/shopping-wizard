@@ -6,7 +6,12 @@ var thirdTypeShippingElement = document.getElementsByClassName("input-type-shipp
 firstTypeShippingElement.addEventListener("click", DeliveryDynamic,true);
 secondTypeShippingElement.addEventListener("click", DeliveryDynamic,true);
 thirdTypeShippingElement.addEventListener("click", DeliveryDynamic,true);
-document.getElementById("confirm-button").addEventListener("click", DeliveryDynamic,true);
+document.getElementById("address-form").addEventListener("submit", DeliveryDynamicFromAddress,true);
+
+function DeliveryDynamicFromAddress(event){
+    event.preventDefault();
+    DeliveryDynamic(event);
+}
 
 function DeliveryDynamic(event){
     var textElement = document.getElementById("arrival-dates");
@@ -21,11 +26,14 @@ function DeliveryDynamic(event){
 
     if(firstTypeShippingElement.checked == true){
         textElement.innerHTML = "Your order will arrive between <br>" + day2.getDate() + "/" + day2.getMonth() + "/" + day2.getFullYear() + " and " + day3.getDate() + "/" + day3.getMonth() + "/" + day3.getFullYear() + ".";
+        purchase.typeOfShipping = 1;
     }
     else if(secondTypeShippingElement.checked == true){
         textElement.innerHTML = "Your order will arrive between <br>" + day1.getDate() + "/" + day1.getMonth() + "/" + day1.getFullYear() + " and " + day2.getDate() + "/" + day2.getMonth() + "/" + day2.getFullYear() + ".";
+        purchase.typeOfShipping = 2;
     }
     else if(thirdTypeShippingElement.checked == true){
         textElement.innerHTML = "Your order will arrive between <br>" + currentDay.getDate() + "/" + currentDay.getMonth() + "/" + currentDay.getFullYear() + " and " + day1.getDate() + "/" + day1.getMonth() + "/" + day1.getFullYear() + ".";
+        purchase.typeOfShipping = 3;
     }
 }
