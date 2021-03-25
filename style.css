@@ -1003,6 +1003,7 @@ button {
     padding: 10px;
 }
 
+
 /* Outlined buttons + hover */
 .negative-button:hover {
     color: white;
@@ -1037,6 +1038,18 @@ button {
     font-size: 30px;
     width: 25%;
 }
+
+/* Disabled by default*/
+#confirm-button-finish{
+    opacity: 20%;
+}
+
+/* #buttons-finish button#confirm-button-finish:hover{
+    color: white;
+    border: var(--stroke-border) solid var(--dark-green);
+    background-color: var(--dark-green);
+    padding: 10px;
+} */
 
 /* Clear button */
 #clear-button{
