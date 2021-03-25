@@ -769,7 +769,7 @@ input[type="file"] {
     background-color: var(--dark-green);
 }
 
-.checkbox-mp{
+.checkbox-address{
     width: fit-content;
     transform: translateY(-120px);
 }
