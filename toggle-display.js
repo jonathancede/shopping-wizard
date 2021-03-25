@@ -1,4 +1,5 @@
 var indexCurrentPage = 1;       // This variable indicates the index of the current page.
+let priceCount;
 
 /*---- This is the object where the information will be storaged ----*/
 var purchase = {
@@ -117,6 +118,7 @@ function StorageDataAndNextPage(event){
             if(purchase.isCustomMessage == true){
                 purchase.customMessage = document.getElementById("custom-text").value;
             }
+            purchase.totalPriceCount = priceCount * purchase.quantity;
 
             indexCurrentPage++;
             break;
