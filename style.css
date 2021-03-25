@@ -946,6 +946,14 @@ height: 200px;
     padding: 0% ;
 
 }
+#thank-you-summary{
+display: flex;
+width: 50%;
+height: 100%;
+flex-grow: 1;
+border: black 2px solid;
+
+}
 
 #buttons-true-finish{
     text-align: center;
