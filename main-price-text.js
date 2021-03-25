@@ -7,5 +7,4 @@ console.log("Main page price");
 // Global variables >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-
 // HTML elements >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
