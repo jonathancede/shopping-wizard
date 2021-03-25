@@ -21,6 +21,16 @@ const path4ScapConcrete2 = "Assets/4-Scap/Concrete/Scap-Concrete-2.jpg";
 
 var indexGallery = 1;
 
+/*---- Added the EventListeners to the elements in DOM ----*/
+document.getElementById("photo-gallery1").addEventListener("click", ImageDynamicMainPage, true);
+document.getElementById("photo-gallery2").addEventListener("click", ImageDynamicMainPage, true);
+document.getElementById("plant1").addEventListener("click", ImageDynamicMainPage, true);
+document.getElementById("plant2").addEventListener("click", ImageDynamicMainPage, true);
+document.getElementById("plant3").addEventListener("click", ImageDynamicMainPage, true);
+document.getElementById("plant4").addEventListener("click", ImageDynamicMainPage, true);
+document.getElementById("wooden-type").addEventListener("click", ImageDynamicMainPage, true);
+document.getElementById("concrete-type").addEventListener("click", ImageDynamicMainPage, true);
+
 function ImageDynamicMainPage(event){
     var typeChange = event.currentTarget.className;
 
