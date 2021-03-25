@@ -8,13 +8,10 @@ console.log("Main page price");
 // HTML elements >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // Plant
 let plantWrapper = document.getElementById("type-plant-wrapper");
-
 let plantName = document.querySelector("#type-plant-wrapper h2");
-let plantNameText = plantName.innerHTML;
-
 let plantPrice = document.getElementById("type-plant-total");
-let plantPriceText = plantPrice.innerHTML;
 
+// Adding click listener
 document.getElementById("plant1").addEventListener("click", addPlant);
 document.getElementById("plant2").addEventListener("click", addPlant);
 document.getElementById("plant3").addEventListener("click", addPlant);
@@ -22,7 +19,11 @@ document.getElementById("plant4").addEventListener("click", addPlant);
 
 // Base
 let baseType = document.querySelector("#type-base-wrapper h2");
-let baseText = baseType.innerHTML;
+let basePrice = document.getElementById("base-price-total");
+
+// Adding click listener
+document.getElementById("wooden-type").addEventListener("click", addBase);
+document.getElementById("concrete-type").addEventListener("click", addBase);
 
 
 // Quantity
@@ -36,9 +37,7 @@ function addTotal(){
 
 // Plant
 function addPlant(){
-    console.log("test >>>>>>>>>>>>>>>>>>");
-
-    // Adapt plant price
+    // Adapt plant item
     switch(purchase.typeOfPlant){
         // Var
         case 1:
@@ -73,8 +72,25 @@ function addPlant(){
 
 // Base
 function addBase(){
-
+    // Adapt base item
+    switch(purchase.typeOfBase){
+    // Wooden
+    case 1:
+        // Replace base name
+        baseType.innerHTML = "Wooden";
+        // Replace price
+        basePrice.innerHTML = "6.00€";
+        break;
+    // Concrete
+    case 2:
+        // Replace base name
+        baseType.innerHTML = "Concrete";
+        // Replace price
+        basePrice.innerHTML = "4.00€";
+        break;
+    }
 }
+
 
 // Message
 function addMessage(){
