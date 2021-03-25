@@ -1,7 +1,7 @@
 // POP-UP TIME WINDOW
 
 // Test >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-//console.log("Time-window.js loaded");
+// console.log("Time-window.js loaded");
 
 
 // Global variables >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -165,8 +165,39 @@ function resetTime(){
     secondsLeft = 0;
     minutesLeft = 0;
 
+    // Reset time window title
+    timeTextTitle.innerHTML = "Hurry up!";
+
     // Hide pop-up window
     timeWindow.style.display = "none";
+
+    //Reset all timeline DOM elements
+    if (circle1.classList.contains("enabled-circle")){
+        circle1.classList.remove("enabled-circle")
+    }
+    if (circle2.classList.contains("enabled-circle")){
+        circle2.classList.remove("enabled-circle")
+    }
+    if (circle3.classList.contains("enabled-circle")){
+        circle3.classList.remove("enabled-circle")
+    }
+    if (circle4.classList.contains("enabled-circle")){
+        circle4.classList.remove("enabled-circle")
+    }
+
+
+    if (timelineText1.classList.contains("timeline-text-enabled")){
+        timelineText1.classList.remove("timeline-text-enabled")
+    }
+    if (timelineText2.classList.contains("timeline-text-enabled")){
+        timelineText2.classList.remove("timeline-text-enabled")
+    }
+    if (timelineText3.classList.contains("timeline-text-enabled")){
+        timelineText3.classList.remove("timeline-text-enabled")
+    }
+    if (timelineText4.classList.contains("timeline-text-enabled")){
+        timelineText4.classList.remove("timeline-text-enabled")
+    }
 
     // Reseting all timeouts/intervals
     clearTimeout(tenSecondsTimeout);

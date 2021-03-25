@@ -284,7 +284,7 @@ function BackPage(){
             percentage.style.width = "0%";
             circle2.classList.toggle("enabled-circle");
             timelineText2.classList.toggle("timeline-text-enabled");
-        
+
             indexCurrentPage--;
             break;
         case 4:
@@ -304,7 +304,7 @@ function BackPage(){
             percentage.style.width = "33%";
             circle3.classList.toggle("enabled-circle");
             timelineText3.classList.toggle("timeline-text-enabled");
-            
+
             indexCurrentPage--;
             break;
         case 5:
@@ -319,7 +319,7 @@ function BackPage(){
 
             mainleftNextPage.style.display = "flex";
             mainRightNextPage.style.display = "flex";
-            
+
             indexCurrentPage--;
             // indexCurrentPage = 1;
 
