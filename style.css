@@ -132,7 +132,6 @@ main{
     margin-right: 10px;
     display: flex;
     flex-direction: row;
-
 }
 
 .picture-box{
@@ -153,10 +152,8 @@ height: 700px;
 display: flex;
 flex-direction: column;
 width: 120px;
-
-/* background-color:lightsalmon; */
-
 }
+
 .photo-gallery{
     width: 50px;
     height: 80px;
@@ -320,15 +317,6 @@ width: 120px;
     background-color: #00d5c2;
 }
 
-/* #plant-style {
-height: 250px;
-width:inherit ;
-border:#00d5c2 2px solid;
-border-left:transparent ;
-border-right: transparent;
-
-
-} */
 .sub-section{
     display: flex;
     border: transparent;
@@ -343,7 +331,6 @@ border-right: transparent;
 line-height: 24px;
 margin-right: 20px;
 flex-basis: 20%;
-
 }
 
 #plant1,#plant2,#plant3,#plant4{
@@ -503,8 +490,8 @@ height: 150px;
     flex-basis: 15%;
     /* background-color: lightcoral; */
     margin-left: 20px;
-
 }
+
 .price-total{
 font-size: 20px;
 }
@@ -523,6 +510,19 @@ font-size: 20px;
     height: 100px;
     line-height: 24px;
     flex-basis: 20%;
+}
+
+/* List wrappers */
+#type-plant-wrapper{
+    /* background-color: red; */
+}
+
+#type-base-wrapper{
+    /* background-color: green; */
+}
+
+#message-wrapper{
+    /* background-color: cyan; */
 }
 
 #type-plant-price{
