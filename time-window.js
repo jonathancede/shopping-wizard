@@ -25,12 +25,17 @@ var tenSecondsTimeout;
 var eachMinuteInterval;
 var subtractSecondInterval;
 
+var finishTotalSeconds;
+var finishMinutes;
+var finishSeconds;
+
 const minute = 1000*60;
 
 
 // HTML elements >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 document.getElementById("buy-button").addEventListener("click", initializeTime);
 document.getElementById("back-button-profile").addEventListener("click", resetTime);
+
 // Hide pop-up window if last button is clicked
 document.getElementById("confirm-button-finish").addEventListener("click", closeWindowFinish);
 
@@ -126,6 +131,10 @@ function closeWindow(event){
 
 // Close window at finish page
 function closeWindowFinish(){
+    finishTotalSeconds = 300 - secondsLeft;
+    finishMinutes = parseInt(finishTotalSeconds/60);
+    finishSeconds = parseInt(((finishTotalSeconds/60) % 1)*60);
+
     closeWindow();
     resetTime();
 }

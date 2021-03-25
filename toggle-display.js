@@ -48,6 +48,8 @@ document.getElementById("buy-button").addEventListener("click", StorageDataAndNe
 document.getElementById("profile-form").addEventListener("submit", CheckPassword, true);
 document.getElementById("address-form").addEventListener("submit", StorageDataAndNextPage, true);
 document.getElementById("confirm-button-shipping").addEventListener("click", StorageDataAndNextPage, true);
+document.getElementById("confirm-button-finish").addEventListener("click", StorageDataAndNextPage, true);
+document.getElementById("final-button").addEventListener("click", StorageDataAndNextPage, true);
 
 document.getElementById("back-button-profile").addEventListener("click", BackPage);
 document.getElementById("back-button-address").addEventListener("click", BackPage);
@@ -228,17 +230,48 @@ function StorageDataAndNextPage(event){
             var mainleftCurrentPage = document.getElementById("main-left-finish");
             var mainRightCurrentPage = document.getElementById("main-right-finish");
 
-            var mainleftNextPage = document.getElementById("main-left-mp");
-            var mainRightNextPage = document.getElementById("main-right-mp");
+            document.getElementById("main-center-finish-screen").style.display = "flex";
 
             mainleftCurrentPage.style.display = "none";
             mainRightCurrentPage.style.display = "none";
 
+
+            indexCurrentPage++;
+            break;
+        case 6:
+            var mainleftNextPage = document.getElementById("main-left-mp");
+            var mainRightNextPage = document.getElementById("main-right-mp");
+
+            document.getElementById("main-center-finish-screen").style.display = "none";
+
             mainleftNextPage.style.display = "flex";
             mainRightNextPage.style.display = "flex";
 
+            /*---- Remove all data ----*/
+            purchase = {
+                typeOfPlant: 1,
+                quantity: 1,
+                typeOfBase: 1,
+                isCustomMessage: false,
+                customMessage: new String,
+                totalPriceCount: 16.00,
+                userName: new String,
+                email: new String,
+                password: new String,
+                firstName: new String,
+                lastName: new String,
+                birthday: new String,
+                addressOne: new String,
+                addressTwo: new String,
+                postalCode: new String,
+                country: new String,
+                prePhone: new String,
+                phone: new String,
+                typeOfShipping: 1,
+                isGift: false,
+                giftMessage: new String
+            };
 
-            // indexCurrentPage++;
             indexCurrentPage = 1;
             break;
     }
