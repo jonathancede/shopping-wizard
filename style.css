@@ -135,10 +135,11 @@ main{
 }
 
 #timeline-line-percentage{
-    /* Default width to zero */
+    /* Default width to 100% */
     width: 100%;
     height: 2px;
     background-color: var(--dark-green);
+    /* transition: .4s ease-in-out; */
 }
 
 /* Changing widths in process */
