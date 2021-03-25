@@ -165,6 +165,9 @@ function resetTime(){
     secondsLeft = 0;
     minutesLeft = 0;
 
+    // Reset time window title
+    timeTextTitle.innerHTML = "Hurry up!";
+
     // Hide pop-up window
     timeWindow.style.display = "none";
 
