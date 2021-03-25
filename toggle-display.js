@@ -271,7 +271,7 @@ function BackPage(){
             percentage.style.width = "0%";
             circle2.classList.toggle("enabled-circle");
             timelineText2.classList.toggle("timeline-text-enabled");
-        
+
             indexCurrentPage--;
             break;
         case 4:
