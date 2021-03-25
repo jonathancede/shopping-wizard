@@ -898,7 +898,7 @@ button {
 }
 
 /* Back/Confirm button */
-#back-button,#back-to-main-page, #confirm-button{
+#back-button-profile, #back-button-address, #back-button-shipping, #back-button-finish, #confirm-button-profile, #confirm-button-address, #confirm-button-shipping{
     font-size: 30px;
     width: 25%;
 }
