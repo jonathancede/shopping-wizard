@@ -132,7 +132,6 @@ main{
     margin-right: 10px;
     display: flex;
     flex-direction: row;
-
 }
 
 .picture-box{
@@ -154,10 +153,8 @@ height: 690px;
 display: flex;
 flex-direction: column;
 width: 120px;
-
-/* background-color:lightsalmon; */
-
 }
+
 .photo-gallery{
     width: 50px;
     height: 80px;
@@ -326,15 +323,6 @@ width: 120px;
     background-color: #00d5c2;
 }
 
-/* #plant-style {
-height: 250px;
-width:inherit ;
-border:#00d5c2 2px solid;
-border-left:transparent ;
-border-right: transparent;
-
-
-} */
 .sub-section{
     display: flex;
     border: transparent;
@@ -349,7 +337,6 @@ border-right: transparent;
 line-height: 24px;
 margin-right: 20px;
 flex-basis: 20%;
-
 }
 
 #plant1{
@@ -486,6 +473,7 @@ flex-basis: 20%;
     flex-direction: column;
     height: 40%;
     width: 70%;
+    margin-left: 10px;
 }
 
 .text-area-wrapper{
@@ -530,13 +518,13 @@ height: 150px;
     flex-basis: 15%;
     /* background-color: lightcoral; */
     margin-left: 20px;
-
 }
+
 .price-total{
 font-size: 20px;
 }
 
-.price-total-2{
+#total-price-mp{
     font-size: 40px;
 }
 
@@ -546,8 +534,21 @@ font-size: 20px;
     width: 100%;
 }
 
-#price-text-box{
+#price-text-box-mp{
     height: 100px;
+    line-height: 24px;
+    flex-basis: 20%;
+}
+
+/* List wrappers */
+#type-plant-wrapper{
+}
+
+#type-base-wrapper{
+}
+
+#message-wrapper{
+    display: none;
 }
 
 #type-plant-price{
@@ -598,10 +599,10 @@ input[type="file"] {
     padding: 10px;
 }
 
-.section-title-2{
+/* .section-title-2{
     line-height: 24px;
     flex-basis: 20%;
-}
+} */
 
 #bottom-right-left{
     margin-right: 20px;

@@ -122,7 +122,7 @@
                     </div>
                     <div id="quantity-text">
                         <label class="section-title"><h2>Quantity</h2></label>
-                        <input type="number" id="quantity-box" name="quantity" min="1" >
+                        <input type="number" id="quantity-box" name="quantity" min="1" value="1">
                     </div>
                 <!-- </div> -->
                 <div class="line-margin"></div>
@@ -132,7 +132,7 @@
                             <!-- Wooden Button  -->
                             <label class="radio">
                                 <span class="radio_input">
-                                    <input id="wooden-type" class="typeBase" type="radio" name="radio" checked>
+                                    <input id="wooden-type" class="typeBase" type="radio" name="base-radio" checked>
                                     <span class="radio_control"></span>
                                     <span class="radio_label"><h2>Wooden</h2>
                                 </span>
@@ -142,7 +142,7 @@
                         <div class="base-checkbox"> <!--Concrete Button  -->
                             <label class="radio">
                                 <span class="radio_input">
-                                    <input id="concrete-type" class="typeBase" type="radio" name="radio">
+                                    <input id="concrete-type" class="typeBase" type="radio" name="base-radio">
                                     <span class="radio_control"></span>
                                     <span class="radio_label"><h2>Concrete</h2></span>
                                 </span>
@@ -172,26 +172,35 @@
                     </div>
                 </div>
             </div>
+
+            <!-- List of items -->
+
             <div id="price-box">
                 <div class="line-margin"></div>
                 <div class="main-price">
-                    <div id="price-text-box" class="section-title-2">
-                    <h1>Price</h1>
-                    <br>
-                        <div id="price-total-box" class="price-total-2">46.00€</div>
+                    <div id="price-text-box-mp">
+                        <h1>Price</h1>
+                        <br>
+                        <div id="total-price-mp">16.00€</div>
                     </div>
-                    <!-- cambiar clase price total a id -->
                     <div id="type-plant-price" class="selection-title2">
-                            <h2>Tri</h2>
-                            <div id="type-price-total" class="price-total">20.00€(x2)</div>
-                            <br>
-                            <div id="type-base-price" class="selection-title2>">
+                        <!-- Selected plant -->
+                        <div id="type-plant-wrapper">
+                            <h2>Var</h2>
+                            <div id="type-plant-total" class="price-total">10.00€</div>
+                        </div>
+                        <br>
+                        <!-- Selected base -->
+                        <div id="type-base-wrapper">
                             <h2>Wooden base</h2>
-                            <div id="base-price-total"class="price-total">3.00€(x2)</div>
-                            <br>
+                            <div id="base-price-total" class="price-total">6.00€</div>
+                        </div>
+                        <br>
+                        <!-- Selected message -->
+                        <div id="message-wrapper">
                             <h2>Custom message</h2>
-                            <div id="custom-message-total"class="price-total">1.50€(x2)</div>
-                            </div>
+                            <div id="custom-message-total" class="price-total"></div>
+                        </div>
                     </div>
                 </div>
                 <div id="buy-button-box">
@@ -306,7 +315,7 @@
                         <div class="select-country-wrapper">
                             <select class="form-text-area select-menu" id="user-country" name="country" required>
                                 <!-- List of countries -->
-                                <option value="Default">Select a country</option>
+                                <option value="Default">Country:</option>
                                 <option value="Andorra">Andorra</option>
                                 <option value="France">France</option>
                                 <option value="Germany">Germany</option>
@@ -374,7 +383,7 @@
                         <!-- Free -->
                         <label class="radio">
                             <span class="radio_input">
-                                <input type="radio" name="radio" checked>
+                                <input class="input-type-shipping" type="radio" name="shipping-radio" checked>
                                 <span class="radio_control"></span>
                             </span>
                             <span class="radio_label">Free shipping (72h)</span>
@@ -384,7 +393,7 @@
                         <!-- Extra  -->
                         <label class="radio">
                             <span class="radio_input">
-                                <input type="radio" name="radio">
+                                <input class="input-type-shipping" type="radio" name="shipping-radio">
                                 <span class="radio_control"></span>
                             </span>
                             <span class="radio_label">Extra shipping (48h) <strong>+ 4,99€</strong></span>
@@ -394,16 +403,14 @@
                         <!-- Premium  -->
                         <label class="radio">
                             <span class="radio_input">
-                                <input type="radio" name="radio">
+                                <input class="input-type-shipping" type="radio" name="shipping-radio">
                                 <span class="radio_control"></span>
                             </span>
-                            <span class="radio_label">Premium shipping (72h) <strong>+ 7,99€</strong></span>
+                            <span class="radio_label">Premium shipping (24h) <strong>+ 7,99€</strong></span>
                         </label>
                         <!-- Linebreak -->
                         <br><br>
-                        <h3 id="arrival-dates">Your order will arrive between <br>
-                            Tuesday, 29th March at 3pm
-                            and <br>Wednesday, 30th March at 3pm.</h3>
+                        <h3 id="arrival-dates"></h3>
                     </div>
                 </div>
                 <!-- Bottom right right -->
@@ -502,8 +509,10 @@
 <!-- Javascript files -->
 <script src="script.js"></script>
 <script src="toogle-display.js"></script>
+<script src="main-price-text.js"></script>
 <script src="image-dynamic.js"></script>
 <script src="time-window.js"></script>
 <script src="opacity-textarea.js"></script>
+<script src="delivery-dynamic.js"></script>
 <script src="wrapper-images.js"></script>
 </html>

@@ -27,6 +27,9 @@ var purchase = {
     giftMessage: new String
 };
 
+// Test print
+console.log(">>>>>>>>>>>>>> Test:", purchase.typeOfPlant);
+
 function CheckAndNextPage(event){
     event.preventDefault();
     switch (indexCurrentPage) {

@@ -74,7 +74,7 @@ function subtractSecond(){
     minutesConverted = parseInt(secondsLeft/60);
     secondsConverted = parseInt(((secondsLeft/60) % 1)*60);
     remainingTime = `Current time ${minutesConverted} minutes and ${secondsConverted} seconds.`
-    console.log(remainingTime);
+    // console.log(remainingTime);
 }
 
 // Executed when user clicks "back" to main page
